@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="msemr_nameuse" localizedName="Use of Name" description="The use of a human name.">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Use of Name" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="The use of a human name." languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="935000000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Usual" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Official" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000002" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Temp" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000003" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Nick" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000004" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Maiden" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000005" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Old" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000006" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Anonymus" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

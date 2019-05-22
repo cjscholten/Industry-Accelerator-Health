@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{28b5b9b6-dfa2-45d6-8a81-3f6ba02a098a}</formid>
+    <IntroducedVersion>6.1.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form showImage="true">
+      <DisplayConditions Order="5" solutionaction="Modified" />
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Contact - Mobile" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="This form is used for mobile technicians, with appropriate field layout." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

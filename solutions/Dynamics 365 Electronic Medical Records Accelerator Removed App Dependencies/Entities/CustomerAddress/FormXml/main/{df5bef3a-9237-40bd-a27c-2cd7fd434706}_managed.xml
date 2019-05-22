@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{df5bef3a-9237-40bd-a27c-2cd7fd434706}</formid>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="general" verticallayout="true" id="{7a1719bc-52d2-415f-add9-c47470e362c2}" IsUserDefined="0" ordinalvalue="0">
+          <columns>
+            <column width="100%" id="0">
+              <sections>
+                <section name="customer address information" showlabel="false" showbar="false" id="{e94c2d90-e386-47a5-bc0e-23659c114b80}" IsUserDefined="0" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{a427cb71-edc1-4800-a0c4-aa921820f17f}" ordinalvalue="20009" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{b8c54b77-2905-3125-b30a-3e04de577bdc}" showlabel="false" ordinalvalue="20009" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="phone numbers" showlabel="true" showbar="true" id="{fd35da8d-5a6b-4302-bf66-009daf60f42b}" IsUserDefined="0" ordinalvalue="1">
+                  <rows>
+                    <row>
+                      <cell id="{6d915df1-ae01-463b-a735-e8850bc58e63}" showlabel="false" ordinalvalue="20003" solutionaction="Modified" />
+                    </row>
+                  </rows>
+                </section>
+                <section name="additional information" showlabel="true" showbar="true" id="{98042d80-87b4-48e5-98fe-843d9c804bf4}" IsUserDefined="0" ordinalvalue="2">
+                  <rows>
+                    <row>
+                      <cell id="{8073d79b-05e9-4a3f-9278-577fae9f9bb0}" showlabel="false" ordinalvalue="20003" solutionaction="Modified" />
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation solutionaction="Added">
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

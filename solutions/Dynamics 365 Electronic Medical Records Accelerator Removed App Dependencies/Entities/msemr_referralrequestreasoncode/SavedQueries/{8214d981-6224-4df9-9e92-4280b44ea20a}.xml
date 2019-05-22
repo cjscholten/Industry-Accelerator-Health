@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{8214d981-6224-4df9-9e92-4280b44ea20a}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="msemr_display" select="1" icon="1" preview="1">
+        <row name="msemr_referralrequestreasoncode" id="msemr_referralrequestreasoncodeid">
+          <cell name="msemr_display" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_referralrequestreasoncode">
+          <attribute name="msemr_referralrequestreasoncodeid" />
+          <attribute name="msemr_display" />
+          <attribute name="createdon" />
+          <order attribute="msemr_display" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Referral Request Reason Code Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

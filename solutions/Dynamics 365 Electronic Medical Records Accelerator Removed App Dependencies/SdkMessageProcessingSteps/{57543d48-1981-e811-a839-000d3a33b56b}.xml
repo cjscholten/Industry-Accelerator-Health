@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Microsoft.Dynamics.Health.PatientActivityDate: Update of task" SdkMessageProcessingStepId="{57543d48-1981-e811-a839-000d3a33b56b}">
+  <PluginTypeName>Microsoft.Dynamics.Health.PatientActivityDate, Microsoft.Dynamics.Health, Version=1.0.0.0, Culture=neutral, PublicKeyToken=20f0165d2cb5406f</PluginTypeName>
+  <PluginTypeId>ef10a14c-29f9-48c4-a0d2-6509408bf427</PluginTypeId>
+  <PrimaryEntity>task</PrimaryEntity>
+  <AsyncAutoDelete>1</AsyncAutoDelete>
+  <Description>Microsoft.Dynamics.Health.PatientActivityDate: Update of task</Description>
+  <FilteringAttributes>msemr_requesteragentpatient</FilteringAttributes>
+  <InvocationSource>1</InvocationSource>
+  <Mode>1</Mode>
+  <Rank>1</Rank>
+  <SdkMessageId>{20bebb1b-ea3e-db11-86a7-000a3a5473e8}</SdkMessageId>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>40</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages>
+    <SdkMessageProcessingStepImage Name="task">
+      <SdkMessageProcessingStepImageId>{7b869325-1a81-e811-a83f-000d3a33b5cc}</SdkMessageProcessingStepImageId>
+      <Attributes>createdon,msemr_requesteragentpatient</Attributes>
+      <EntityAlias>task</EntityAlias>
+      <ImageType>1</ImageType>
+      <MessagePropertyName>Target</MessagePropertyName>
+      <IsCustomizable>1</IsCustomizable>
+    </SdkMessageProcessingStepImage>
+  </SdkMessageProcessingStepImages>
+</SdkMessageProcessingStep>

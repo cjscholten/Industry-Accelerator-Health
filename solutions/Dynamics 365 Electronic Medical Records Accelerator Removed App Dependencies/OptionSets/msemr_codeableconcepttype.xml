@@ -1,0 +1,1320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="msemr_codeableconcepttype" localizedName="Codeable Concept Type">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Codeable Concept Type" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="935000000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Action Participant Role" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Action Reason" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000002" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Activity Reason" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000003" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Additional Dosage Instruction" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000004" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Additive Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000005" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Administration Method Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000006" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Administration Site Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000007" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Admit Source" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000008" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Allergy Intolerance" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000009" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Animal Breed" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000010" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Animal Gender" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000011" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Animal Species" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000012" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="As Needed Reason Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Body Structure" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000013" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Care Plan Activity" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000014" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Care Plan Activity Category" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000015" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Care Plan Activity Outcome" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000016" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Care Plan Category" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000017" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Care Team Category" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000018" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Clinical Finding" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000019" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Clinical Impression Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000020" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Clinical Impression Prognosis" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000021" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Communication Category" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000022" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Condition Category Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000023" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Condition Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000024" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Condition Outcome Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000025" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Condition Severity" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000026" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Condition Stage" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000027" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Contact Entity Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000028" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Contact Role" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000029" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Data Requirement Code Filter Value Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000030" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Definition Topic" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000031" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Detected Issue" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000032" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Device Component Operational Status" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000033" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Device Component Parameter Group" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000034" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Device Metric Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000035" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Device Safety" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000036" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Device Specification Spec Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000037" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Device Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000038" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Diagnosis Role" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000039" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Diagnostic Report" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000040" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Diet" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000041" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Diet Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000042" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Discharge Disposition" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000043" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Encounter Reason Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000044" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Encounter Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000045" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Endpoint Payload Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000046" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Enteral Formula Additive Type Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000047" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Enteral Formula Type Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000048" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Enteral Route Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000049" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Episode Of Care Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000050" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Event History" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000051" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Family History Not Done Reason" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000053" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Family Member" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000054" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="FHIR Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000055" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Financial Account" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000056" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Fluid Consistency Type Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000057" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Food Type Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000058" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Form Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000059" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Goal Category" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000060" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Goal Priority" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000061" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Goal Start Event" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000062" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Goal Target Detail" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000063" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Group" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000064" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Imaging Study" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000065" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Immunization Request" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000066" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Investigation Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000067" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Jurisdiction" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000068" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Language" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000070" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Library" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000071" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Link Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000072" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Location Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000073" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="LOINC Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000074" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Medication Administration Category" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000075" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Medication As Needed Reason Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000076" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Medication Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000077" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Medication Container" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000078" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Medication Ingredient" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000079" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Medication Package Content" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000080" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Medication Request Category" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000081" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Medication Statement" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000082" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Nutrient Modifier Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000083" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Observation Category Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000084" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Observation Component Value" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000085" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Observation Interpretation Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000086" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Observation Method" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000087" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Observation Reference Range Applies To Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000088" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Observation Reference Range Meaning Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000089" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Observation Value Absent Reason" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000090" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Observation Value Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000091" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Participant Role" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000092" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Participant Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000069" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Referral Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000093" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Participation Mode" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000094" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Patient Referral Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000095" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Patient Relationship Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000096" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Plan Definition Action Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000097" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Plan Definition Action Reason" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000098" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Plan Definition Goal Target" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000099" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Practice Setting Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000100" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Practitioner Role" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000101" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Practitioner Specialty" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000102" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Priority" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000103" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Procedure Category Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000104" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Procedure Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000105" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Procedure Device Action Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000106" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Procedure Follow up Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000107" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Procedure Outcome Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000108" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Procedure Performer Role Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000109" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Procedure Reason Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000110" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Provenance" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000052" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Qualification Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000111" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Quantity Unit Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000112" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Questionnaire" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000113" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Questionnaire Response" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000114" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Re-Admission Indicator" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000116" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Reason Medication Given Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000117" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Reason Medication Not Given Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000118" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Referral Method" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000119" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Request Group Action Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000120" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Request Group Reason Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000121" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Request Intent" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000122" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Resource Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000123" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Risk Assessment Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000124" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Risk Assessment Method" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000125" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Risk Assessment Outcome" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000126" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Risk Assessment Reason Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000127" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Route Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000128" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Sequence" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000129" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Service Category" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000130" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Service Characteristic" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000131" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Service Delivery Location Role Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000132" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Service Eligibility" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000133" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Service Provision Condition" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000134" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Service Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000135" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Snomed CT Medication Codes" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000136" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Special Arrangement" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000137" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Special Courtesy" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000138" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Specialty" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000139" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Specimen Collection Method" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000140" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Specimen Container" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000141" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Specimen Processing Procedure" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000142" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Specimen Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000143" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Structure Map" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000144" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Substance Admin Substitution Reason" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000145" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Substance Category Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000146" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Substance Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000147" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Supplement Type Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000148" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Symptom Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000149" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Task Business Status" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000150" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Task Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000151" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Task Input Parameter Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000152" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Task Output Parameter Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000153" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Task Performer Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000154" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Task Reason" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000155" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Task Status Reason" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000156" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Texture Modified Food Type Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000157" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Texture Modifier Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000158" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Topic" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000159" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Use Context" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000160" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Value Set" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000161" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Vision Prescription Product Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000162" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Vision Prescription Reason Code" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

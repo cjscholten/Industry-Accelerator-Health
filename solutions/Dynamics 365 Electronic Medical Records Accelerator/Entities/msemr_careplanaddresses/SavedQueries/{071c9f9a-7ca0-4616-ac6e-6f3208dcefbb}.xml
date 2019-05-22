@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{071c9f9a-7ca0-4616-ac6e-6f3208dcefbb}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="msemr_name">
+        <row id="msemr_careplanaddressesid" name="result">
+          <cell name="msemr_careplan" width="100" />
+          <cell name="msemr_addresses" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msemr_careplanaddresses">
+          <attribute name="createdon" />
+          <order descending="false" attribute="msemr_addresses" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msemr_addresses" />
+          <attribute name="msemr_careplan" />
+          <attribute name="msemr_careplanaddressesid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Care Plan Addresses" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

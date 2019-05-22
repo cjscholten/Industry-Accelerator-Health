@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{0db91b5b-61d7-41ef-a459-c7ec9ab3e60e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msemr_name" select="1" icon="1" preview="1">
+        <row name="result" id="msemr_procedurepartofid">
+          <cell name="msemr_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_procedurepartof">
+          <attribute name="msemr_procedurepartofid" />
+          <attribute name="msemr_name" />
+          <attribute name="createdon" />
+          <order attribute="msemr_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Procedure Part Of Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

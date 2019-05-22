@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{8da1e21e-5ac1-46b1-b026-19134f20b5ca}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{04c01a72-04bd-432b-b8d0-ebdd54d4faa8}" name="{04c01a72-04bd-432b-b8d0-ebdd54d4faa8}" IsUserDefined="1" showlabel="true" expanded="true" locklevel="0" verticallayout="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section id="{39a7c8e3-b030-4354-a167-b9c30e65827f}" name="{39a7c8e3-b030-4354-a167-b9c30e65827f}" IsUserDefined="0" showlabel="true" showbar="true" columns="1" labelwidth="130" celllabelposition="Left" locklevel="0" celllabelalignment="Left">
+                  <labels>
+                    <label description="CARE PLAN INFO" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{de8e34c9-4c31-4360-aefd-49f28b92feb0}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_title" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_title" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2d23ce3e-32a6-3e7d-40a2-82652db67dbc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_patientidentifier" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_patientidentifier" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5372baa5-e934-2200-273d-2845c87ee93c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_subjecttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_subjecttype" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{beb89d93-0132-7aa0-545d-0e1421940cbe}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_contexttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_contexttype" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{35b48603-6846-4926-5a1c-692dd0e852a2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_planstartdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_planstartdate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b04a7d7c-c796-4905-eb3c-716926e03ac6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_planenddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_planenddate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b6041d2c-a7ba-b907-ec8d-ac2929d9b7d9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_plandescription" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_plandescription" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b215561c-e63c-b493-8121-71029ab1da2e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_careplanidentifier" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_careplanidentifier" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ba740893-78c4-3640-52bd-7131344cc358}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_planintent" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_planintent" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3a0152a4-a64b-4417-b52e-74ac52913478}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{6e8a0064-44e3-1536-9e7b-d262706da57b}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section id="{616b836a-48a6-5326-bc27-4ed4d3bd1438}" name="{04c01a72-04bd-432b-b8d0-ebdd54d4faa8}_section_3" IsUserDefined="0" showlabel="true" showbar="true" layout="varwidth" columns="1" labelwidth="115" celllabelposition="Left" locklevel="0" celllabelalignment="Left">
+                  <labels>
+                    <label description="CARE PLAN REFERENCES" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b5e426cc-7d2e-61ab-ca50-652645553116}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_encounteridentifier" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_encounteridentifier" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{31a4d865-e244-b48c-9e04-ccdbea38da27}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_episodeofcare" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_episodeofcare" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9a30dbd1-c360-93d0-8e28-1e1cd6d5cd3e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_groupidentifier" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_groupidentifier" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{23c76980-d588-b299-cc03-560e56d1b46b}" name="{04c01a72-04bd-432b-b8d0-ebdd54d4faa8}_section_2" IsUserDefined="0" showlabel="true" showbar="true" layout="varwidth" columns="1" labelwidth="115" celllabelposition="Left" locklevel="0" celllabelalignment="Left">
+                  <labels>
+                    <label description="TIMELINE" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b990b749-e03c-9763-e7c6-8bb7ee04645c}" showlabel="true" locklevel="0" colspan="1" auto="false" rowspan="15">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{eebb608c-d464-6a8c-9390-90bbd6032690}">
+                          <parameters>
+                            <UClientUniqueName>Timeline</UClientUniqueName>
+                            <UClientModules>Notes</UClientModules>
+                            <UClientDefaultModuleForCreateExperience>Notes</UClientDefaultModuleForCreateExperience>
+                            <UClientShowFilterPane>true</UClientShowFilterPane>
+                            <UClientExpandFilterPane>false</UClientExpandFilterPane>
+                            <UClientOrderBy>descending</UClientOrderBy>
+                            <UClientRecordPerPage>10</UClientRecordPerPage>
+                            <DefaultTabId>ActivitiesTab</DefaultTabId>
+                            <EmailConversationView>true</EmailConversationView>
+                            <ShowArticleTab>false</ShowArticleTab>
+                            <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{01c50731-70c7-2691-6cdc-22c1cdd293b8}" name="ref_pan_{04c01a72-04bd-432b-b8d0-ebdd54d4faa8}_section_4" IsUserDefined="0" showlabel="false" showbar="false" layout="varwidth" columns="1" labelwidth="115" locklevel="0" rowheight="25" autoexpand="false">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6c7315a3-6157-7e15-6c58-d30da7e5c17d}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="Careplan_activities" classid="{02D4264B-47E2-4B4C-AA95-F439F3F4D458}">
+                          <parameters>
+                            <ViewId>{3E1B704B-62DD-41D2-8B15-74CFB0EF9402}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msemr_msemr_careplan_msemr_careplanactivity_CarePlan</RelationshipName>
+                            <TargetEntityType>msemr_careplanactivity</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{3E1B704B-62DD-41D2-8B15-74CFB0EF9402}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#D6EAFA</HeaderColorCode>
+                            <ReferencePanelSubgridIconUrl>msemr_ctc_doctor_svg</ReferencePanelSubgridIconUrl>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{4e9654c5-3a26-b4e4-a810-e84e2a5059ac}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Care Plan Goals" languagecode="1033" />
+                        </labels>
+                        <control id="Careplan_goals" classid="{02D4264B-47E2-4B4C-AA95-F439F3F4D458}" uniqueid="{26986392-8577-e29c-266b-a7283069c597}">
+                          <parameters>
+                            <ViewId>{A206223A-2729-4BCD-A1F6-1E8B05F4D76F}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msemr_msemr_careplan_msemr_careplangoal_CarePlan</RelationshipName>
+                            <TargetEntityType>msemr_careplangoal</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{A206223A-2729-4BCD-A1F6-1E8B05F4D76F}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#D6EAFA</HeaderColorCode>
+                            <ReferencePanelSubgridIconUrl>msemr_icon_nurse</ReferencePanelSubgridIconUrl>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{293a94eb-e235-c1a4-796b-1e40eaae1709}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Care Plan Addresses" languagecode="1033" />
+                        </labels>
+                        <control id="careplan_addresses" classid="{02D4264B-47E2-4B4C-AA95-F439F3F4D458}" uniqueid="{966ca8d8-d406-2b92-eacc-d5d07b61b03a}">
+                          <parameters>
+                            <ViewId>{071C9F9A-7CA0-4616-AC6E-6F3208DCEFBB}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msemr_msemr_careplan_msemr_careplanaddresses_CarePlan</RelationshipName>
+                            <TargetEntityType>msemr_careplanaddresses</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{071C9F9A-7CA0-4616-AC6E-6F3208DCEFBB}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#D6EAFA</HeaderColorCode>
+                            <ReferencePanelSubgridIconUrl>msemr_tc_icon_procedure_svg</ReferencePanelSubgridIconUrl>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

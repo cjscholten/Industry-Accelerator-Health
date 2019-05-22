@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{a69e8b17-60c8-4b4e-a776-b5af75d4ec33}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="msemr_name">
+        <row id="msemr_specimenid" name="result">
+          <cell name="msemr_name" width="300" />
+          <cell name="msemr_subjecttypepatient" width="100" />
+          <cell name="msemr_type" width="100" />
+          <cell name="msemr_accessionnumber" width="100" />
+          <cell name="msemr_bodysite" width="100" />
+          <cell name="msemr_collectioncollecteddatetime" width="100" />
+          <cell name="msemr_collectioncollectedperiodend" width="100" />
+          <cell name="msemr_collectioncollectedperiodstart" width="100" />
+          <cell name="msemr_collectioncollectedtype" width="100" />
+          <cell name="msemr_collectioncollector" width="100" />
+          <cell name="msemr_subjecttypedevice" width="100" />
+          <cell name="msemr_subjecttypegroup" width="100" />
+          <cell name="msemr_collectedmethod" width="100" />
+          <cell name="msemr_collectedquantity" width="100" />
+          <cell name="msemr_specimennumber" width="100" />
+          <cell name="msemr_subjecttype" width="100" />
+          <cell name="msemr_subjecttypesubstance" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msemr_specimen">
+          <attribute name="msemr_name" />
+          <attribute name="createdon" />
+          <order descending="false" attribute="msemr_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msemr_type" />
+          <attribute name="msemr_subjecttypesubstance" />
+          <attribute name="msemr_subjecttype" />
+          <attribute name="msemr_specimennumber" />
+          <attribute name="msemr_collectedquantity" />
+          <attribute name="msemr_subjecttypepatient" />
+          <attribute name="msemr_collectedmethod" />
+          <attribute name="msemr_subjecttypegroup" />
+          <attribute name="msemr_subjecttypedevice" />
+          <attribute name="msemr_collectioncollector" />
+          <attribute name="msemr_collectioncollectedtype" />
+          <attribute name="msemr_collectioncollectedperiodstart" />
+          <attribute name="msemr_collectioncollectedperiodend" />
+          <attribute name="msemr_collectioncollecteddatetime" />
+          <attribute name="msemr_bodysite" />
+          <attribute name="msemr_accessionnumber" />
+          <attribute name="msemr_specimenid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Specimens" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

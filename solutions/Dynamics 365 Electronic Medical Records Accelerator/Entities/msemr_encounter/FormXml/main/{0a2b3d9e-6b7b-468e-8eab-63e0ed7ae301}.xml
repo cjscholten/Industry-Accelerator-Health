@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{0a2b3d9e-6b7b-468e-8eab-63e0ed7ae301}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{7c8f15d9-7976-4439-8701-9559e78c9695}" name="{7c8f15d9-7976-4439-8701-9559e78c9695}" expanded="true" showlabel="true" IsUserDefined="1" locklevel="0" verticallayout="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section id="{662f311a-8c03-4a75-a9c7-0087912374f4}" showlabel="false" IsUserDefined="0" showbar="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{440dfbc3-a60a-4cec-ab6b-3112b88a927c}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{660ab055-da02-d073-7345-450b2d02223b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Encounter Number" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_encounteridentifier" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_encounteridentifier" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5ddd2e77-8aac-8ea5-0064-46b893531704}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pre Admission Number" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_hospitalizationpreadmissionnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_hospitalizationpreadmissionnumber" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d0b5835c-71e3-223a-b7eb-817c8e130d11}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Subject (Patient)" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_subjectpatient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_subjectpatient" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d5b094e1-a2b4-b2cd-45b9-5c549a327ab2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Start Date/Time" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_encounterstartdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_encounterstartdate" uniqueid="{544364dd-9323-863c-a1c8-184248c43bb0}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a571e0d5-1289-505d-38e6-c4649e2bccb9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="End Date/Time" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_encounterenddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_encounterenddate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b4554a98-70a7-35c4-0a89-2786ccaa7995}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Priority" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_encounterpriority" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_encounterpriority" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{29ac71b4-9b3b-54c1-7086-8a9231a6651a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Patient" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_encounterpatientidentifier" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_encounterpatientidentifier" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9d68818d-2144-2517-a464-ac01dc77b778}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period Start" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_periodstart" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_periodstart" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{55145a93-3ee2-46ea-99d4-a2ee2126a928}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{83587b07-7b5b-2de0-d9a5-a4623049061a}" name="{7c8f15d9-7976-4439-8701-9559e78c9695}_section_2" showlabel="false" IsUserDefined="0" labelwidth="115" columns="1" layout="varwidth" showbar="false" locklevel="0">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b47ba37d-e905-e13e-7d7b-36869aa26a60}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="On behalf of" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_onbehalfof" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_onbehalfof" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{78e3dd94-3a74-81b7-74eb-48574030550c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Origin" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_hospitalizationorigin" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_hospitalizationorigin" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1a5aba50-d191-0892-50a7-8c9568e1ca14}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Destination" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_hospitalizationdestination" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_hospitalizationdestination" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{81be1be0-4cb7-c40a-2450-5236b596c1ed}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Context (Encounter)" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_contextencounter" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_contextencounter" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{45094ea6-3cb0-8a01-b206-e3b57834e759}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Context (Episode of Care)" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_contextepisodeofcare" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_contextepisodeofcare" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{08cd19b6-4b62-9313-dbcd-c9478e09424c}" name="{7c8f15d9-7976-4439-8701-9559e78c9695}_section_3" showlabel="false" IsUserDefined="0" labelwidth="115" columns="1" layout="varwidth" showbar="false" locklevel="0">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{82812c10-3a24-7241-edd7-2b8d88e84c93}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Re admission" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_hospitalizationreadmission" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_hospitalizationreadmission" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dcce1dc6-ec8e-9222-01b8-2711b132c56b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Parent Enounter" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_encounterparentencounteridentifier" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_encounterparentencounteridentifier" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9c859722-e315-d628-b0b3-1dd2e99616ed}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Class" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_encounterclass" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_encounterclass" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{99cd7ce6-d35d-0961-5a5a-5581849c4465}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Appointment (EMR)" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_appointmentemr" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_appointmentemr" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6c8b12e7-43d5-7668-5221-43beb33b2661}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Admit Source" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_hospitalizationadmitsource" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_hospitalizationadmitsource" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <Name LocalizedName="Work Order Type" OriginalName="Work Order Type">msdyn_workordertype</Name>
+  <RibbonDiffXml />
+</Entity>

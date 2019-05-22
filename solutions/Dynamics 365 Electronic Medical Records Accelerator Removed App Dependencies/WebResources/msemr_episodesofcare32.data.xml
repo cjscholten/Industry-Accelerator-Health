@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{ca94fde2-c47e-e811-a83f-000d3a33b3a3}</WebResourceId>
+  <Name>msemr_episodesofcare32</Name>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.6</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource" /&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/msemr_episodesofcare32CA94FDE2-C47E-E811-A83F-000D3A33B3A3</FileName>
+</WebResource>

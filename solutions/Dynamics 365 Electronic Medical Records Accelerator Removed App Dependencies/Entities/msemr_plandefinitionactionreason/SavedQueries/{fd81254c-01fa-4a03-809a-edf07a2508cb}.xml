@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{fd81254c-01fa-4a03-809a-edf07a2508cb}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="msemr_name" select="1" icon="1" preview="1">
+        <row name="msemr_plandefinitionactionreason" id="msemr_plandefinitionactionreasonid">
+          <cell name="msemr_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_plandefinitionactionreason">
+          <attribute name="msemr_plandefinitionactionreasonid" />
+          <attribute name="msemr_name" />
+          <attribute name="createdon" />
+          <order attribute="msemr_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Plan Definition Action Reason Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

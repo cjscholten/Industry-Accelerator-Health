@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{ab883572-098e-40ff-bbec-5f762fccc4d1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msemr_value" select="1" icon="1" preview="1">
+        <row name="result" id="msemr_medicalidentifierid">
+          <cell name="msemr_value" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_medicalidentifier">
+          <attribute name="msemr_medicalidentifierid" />
+          <attribute name="msemr_value" />
+          <attribute name="createdon" />
+          <order attribute="msemr_value" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Medical Identifiers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

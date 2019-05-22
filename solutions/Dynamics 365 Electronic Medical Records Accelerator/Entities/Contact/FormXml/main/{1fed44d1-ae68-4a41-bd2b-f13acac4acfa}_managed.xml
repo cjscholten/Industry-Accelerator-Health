@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}</formid>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form showImage="true">
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="Contact_CustomerAddress" Id="navAddresses" Show="false" Sequence="20" Area="Info" solutionaction="Modified">
+            <Privileges solutionaction="Removed" />
+            <Titles>
+              <Title LCID="1025" Text="العناوين" solutionaction="Removed" />
+              <Title LCID="1026" Text="Адреси" solutionaction="Removed" />
+              <Title LCID="1027" Text="Adreces" solutionaction="Removed" />
+              <Title LCID="1029" Text="Adresy" solutionaction="Removed" />
+              <Title LCID="1030" Text="Adresser" solutionaction="Removed" />
+              <Title LCID="1031" Text="Adressen" solutionaction="Removed" />
+              <Title LCID="1032" Text="Διευθύνσεις" solutionaction="Removed" />
+              <Title LCID="3082" Text="Direcciones" solutionaction="Removed" />
+              <Title LCID="1061" Text="Aadressid" solutionaction="Removed" />
+              <Title LCID="1069" Text="Helbideak" solutionaction="Removed" />
+              <Title LCID="1035" Text="Osoitteet" solutionaction="Removed" />
+              <Title LCID="1036" Text="Adresses" solutionaction="Removed" />
+              <Title LCID="1110" Text="Enderezos" solutionaction="Removed" />
+              <Title LCID="1037" Text="כתובות" solutionaction="Removed" />
+              <Title LCID="1081" Text="पते" solutionaction="Removed" />
+              <Title LCID="1050" Text="Adrese" solutionaction="Removed" />
+              <Title LCID="1038" Text="Címek" solutionaction="Removed" />
+              <Title LCID="1057" Text="Alamat" solutionaction="Removed" />
+              <Title LCID="1040" Text="Indirizzi" solutionaction="Removed" />
+              <Title LCID="1041" Text="住所" solutionaction="Removed" />
+              <Title LCID="1087" Text="Мекенжайлар" solutionaction="Removed" />
+              <Title LCID="1042" Text="주소" solutionaction="Removed" />
+              <Title LCID="1063" Text="Adresai" solutionaction="Removed" />
+              <Title LCID="1062" Text="Adreses" solutionaction="Removed" />
+              <Title LCID="1086" Text="Alamat" solutionaction="Removed" />
+              <Title LCID="1044" Text="Adresser" solutionaction="Removed" />
+              <Title LCID="1043" Text="Adressen" solutionaction="Removed" />
+              <Title LCID="1045" Text="Adresy" solutionaction="Removed" />
+              <Title LCID="1046" Text="Endereços" solutionaction="Removed" />
+              <Title LCID="2070" Text="Endereços" solutionaction="Removed" />
+              <Title LCID="1048" Text="Adrese" solutionaction="Removed" />
+              <Title LCID="1049" Text="Адреса" solutionaction="Removed" />
+              <Title LCID="1051" Text="Adresy" solutionaction="Removed" />
+              <Title LCID="1060" Text="Naslovi" solutionaction="Removed" />
+              <Title LCID="10266" Text="Адресе" solutionaction="Removed" />
+              <Title LCID="9242" Text="Adrese" solutionaction="Removed" />
+              <Title LCID="1053" Text="Adresser" solutionaction="Removed" />
+              <Title LCID="1054" Text="ที่อยู่" solutionaction="Removed" />
+              <Title LCID="1055" Text="Adresler" solutionaction="Removed" />
+              <Title LCID="1058" Text="Адреси" solutionaction="Removed" />
+              <Title LCID="1066" Text="Địa chỉ" solutionaction="Removed" />
+              <Title LCID="2052" Text="地址" solutionaction="Removed" />
+              <Title LCID="3076" Text="地址" solutionaction="Removed" />
+              <Title LCID="1028" Text="地址" solutionaction="Removed" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="contact_customer_contacts" Id="navSubConts" Sequence="14" Area="Info" Show="false" solutionaction="Modified" />
+          <NavBarByRelationshipItem RelationshipName="contact_customer_relationship_customer" Id="navRelationships" Sequence="15" Area="Info" Show="false" solutionaction="Modified" />
+          <NavBarByRelationshipItem RelationshipName="quote_customer_contacts" Id="navQuotes" Sequence="12" Area="Info" Show="false" solutionaction="Modified" />
+          <NavBarByRelationshipItem RelationshipName="order_customer_contacts" Id="navOrders" Sequence="11" Area="Info" Show="false" solutionaction="Modified" />
+          <NavBarByRelationshipItem RelationshipName="contact_bookableresource_ContactId" Sequence="10000" Area="Info" Id="nav_contact_bookableresource_ContactId" Show="false" solutionaction="Removed" />
+          <NavBarByRelationshipItem Icon="$webresource:msdyn_/Icons/Sitemap/PurchaseOrder_32.png" RelationshipName="msdyn_contact_msdyn_purchaseorder_VendorSalesPerson" Sequence="10000" Client="Web" Area="Info" Id="nav_msdyn_contact_msdyn_purchaseorder_VendorSalesPerson" Show="false" solutionaction="Removed" />
+          <NavBarByRelationshipItem Icon="$webresource:msdyn_/Icons/Sitemap/RMA_32.png" RelationshipName="msdyn_contact_msdyn_rma_RequestedByContact" Sequence="10001" Client="Web" Area="Info" Id="nav_msdyn_contact_msdyn_rma_RequestedByContact" Show="false" solutionaction="Modified" />
+          <NavBarByRelationshipItem Icon="$webresource:msdyn_/Icons/Sitemap/RTV_32.png" RelationshipName="msdyn_contact_msdyn_rtv_VendorContact" Sequence="10002" Client="Web" Area="Info" Id="nav_msdyn_contact_msdyn_rtv_VendorContact" Show="false" solutionaction="Modified" />
+          <NavBarByRelationshipItem Icon="$webresource:msdyn_/Icons/Sitemap/WorkOrder_32.png" RelationshipName="msdyn_contact_msdyn_workorder_ReportedByContact" Sequence="10003" Client="Web" Area="Info" Id="nav_msdyn_contact_msdyn_workorder_ReportedByContact" Show="false" solutionaction="Modified" />
+          <NavBarByRelationshipItem RelationshipName="contact_entitlement_Customer" Sequence="21" Area="Info" Id="navEntitlement" solutionaction="Added">
+            <Titles>
+              <Title LCID="1033" Text="Entitlements" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="Contact_ActivityPointers" Sequence="22" Area="Info" Id="navActivities" solutionaction="Added">
+            <Titles>
+              <Title LCID="1033" Text="Activities" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas solutionaction="Added">
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <DisplayConditions FallbackForm="true" Order="3" solutionaction="Modified" />
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Contact" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Contact form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
