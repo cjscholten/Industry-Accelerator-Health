@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{5b8a7b0d-d180-e811-a83b-000d3a33bdbd}</WebResourceId>
+  <Name>msemr_specimen16</Name>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.6</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource" /&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/msemr_specimen165B8A7B0D-D180-E811-A83B-000D3A33BDBD</FileName>
+</WebResource>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{99b533ac-8df9-424f-ad88-d6f6ec0b849a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msemr_programname" select="1" icon="1" preview="1">
+        <row name="result" id="msemr_healthcareserviceprogramnameid">
+          <cell name="msemr_programname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_healthcareserviceprogramname">
+          <attribute name="msemr_healthcareserviceprogramnameid" />
+          <attribute name="msemr_programname" />
+          <attribute name="createdon" />
+          <order attribute="msemr_programname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Healthcare Service Program Name" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

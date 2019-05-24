@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{d3b5783a-c00d-4a98-9fee-4ff8dddbc245}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="msemr_name">
+        <row id="msemr_deviceid" name="result">
+          <cell name="msemr_name" width="300" />
+          <cell name="msemr_model" width="100" />
+          <cell name="msemr_manufacturer" width="100" />
+          <cell name="msemr_devicestatus" width="100" />
+          <cell name="msemr_location" width="100" />
+          <cell name="msemr_expirationdate" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msemr_device">
+          <attribute name="msemr_name" />
+          <attribute name="createdon" />
+          <order descending="false" attribute="msemr_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msemr_model" />
+          <attribute name="msemr_manufacturer" />
+          <attribute name="msemr_location" />
+          <attribute name="msemr_expirationdate" />
+          <attribute name="msemr_devicestatus" />
+          <attribute name="msemr_deviceid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Devices" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

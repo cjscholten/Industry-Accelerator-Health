@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{e2be7ae4-2481-e811-a83c-000d3a33b3be}</WebResourceId>
+  <Name>msemr_ui-icons_777777_256x240</Name>
+  <DisplayName>ui-icons_777777_256x240</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.7</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/msemr_ui-icons_777777_256x240E2BE7AE4-2481-E811-A83C-000D3A33B3BE</FileName>
+</WebResource>

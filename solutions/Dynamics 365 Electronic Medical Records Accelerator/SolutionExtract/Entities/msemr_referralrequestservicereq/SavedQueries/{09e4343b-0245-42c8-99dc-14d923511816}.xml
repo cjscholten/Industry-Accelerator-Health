@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{09e4343b-0245-42c8-99dc-14d923511816}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msemr_display" select="1" icon="1" preview="1">
+        <row name="result" id="msemr_referralrequestservicereqid">
+          <cell name="msemr_display" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_referralrequestservicereq">
+          <attribute name="msemr_referralrequestservicereqid" />
+          <attribute name="msemr_display" />
+          <attribute name="createdon" />
+          <order attribute="msemr_display" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Referral Request Service Reqs" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

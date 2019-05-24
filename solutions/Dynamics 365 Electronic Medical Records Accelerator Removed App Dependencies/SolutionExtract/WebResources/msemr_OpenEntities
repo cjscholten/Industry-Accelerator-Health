@@ -1,0 +1,10 @@
+function openAppointmentEMRForm(){
+	
+var parameters = {};
+
+var windowOptions = {
+ openInNewWindow: false
+};
+Xrm.Utility.openEntityForm("msemr_appointmentemr",null,parameters,windowOptions);
+	
+}

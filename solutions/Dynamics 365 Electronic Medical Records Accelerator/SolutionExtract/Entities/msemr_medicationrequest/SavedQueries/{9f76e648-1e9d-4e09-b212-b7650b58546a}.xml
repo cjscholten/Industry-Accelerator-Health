@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{9f76e648-1e9d-4e09-b212-b7650b58546a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="msemr_name">
+        <row id="msemr_medicationrequestid" name="result">
+          <cell name="msemr_name" width="300" />
+          <cell name="msemr_authoredon" width="100" />
+          <cell name="msemr_requesteragenttypepractitioner" width="100" />
+          <cell name="msemr_category" width="100" />
+          <cell name="msemr_contexttype" width="100" />
+          <cell name="msemr_dispenserequestnumberofrepeatsallowed" width="100" />
+          <cell name="msemr_dispenserequestquantity" width="100" />
+          <cell name="msemr_medicationtypecodeableconcept" width="100" />
+          <cell name="msemr_identifier" width="100" />
+          <cell name="msemr_medicationtype" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msemr_medicationrequest">
+          <attribute name="msemr_name" />
+          <attribute name="createdon" />
+          <order descending="false" attribute="msemr_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msemr_requesteragenttypepractitioner" />
+          <attribute name="msemr_medicationtype" />
+          <attribute name="msemr_identifier" />
+          <attribute name="msemr_medicationtypecodeableconcept" />
+          <attribute name="msemr_dispenserequestquantity" />
+          <attribute name="msemr_dispenserequestnumberofrepeatsallowed" />
+          <attribute name="msemr_contexttype" />
+          <attribute name="msemr_category" />
+          <attribute name="msemr_authoredon" />
+          <attribute name="msemr_medicationrequestid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Medication Requests" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{220f3dc8-2a23-47f1-b2d2-a84ffc068342}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="msemr_description">
+        <row id="msemr_observationid" name="result">
+          <cell name="msemr_description" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="msemr_bodysite" width="100" />
+          <cell name="msemr_code" width="100" />
+          <cell name="msemr_dataabsentreason" width="100" />
+          <cell name="msemr_subjecttypedevice" width="100" />
+          <cell name="msemr_conexttypeencounter" width="100" />
+          <cell name="msemr_episodeofcare" width="100" />
+          <cell name="msemr_conexttypeepisodeofcare" width="100" />
+          <cell name="msemr_identifier" width="100" />
+          <cell name="msemr_subjecttypelocation" width="100" />
+          <cell name="msemr_subjecttypepatient" width="100" />
+          <cell name="msemr_subjecttype" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msemr_observation">
+          <attribute name="msemr_description" />
+          <attribute name="createdon" />
+          <order descending="false" attribute="msemr_description" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msemr_subjecttype" />
+          <attribute name="msemr_subjecttypepatient" />
+          <attribute name="msemr_subjecttypelocation" />
+          <attribute name="msemr_identifier" />
+          <attribute name="msemr_conexttypeepisodeofcare" />
+          <attribute name="msemr_episodeofcare" />
+          <attribute name="msemr_conexttypeencounter" />
+          <attribute name="msemr_subjecttypedevice" />
+          <attribute name="msemr_dataabsentreason" />
+          <attribute name="msemr_code" />
+          <attribute name="msemr_bodysite" />
+          <attribute name="msemr_observationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Observations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

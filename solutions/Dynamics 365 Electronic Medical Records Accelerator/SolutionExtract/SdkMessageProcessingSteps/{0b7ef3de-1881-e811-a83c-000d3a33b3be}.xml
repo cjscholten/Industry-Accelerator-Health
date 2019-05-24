@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Microsoft.Dynamics.Health.PatientActivityDate: Update of msemr_nutritionorder" SdkMessageProcessingStepId="{0b7ef3de-1881-e811-a83c-000d3a33b3be}">
+  <PluginTypeName>Microsoft.Dynamics.Health.PatientActivityDate, Microsoft.Dynamics.Health, Version=1.0.0.0, Culture=neutral, PublicKeyToken=20f0165d2cb5406f</PluginTypeName>
+  <PluginTypeId>ef10a14c-29f9-48c4-a0d2-6509408bf427</PluginTypeId>
+  <PrimaryEntity>msemr_nutritionorder</PrimaryEntity>
+  <AsyncAutoDelete>1</AsyncAutoDelete>
+  <Description>Microsoft.Dynamics.Health.PatientActivityDate: Update of msemr_nutritionorder</Description>
+  <FilteringAttributes>msemr_datetime,msemr_patient</FilteringAttributes>
+  <InvocationSource>1</InvocationSource>
+  <Mode>1</Mode>
+  <Rank>1</Rank>
+  <SdkMessageId>{20bebb1b-ea3e-db11-86a7-000a3a5473e8}</SdkMessageId>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>40</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages>
+    <SdkMessageProcessingStepImage Name="msemr_nutritionorder">
+      <SdkMessageProcessingStepImageId>{4aac98ff-1981-e811-a83b-000d3a33bdbd}</SdkMessageProcessingStepImageId>
+      <Attributes>msemr_datetime,msemr_patient</Attributes>
+      <EntityAlias>msemr_nutritionorder</EntityAlias>
+      <ImageType>1</ImageType>
+      <MessagePropertyName>Target</MessagePropertyName>
+      <IsCustomizable>1</IsCustomizable>
+    </SdkMessageProcessingStepImage>
+  </SdkMessageProcessingStepImages>
+</SdkMessageProcessingStep>

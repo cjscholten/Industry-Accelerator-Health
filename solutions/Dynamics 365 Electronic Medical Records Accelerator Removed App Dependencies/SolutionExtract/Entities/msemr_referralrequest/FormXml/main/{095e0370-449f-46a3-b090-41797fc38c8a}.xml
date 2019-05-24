@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{095e0370-449f-46a3-b090-41797fc38c8a}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{f7c87b60-5a1e-4c77-a27e-ecfcb30a9d37}" IsUserDefined="1" name="{f7c87b60-5a1e-4c77-a27e-ecfcb30a9d37}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{86394050-819f-4c8e-9373-fac55cefaebf}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0b57bd81-85e6-4b68-b873-4605c93449d7}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a9012e49-4ba5-24b9-3991-c9020e12003c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Referral Request Subject" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_subject" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_subject" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3577687d-58d4-799e-c420-eb249bea7101}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Referral Request Number" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_referralrequestnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_referralrequestnumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{92395631-d833-0e7b-3305-eb3a941a7681}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Referral Request Intent" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_intent" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_intent" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5caa79a0-2b45-8120-8d83-34e867c23572}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Referral Request Context" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_contexttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_contexttype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{295125a7-c7c5-18c7-0ca5-a3a65de070ea}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Referral Request Priority" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_priority" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_priority" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e3538966-6679-7ad5-aa6b-9ae6e67b5bed}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Referral Request Status" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{08dbceb1-0bb2-b9dc-a720-980caa618aa9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Referral Request Type" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_type" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_type" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7609640a-3c0b-c9a8-4366-cb6e07ead4be}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Occurrence Date" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_occurrencedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_occurrencedate" disabled="false" uniqueid="{c399aa7d-7e90-7ac3-ae12-06d2c10cd24b}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e3765783-0149-7bea-4c3b-18da2a352727}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Occurrence End Date" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_occurenceperiodenddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_occurenceperiodenddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5a14c4a1-aab5-b906-c0bb-380a9841d04d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Occurrence Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_occurenceperiodstartdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_occurenceperiodstartdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1c52aa13-4761-d61e-9d65-c9a676023351}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Occurrence Type" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_occurrencetype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_occurrencetype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e3b53789-a216-cedb-776b-b09819aa3a8e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_description" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4bacb36b-488d-7dcb-2371-c0488cb4823a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Authored On" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_authoredon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_authoredon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3efc9cba-28cb-43a5-b15d-6e77cadd8eba}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="{f7c87b60-5a1e-4c77-a27e-ecfcb30a9d37}_section_2" showlabel="false" showbar="false" locklevel="0" id="{56c207e8-0b02-301a-565d-1da42d354b7b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b8309c3a-35db-a1ec-e475-badab2d7e793}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Subject (Patient)" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_subjectpatient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_subjectpatient" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{50733a33-462c-9a07-53a9-3a0e3a3dcc55}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Requestor" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_requestor" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_requestor" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d521360e-c79d-8259-bce1-4643a6467329}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Requester Agent" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_requesteragent" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_requesteragent" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a6c5bb19-36ec-a3ec-eb0d-ca7bd22138dc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Requester on behalf of" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_requesteronbehalfof" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_requesteronbehalfof" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d9c5148d-be34-17e0-6eba-b3d956a05a9e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Related Person" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_requesteragentrelatedperson" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_requesteragentrelatedperson" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ba08b903-1a16-b650-e942-71b3b8234d6e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Device" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_requesteragentdevice" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_requesteragentdevice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{98d6781b-6491-69c5-a065-443131676220}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Appointment (EMR)" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_appointmentemr" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_appointmentemr" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ddc6687d-cc77-4bb5-4e84-4257b93cac02}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Encounter" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_subjectcontextencounter" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_subjectcontextencounter" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bec49470-28bc-4010-9277-6e620cb5d409}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Episode of Care" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_subjectcontextepisodeofcare" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_subjectcontextepisodeofcare" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{62035b71-ed99-2379-ce39-e73358715369}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Group Identifier" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_groupidentifier" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_groupidentifier" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{62631c2a-0055-61ab-ad44-c6b13b797a1e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Initiating Encounter" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_initiatingencounter" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_initiatingencounter" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e8e80e60-2855-d318-d2ed-1879c8a5cbbe}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Initiating Episode of Care" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_initiatingepisodeofcare" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_initiatingepisodeofcare" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{00ce2356-d920-72dc-5023-104018cd61ce}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Patient" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_requesteragentpatient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_requesteragentpatient" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{07bb10ba-7945-b45c-46ab-a05c244b209b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Practitioner" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_requesteragentpractitioner" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_requesteragentpractitioner" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{10087678-745d-6da1-dc11-7842b439cb13}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Practitioner Specialty" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_practitionerspecialty" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_practitionerspecialty" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

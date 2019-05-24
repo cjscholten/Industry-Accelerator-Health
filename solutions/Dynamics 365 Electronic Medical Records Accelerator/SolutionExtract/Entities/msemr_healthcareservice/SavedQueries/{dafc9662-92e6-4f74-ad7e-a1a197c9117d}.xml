@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{dafc9662-92e6-4f74-ad7e-a1a197c9117d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="msemr_name">
+        <row id="msemr_healthcareserviceid" name="result">
+          <cell name="msemr_name" width="300" />
+          <cell name="msemr_providedby" width="100" />
+          <cell name="msemr_category" width="100" />
+          <cell name="msemr_appointmentrequired" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msemr_availabilityexceptions" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msemr_comment" width="100" />
+          <cell name="msemr_eligibility" width="100" />
+          <cell name="msemr_healthcareservice" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msemr_healthcareservice">
+          <attribute name="msemr_name" />
+          <attribute name="createdon" />
+          <order descending="false" attribute="msemr_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msemr_providedby" />
+          <attribute name="msemr_healthcareservice" />
+          <attribute name="msemr_eligibility" />
+          <attribute name="msemr_comment" />
+          <attribute name="msemr_category" />
+          <attribute name="msemr_availabilityexceptions" />
+          <attribute name="msemr_appointmentrequired" />
+          <attribute name="msemr_healthcareserviceid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Healthcare Services" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

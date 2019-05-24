@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{95345c96-882e-4eb2-8e69-7368d7921636}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msemr_title" select="1" icon="1" preview="1">
+        <row name="result" id="msemr_careplanid">
+          <cell name="msemr_title" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_careplan">
+          <attribute name="msemr_careplanid" />
+          <attribute name="msemr_title" />
+          <attribute name="createdon" />
+          <order attribute="msemr_title" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Care Plan Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

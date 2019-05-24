@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{52af17b8-363c-46df-9af6-09c4b8c4c2fa}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="subject">
+        <row id="activityid" name="result">
+          <cell name="subject" width="300" />
+          <cell name="msemr_actorlocation" width="100" />
+          <cell name="msemr_actorpatient" width="100" />
+          <cell name="msemr_actorpractitioner" width="100" />
+          <cell name="msemr_actorrelatedperson" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msemr_appointmentemr">
+          <attribute name="subject" />
+          <attribute name="createdon" />
+          <order descending="false" attribute="subject" />
+          <filter type="and">
+            <condition attribute="statecode" operator="in">
+              <value>1</value>
+              <value>2</value>
+            </condition>
+          </filter>
+          <attribute name="msemr_actorrelatedperson" />
+          <attribute name="msemr_actorpractitioner" />
+          <attribute name="msemr_actorpatient" />
+          <attribute name="msemr_actorlocation" />
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Closed Appointments (EMR)" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

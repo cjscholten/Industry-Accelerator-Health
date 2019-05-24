@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{3afd440b-8c22-4f7e-b987-8e1f5cc7bac4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msemr_name" select="1" icon="1" preview="1">
+        <row name="result" id="msemr_specimenrequestid">
+          <cell name="msemr_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_specimenrequest">
+          <attribute name="msemr_specimenrequestid" />
+          <attribute name="msemr_name" />
+          <attribute name="createdon" />
+          <order attribute="msemr_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Specimen Requests" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

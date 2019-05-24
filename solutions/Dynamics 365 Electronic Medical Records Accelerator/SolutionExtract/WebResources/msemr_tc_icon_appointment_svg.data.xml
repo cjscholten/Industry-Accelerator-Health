@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{e3964af3-e379-e811-a83b-000d3a33b5cc}</WebResourceId>
+  <Name>msemr_tc_icon_appointment_svg</Name>
+  <DisplayName>icon appointment</DisplayName>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>1.5.1</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/msemr_tc_icon_appointment_svgE3964AF3-E379-E811-A83B-000D3A33B5CC</FileName>
+</WebResource>

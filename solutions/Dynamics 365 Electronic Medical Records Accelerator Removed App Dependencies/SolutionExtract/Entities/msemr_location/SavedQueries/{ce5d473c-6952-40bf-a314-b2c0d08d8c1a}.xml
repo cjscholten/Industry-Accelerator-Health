@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{ce5d473c-6952-40bf-a314-b2c0d08d8c1a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="msemr_name">
+        <row id="msemr_locationid" name="result">
+          <cell name="msemr_name" width="300" />
+          <cell name="msemr_addresscity" width="100" />
+          <cell name="msemr_addressstate" width="100" />
+          <cell name="msemr_addressuse" width="100" />
+          <cell name="msemr_addressperiodend" width="100" />
+          <cell name="msemr_addressperiodstart" width="100" />
+          <cell name="msemr_physicaltype" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msemr_location">
+          <attribute name="msemr_name" />
+          <attribute name="createdon" />
+          <order descending="false" attribute="msemr_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msemr_physicaltype" />
+          <attribute name="msemr_addressuse" />
+          <attribute name="msemr_addressstate" />
+          <attribute name="msemr_addressperiodstart" />
+          <attribute name="msemr_addressperiodend" />
+          <attribute name="msemr_addresscity" />
+          <attribute name="msemr_locationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Locations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
