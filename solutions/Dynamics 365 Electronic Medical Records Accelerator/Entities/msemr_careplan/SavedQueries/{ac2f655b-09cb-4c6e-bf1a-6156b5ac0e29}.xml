@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{ac2f655b-09cb-4c6e-bf1a-6156b5ac0e29}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msemr_title" select="1" icon="1" preview="1">
+        <row name="result" id="msemr_careplanid">
+          <cell name="msemr_title" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msemr_plandescription" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msemr_planstartdate" width="100" />
+          <cell name="msemr_planenddate" width="100" />
+          <cell name="msemr_subjecttype" width="100" />
+          <cell name="msemr_contexttype" width="100" />
+          <cell name="msemr_groupidentifier" width="100" />
+          <cell name="msemr_planintent" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_careplan">
+          <attribute name="msemr_title" />
+          <attribute name="createdon" />
+          <order attribute="msemr_title" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msemr_subjecttype" />
+          <attribute name="msemr_planstartdate" />
+          <attribute name="msemr_planintent" />
+          <attribute name="msemr_groupidentifier" />
+          <attribute name="msemr_planenddate" />
+          <attribute name="msemr_plandescription" />
+          <attribute name="msemr_contexttype" />
+          <attribute name="msemr_careplanid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Care Plans" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

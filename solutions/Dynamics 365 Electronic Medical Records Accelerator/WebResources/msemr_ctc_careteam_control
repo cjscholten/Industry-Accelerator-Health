@@ -1,0 +1,1226 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>CareTeam Circle Menu</title>
+
+    <script src="../WebResources/msemr_jquery214" type="text/javascript"></script>
+    <script src="../WebResources/msemr_JSON2_JS" type="text/javascript"></script>
+    <script src="../WebResources/msemr_XrmServiceToolkit_JS" type="text/javascript"></script>
+    <script src="../WebResources/msemr_Controller_js" type="text/javascript"></script>
+
+
+    <!--<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>-->
+
+
+    <meta>
+    <meta>
+    <meta>
+<meta></head>
+<body style="word-wrap: break-word;">
+    <style>
+        /**/
+        ul.orbit.orbitlistJS {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+            /* Orbitlist satellites */
+            ul.orbit.orbitlistJS li {
+                position: absolute;
+                cursor: pointer;
+            }
+
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 700px;
+            overflow: hidden;
+            margin-top: -3%;
+        }
+
+        /* Style der Satelliten */
+
+        .orbit li {
+            width: 50px;
+            height: 50px;
+            border-radius: 60px;
+            background: #0ca4f0;
+            text-align: center;
+            line-height: 50px;
+        }
+
+            .orbit li img, icon img {
+                width: 50px;
+                height: 50px;
+                border-radius: 60px;
+                margin: 0;
+            }
+
+
+        ul.orbit.orbitlistJS li {
+            transition: all 0.2s linear;
+        }
+
+        ul.orbit li.transaction {
+            animation: diffues 500ms ease-in-out;
+        }
+
+        ul.orbit.orbitlistJS li:hover {
+            background: #42c0ff;
+        }
+
+        .orbit li.orbitlistJS-trace {
+            background: #42c0ff;
+            opacity: 0.9;
+        }
+
+        .orbit li.orbitlistJS-active {
+            background: #0ca4f0;
+            opacity: 0.9;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background: #0ca4f0;
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            z-index: 999;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+            .icon span {
+                display: block;
+                position: absolute;
+                left: 25%;
+                width: 50%;
+                height: 4px;
+                border-radius: 4px;
+                background: #f2f2f2;
+                opacity: 1;
+                transform: rotate(0deg);
+                transition: 0.25s ease-in-out;
+            }
+
+
+        @keyframes shake {
+            0% {
+                transform: rotate(2deg);
+            }
+
+            50% {
+                transform: rotate(-3deg);
+            }
+
+            70% {
+                transform: rotate(3deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .menu-item:hover {
+            animation: shake 500ms ease-in-out forwards;
+        }
+
+        @keyframes diffues {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+
+        /*tooltip Box*/
+        .con-tooltip customtooltip {
+            position: relative;
+            background: #F2D1C9;
+            border-radius: 9px;
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+            cursor: default;
+        }
+
+        /*tooltip */
+        .tooltip {
+            text-align: center;
+            visibility: hidden;
+            z-index: 1;
+            opacity: .40;
+            min-width: 100px;
+            padding: 0px 10px;
+            box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+            background: #333;
+            color: #fff;
+            position: absolute;
+            top: -140%;
+            left: -25%;
+            border-radius: 9px;
+            font-size: 14px;
+            transform: translateY(9px);
+            transition: all 0.3s ease-in-out;
+        }
+
+            .tooltip p {
+                line-height: 20px;
+                font-family: Segoe UI, Arial, sans-serif;
+                width: 100%;
+            }
+
+            /* tooltip  after*/
+            .tooltip::after {
+                content: " ";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 12px 12.5px 0 12.5px;
+                border-color: #333 transparent transparent transparent;
+                position: absolute;
+                left: 40%;
+            }
+
+        /*.con-tooltip.active .tooltip {*/
+        .con-tooltip:hover .tooltip {
+            visibility: visible;
+            /*transform: translateY(-10px);*/
+            opacity: 1;
+            transition: .3s linear;
+            z-index: 10;
+        }
+
+        /*hover ToolTip*/
+        .left:hover {
+            transform: translateX(-6px);
+        }
+
+        .top:hover {
+            transform: translateY(-6px);
+        }
+
+        .bottom:hover {
+            transform: translateY(6px);
+        }
+
+        .right:hover {
+            transform: translateX(6px);
+        }
+
+        /*left*/
+
+        .left .tooltip {
+            top: -29%;
+            left: -266%;
+        }
+
+            .left .tooltip::after {
+                top: 40%;
+                left: 90%;
+                transform: rotate(-90deg);
+            }
+
+        /*bottom*/
+
+        .bottom .tooltip {
+            top: 115%;
+            left: -20%;
+        }
+
+            .bottom .tooltip::after {
+                top: -17%;
+                left: 40%;
+                transform: rotate(180deg);
+            }
+
+        /*right*/
+
+        .right .tooltip {
+            top: -33%;
+            left: 119%;
+        }
+
+            .right .tooltip::after {
+                top: 40%;
+                left: -12%;
+                transform: rotate(90deg);
+            }
+
+        .icon > img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+        #svgContainer {
+            z-index: -10;
+            position: absolute;
+            background-color: transparent;
+            opacity: 0.5;
+        }
+
+        .icon .tooltip span {
+            transform: none;
+            background: none;
+            width: 100%;
+            left: 0;
+            font-size: 10px;
+            top: 16px;
+            font-family: Segoe UI, Arial, sans-serif;
+        }
+    </style>
+
+    <div class="container">
+        <div id="svgContainer" style="margin: 50px 50px;">
+            <svg id="svg1" width="0" height="0">
+
+
+            </svg>
+        </div>
+        <div class="icon iconOpened con-tooltip" id="icon" onclick="Triggermenu(this)">
+
+            <div class="tooltip" style="padding:0px 0 6px 0px;">
+                <p class="patientname"></p>
+                <span class="menutooltip">Click to Collapse</span>
+            </div>
+            <img src="" alt="patient" id="PatientImage">
+        </div>
+        <ul class="orbit" id="MainOrbitList"></ul>
+    </div>
+
+    <script type="text/javascript">
+        (function ($) {
+            // jQuery extension: reverse jQuery element order
+            jQuery.fn.reverse = [].reverse;
+
+
+            // Default values for inner and outer radius limits (between 0 and 1)
+            var defaultInner = 0; // Inner limit for radius
+            var defaultOuter = 1; // Outer limit for radius
+            var defaultBorders = 1; // Factor for space between limit
+            // and inner/outer orbit
+
+            // Default value for starting degree
+            var defaultBegin = 0;
+
+            // TODO: not yet implemented: Min density of satellites
+            var minDensity = 8;
+            var minDensityLevel1 = 4; // Min density for 1st orbit,
+            // orbitlist becomes asymetric if less satellites
+
+
+            // Trace satellite back to root
+            function $orbitlistJS_trace(satellite) {
+                while (satellite.length) {
+                    satellite.addClass('orbitlistJS-trace');
+                    satellite = satellite.data('parent');
+                }
+            }
+
+
+            // Flatten Orbitlist HTML to one level only
+            function $orbitlistJS_flatten(core) {
+
+                // Detect height of orbitlist core in document
+                var coreHeight = core.parents().length;
+
+                // Height of heighest orbit
+                var orbitHeight;
+
+                // All satellites: save parent element, then move li element up to first level
+                core.find('li').reverse().each(function () {
+
+                    var satellite = $(this);
+
+                    // Analyse height and apply corresponding css class
+                    var height = (satellite.parents().length - coreHeight + 1) / 2;
+                    satellite.addClass('orbitlistJS-orbit-' + height);
+                    satellite.data('height', height);
+                    orbitHeight = Math.max(orbitHeight, height);
+
+                    // Save reference for parent element if there is any
+                    satellite.data('parent', satellite.parent().parent().filter(".orbit li"));
+                    core.prepend(satellite);
+
+                });
+
+                // Save core height and max orbit height in core
+                core.data('coreHeight', coreHeight);
+                core.data('orbitHeight', orbitHeight);
+
+                // Initial visible height is 1 (children of core)
+                core.data('visibleHeight', 1);
+
+                // Delete all sublists (now empty)
+                core.find('ul').remove();
+
+            }
+
+            function $orbitlistJS_update(core) {
+
+                var density; // Density of satellites shown
+                var angle; // Starting angle of orbit
+
+                // Height/width of element surrounding the orbitlist
+                var frameW = core.parent().outerWidth();
+                var frameH = core.parent().outerHeight();
+                var radius = Math.min(frameW, frameH) / 2;
+                var offsetTop = frameH / 2 - radius;
+                var offsetLeft = frameW / 2 - radius;
+
+                // Data for first/lowest orbit
+                var orbitHeight = 1;
+                var orbit = core.find('.orbitlistJS-orbit-1');
+
+                // Read orbitlist's properties
+                var borders = core.data('orbitlistjs-borders');
+                var inner = core.data('orbitlistjs-inner');
+                var outer = core.data('orbitlistjs-outer');
+                var arcBegin = core.data('orbitlistjs-begin');
+                var arcEnd = core.data('orbitlistjs-end');
+                var visibleHeight = core.data('visibleHeight');
+
+                // Calculate length of arc (between 0 and 1 = full circle)
+                if (arcEnd <= arcBegin) {
+                    arcEnd = arcBegin + 360;
+                }
+                var arcLen = (arcEnd - arcBegin) / 360;
+
+                // Format all visible orbits
+                do {
+
+                    // Detect density and angle of orbit
+                    if (orbitHeight === 1) {
+                        density = orbit.length;
+                        angle = 0;
+                    } else {
+                        var squeeze = 3; // TODO: Change to user-definable parameter
+                        // Density at least as high as orbit below (looks ugly otherwise)
+                        density = Math.max((orbit.length - 1) * squeeze, density);
+                        angle = orbit.first().data('parent').data('angle') - 1 / (density / (orbit.length - 1)) / 2;
+                    }
+
+                    // Format all satellites
+                    orbit.each(function (index) {
+
+                        // set satellite jquery element
+                        var satellite = $(this);
+
+                        // Calculate distance from core (between 0 and 1)
+                        var distance = (visibleHeight === 1 ? 0.5 : (borders + orbitHeight - 1) / (2 * borders + visibleHeight - 1));
+                        distance = inner + distance * (outer - inner);
+
+                        // Calculate satellite position
+                        var radiant = (index / density + angle + arcBegin) * arcLen * Math.PI * 2;
+                        var vertical = -Math.cos(radiant);
+                        var horizontal = Math.sin(radiant);
+
+                        // Positions without offset (circle center = 0|0)
+                        var posTop = radius * distance * vertical;
+                        var posLeft = radius * distance * horizontal;
+
+                        // Correct positions by parent element, centering and satellite dimensions
+                        posTop = posTop + (radius + offsetTop) + core.parent().offset().top - satellite.height() / 2;
+                        posLeft = posLeft + (radius + offsetLeft) + core.parent().offset().left - satellite.width() / 2;
+
+                        // Position satellite
+                        satellite.offset({
+                            top: posTop,
+                            left: posLeft
+                        });
+
+                        // Save angle for child orbit
+                        satellite.data('angle', index / density + angle);
+
+                    });
+
+                    // Get one orbit higher
+                    orbitHeight++;
+                    orbit = core.find('.orbitlistJS-orbit-' + orbitHeight + ':visible');
+
+                } while (orbit.length);
+                setTimeout(function () { GetLine(); }, 300)
+
+            }
+
+            $.fn.orbitlist = function (options) {
+                var settings = $.extend({
+                    // default options here
+                    onhover: false
+                }, options);
+
+                return this.each(function (index) {
+
+                    // Create orbitlist's core
+                    var core = $(this);
+
+                    // Apply CSS class
+                    core.addClass('orbitlistJS');
+
+                    // Determine orbitlist's properties
+                    if (core.data('orbitlistjs-inner') === undefined) {
+                        core.data('orbitlistjs-inner', defaultInner);
+                    }
+                    if (core.data('orbitlistjs-outer') === undefined) {
+                        core.data('orbitlistjs-outer', defaultOuter);
+                    }
+                    if (core.data('orbitlistjs-borders') === undefined) {
+                        core.data('orbitlistjs-borders', defaultBorders);
+                    }
+                    if (core.data('orbitlistjs-begin') === undefined) {
+                        core.data('orbitlistjs-begin', defaultBegin);
+                    }
+                    if (core.data('orbitlistjs-end') === undefined) {
+                        core.data('orbitlistjs-end', core.data('orbitlistjs-begin'));
+                    }
+
+                    // Reduce HTML lists to only one level
+                    // Otherwise dependencies between list elements will cause problems
+                    // when moving particular satellites
+                    $orbitlistJS_flatten(core);
+
+                    // Hide all orbits except first
+                    core.find('li').filter(function () {
+                        return $(this).data('height') > 1;
+                    }).hide();
+
+                    // TODO: Way too much show and hide again in the following lines
+                    // Better filtering is needed!
+
+                    // Bind satellite click event
+                    // TODO: only bind to satellites that actually have children
+                    // therefore implement isParent property
+                    var event_handler = function (event) {
+                        satellite = $(this);
+
+                        // re-distribute styling classes
+                        if (satellite.hasClass('orbitlistJS-active')) {
+                            satellite.removeClass('orbitlistJS-active orbitlistJS-trace');
+                            satellite.data('parent').addClass('orbitlistJS-active');
+                        } else {
+                            core.find('li').removeClass('orbitlistJS-active orbitlistJS-trace');
+                            satellite.addClass('orbitlistJS-active');
+                            $orbitlistJS_trace(satellite);
+                        }
+
+                        // Only show satellites with no parents or parent in current trace
+                        // Calculate current max visible height
+                        var visibleHeight = 1;
+                        core.find('li').hide();
+                        core.find('li').filter(function (index) {
+                            var parent = $(this).data('parent');
+                            var showSatellite = !parent.length | parent.hasClass('orbitlistJS-trace');
+                            if (showSatellite) {
+                                visibleHeight = Math.max(visibleHeight, $(this).data('height'));
+                            }
+                            return showSatellite;
+                        }).show();
+                        core.data('visibleHeight', visibleHeight);
+
+                        // Update orbitlist
+                        $orbitlistJS_update(core);
+
+                        // Prevent event bubbling
+                        event.stopPropagation();
+                    };
+
+                    if (settings['onhover']) {
+                        core.find('li').mouseover(event_handler);
+                    }
+                    else {
+                        core.find('li').click(event_handler);
+                    }
+
+                    // Update orbitlist in order to create initial view
+                    $orbitlistJS_update(core);
+
+                    // Update orbitlist on window resize
+                    $(window).resize(function () {
+                        $orbitlistJS_update(core);
+                    });
+
+                });
+            };
+        })(jQuery);
+
+    </script>
+    <script type="text/javascript">
+        var div = "";
+        var careteamIdArray = [];
+        var CareTeamClassCounter = 0;
+        var ClassAssignArray = [];
+        var OldHtml = "";
+        var TotalRecordCount = 0;
+        var ToolTipClassCounter = 0;
+        var Median = 0;
+        var ToolTipClass = "";
+        var LiId = "";
+        var liCounter = 0;
+        var PathCounter = 0;
+        $(document).ready(function (e) {
+           $("body").scrollTop(100)
+
+        });
+
+        $(function () {
+           GetData();
+            $(".con-tooltip").hover(function () {
+                $(this).css("z-index", "10");
+            }, function () {
+                $(this).css("z-index", "0");
+            });
+        });
+
+
+
+        function GetData() {
+            var Id = GetId();
+            if (Id != null && Id != "" && Id != 'undefined') {
+
+                var list = [];
+                var query = '<fetch mapping="logical" version="1.0" distinct="false" output-format="xml-platform">'
+                                                    + '  <entity name="msemr_careteam">'
+                                               + '      <attribute name="msemr_careteamid" />'
+
+                                                    + '<filter type="and">'
+          + '<condition attribute="msemr_subjectpatient" operator="eq"  uitype="contact" value="' + Id + '" />'
+          + '</filter>'
+
+
+           + '    <link-entity name="contact" from="contactid" to="msemr_subjectpatient" alias="ptnt" link-type="outer" >'
+                                                    + '      <attribute name="entityimage" />'
+                                                    + '      <attribute name="fullname" />'
+                                                    + '    </link-entity>'
+
+          + '<link-entity name="msemr_careteamparticipant" from="msemr_careteam" to="msemr_careteamid" link-type="inner" alias="ctp">'
+
+                                                    + '      <attribute name="msemr_membertype" />'
+                                                    + '      <attribute name="msemr_membercareteam" />'
+                                                    + '      <attribute name="msemr_memberorganization" />'
+                                                    + '      <attribute name="msemr_memberpatient" />'
+                                                    + '      <attribute name="msemr_memberpractioner" />'
+                                                    + '      <attribute name="msemr_memberrelatedperson" />'
+                                                    + '      <attribute name="msemr_role" />'
+
+                                                    + '    <link-entity name="msemr_codeableconcept" from="msemr_codeableconceptid" to="msemr_role" alias="cc" link-type="outer" >'
+                                                    + '      <attribute name="entityimage" />'
+
+                                                    + '    </link-entity>'
+                                                    + '    <link-entity name="msemr_careteam" from="msemr_careteamid" to="msemr_membercareteam" alias="crt" link-type="outer" >'
+                                                    + '      <attribute name="entityimage" />'
+                                                    + '    </link-entity>'
+
+
+                                                    + '    <link-entity name="account" from="accountid" to="msemr_memberorganization" alias="org" link-type="outer" >'
+                                                    + '      <attribute name="entityimage" />'
+                                                    + '    </link-entity>'
+
+                                                    + '    <link-entity name="contact" from="contactid" to="msemr_memberpatient" alias="pt" link-type="outer" >'
+                                                    + '      <attribute name="entityimage" />'
+                                                    + '    </link-entity>'
+
+                                                    + '    <link-entity name="contact" from="contactid" to="msemr_memberpractioner" alias="prc" link-type="outer" >'
+                                                    + '      <attribute name="entityimage" />'
+                                                    + '    </link-entity>'
+
+                                                    + '    <link-entity name="contact" from="contactid" to="msemr_memberrelatedperson" alias="rp" link-type="outer" >'
+                                                    + '      <attribute name="entityimage" />'
+                                                    + '    </link-entity>'
+
+                                                    + '    </link-entity>'
+                                                    + '  </entity>'
+                                                    + '</fetch>';
+
+                var results = XrmServiceToolkit.Soap.Fetch(query);
+                TotalRecordCount = results.length;
+                if (results.length > 0) {
+                    results.forEach(function (val, index) {
+                        var dataSet = val.attributes;
+                        var item = {};
+                        var memberType;
+                        var memberTypeName;
+                        var roleName;
+
+                        if (dataSet.hasOwnProperty('msemr_careteamid')) {
+
+                            var careteamid = dataSet.msemr_careteamid.value;
+                            careteamIdArray.push(careteamid);
+                            item.careteamid = careteamid;
+                            item.ParentCareTeamId = careteamid;
+
+                        }
+
+                        if (dataSet.hasOwnProperty('ptnt.entityimage')) {
+
+                            item.patientimage = 'data:image/JPEG;base64,' + dataSet['ptnt.entityimage'].value;
+
+                        }
+                        if (dataSet.hasOwnProperty('ptnt.fullname')) {
+
+                            item.fullname = dataSet['ptnt.fullname'].value;
+
+                        }
+                        if (dataSet.hasOwnProperty('ctp.msemr_membertype')) {
+
+                            memberType = dataSet['ctp.msemr_membertype'].value;
+                            memberTypeName = dataSet['ctp.msemr_membertype'].formattedValue;
+                        }
+                        if (dataSet.hasOwnProperty('ctp.msemr_role')) {
+
+                            roleName = dataSet['ctp.msemr_role'].formattedValue;
+                        }
+
+
+                        //According to Member Type
+                        if (memberType == 935000000) {
+                            if (dataSet.hasOwnProperty('ctp.msemr_memberpractioner')) {
+                                item.name = dataSet['ctp.msemr_memberpractioner'].formattedValue;
+
+                            }
+                            if (dataSet.hasOwnProperty('prc.entityimage')) {
+                                item.image = 'data:image/JPEG;base64,' + dataSet['prc.entityimage'].value;
+                            }
+                        }
+                        else if (memberType == 935000001) {
+                            if (dataSet.hasOwnProperty('ctp.msemr_memberrelatedperson')) {
+                                item.name = dataSet['ctp.msemr_memberrelatedperson'].formattedValue;
+                            }
+                            if (dataSet.hasOwnProperty('rp.entityimage')) {
+                                item.image = 'data:image/JPEG;base64,' + dataSet['rp.entityimage'].value;
+                            }
+                        }
+                        else if (memberType == 935000002) {
+                            if (dataSet.hasOwnProperty('ctp.msemr_memberpatient')) {
+                                item.name = dataSet['ctp.msemr_memberpatient'].formattedValue;
+                            }
+                            if (dataSet.hasOwnProperty('pt.entityimage')) {
+                                item.image = 'data:image/JPEG;base64,' + dataSet['pt.entityimage'].value;
+                            }
+                        }
+                        else if (memberType == 935000003) {
+                            if (dataSet.hasOwnProperty('ctp.msemr_memberorganization')) {
+                                item.name = dataSet['ctp.msemr_memberorganization'].formattedValue;
+                            }
+                            if (dataSet.hasOwnProperty('org.entityimage')) {
+                                item.image = 'data:image/JPEG;base64,' + dataSet['org.entityimage'].value;
+                            }
+                        }
+                        else if (memberType == 935000004) {
+                            if (dataSet.hasOwnProperty('ctp.msemr_membercareteam')) {
+                                item.name = dataSet['ctp.msemr_membercareteam'].formattedValue;
+                                item.id = dataSet['ctp.msemr_membercareteam'].id;
+                            }
+                            if (dataSet.hasOwnProperty('crt.entityimage')) {
+                                item.image = 'data:image/JPEG;base64,' + dataSet['crt.entityimage'].value;
+                            }
+                        }
+
+                        if (item.image == null || item.image == 'undefined' || item.image == "") {
+
+                            if (dataSet.hasOwnProperty('cc.entityimage')) {
+                                item.roleimage = 'data:image/png;base64,' + dataSet['cc.entityimage'].value;
+                            }
+
+                        }
+                        item.memberType = memberType;
+                        item.memberTypeName = memberTypeName;
+                        item.roleName = roleName;
+                        list.push(item);
+                    });
+                }
+                if (list.length > 0) {
+                    BindCareTeam(list, 0);
+
+                }
+                else
+                {
+                    $('.container').html('<h3 style="font-size:16px;font-weight: 400; color:#9B9B9B; font-family:Segoe\000020UI,Tahoma,Arial; margin-top:25%;height: 100px;text-align: center;">No Records Found</h3>');
+                }
+            }
+            else {
+                $('.container').html('');
+            }
+        }
+
+
+        function BindCareTeam(list, IsChildCareTeam) {
+            debugger;
+            if (IsChildCareTeam == 1 || IsChildCareTeam == "1") {
+                div += '<ul>';
+
+            }
+
+            $.each(list, function (i, e) {
+                liCounter++;
+                Median = TotalRecordCount / 2;
+                ToolTipClass = "left";
+                if (Median > ToolTipClassCounter) {
+                    ToolTipClass = "right";
+                }
+                if (IsChildCareTeam != 1 && IsChildCareTeam != "1") {
+
+                    ToolTipClassCounter++;
+                    if (e.patientimage == null || e.patientimage == 'undefined' || e.patientimage == "") {
+                         e.patientimage = "../webresources/msemr_icon_doctor";
+                    }
+                    $('#PatientImage').attr("src", e.patientimage);
+                    $('.patientname').text(e.fullname);
+
+                }
+                var title = "Person";
+                if (e.image == null || e.image == 'undefined' || e.image == "") {
+                    //careteam
+                    if (e.memberType == 935000004) {
+                        e.image = "../webresources/msemr_icon_careteam";
+                        title = "Care Team"
+
+                    }
+                    //if (e.roleName == "Nurse") {
+                    //    e.image = "../webresources/msemr_icon_nurse";
+                    //    title = "Nurse"
+
+                    //}
+                    else {
+                        e.image = "../webresources/msemr_icon_doctor";
+                        title = "Member"
+
+
+                    }
+
+                    if (e.roleimage != null && e.roleimage != 'undefined' && e.roleimage != "") {
+                        e.image = e.roleimage;
+                        title = "Member"
+                    }
+                }
+         var CareteamClass = "";
+
+                var ArrayObject = search(e.careteamid, ClassAssignArray);
+                if (ArrayObject != null && ArrayObject.CareteamClass != "undefined") {
+                    CareteamClass = ArrayObject.CareteamClass
+                }
+                else {
+                    CareTeamClassCounter++;
+                    CareteamClass = "careteam" + CareTeamClassCounter;
+                    var ClassAssign = { CareteamId: e.careteamid, CareteamClass: CareteamClass };
+                    ClassAssignArray.push(ClassAssign);
+                }
+                if (CareTeamClassCounter == 4) {
+                    CareTeamClassCounter = 0;
+                }
+                if (e.memberType == 935000004) {
+
+                    if (careteamIdArray.length > 0) {
+                        //  var IsCareTeamAlreadyExist = careteamIdArray.includes(e.id)
+                        var IsCareTeamAlreadyExist = includess(careteamIdArray, e.id);
+
+                    }
+                    careteamIdArray.push(e.id);
+                    if (IsCareTeamAlreadyExist == true) {
+
+                        return true;
+                    }
+
+
+
+
+                    var careteamlist = [];
+                    var query = '<fetch mapping="logical" version="1.0" distinct="false" output-format="xml-platform">'
+                                                        + '  <entity name="msemr_careteamparticipant">'
+                                                        + '      <attribute name="msemr_membertype" />'
+                                                        + '      <attribute name="msemr_membercareteam" />'
+                                                        + '      <attribute name="msemr_memberorganization" />'
+                                                        + '      <attribute name="msemr_memberpatient" />'
+                                                        + '      <attribute name="msemr_memberpractioner" />'
+                                                        + '      <attribute name="msemr_memberrelatedperson" />'
+                                                        + '      <attribute name="msemr_role" />'
+                                                        + '<filter type="and">'
+                                                        + '<condition attribute="msemr_careteam" operator="eq"  value="{' + e.id + '}" />'
+                                                        + '</filter>'
+
+                                                        + '    <link-entity name="msemr_codeableconcept" from="msemr_codeableconceptid" to="msemr_role" alias="cc" link-type="outer" >'
+                                                        + '      <attribute name="entityimage" />'
+
+                                                                   + '    </link-entity>'
+                                                + '    <link-entity name="msemr_careteam" from="msemr_careteamid" to="msemr_membercareteam" alias="crt" link-type="outer" >'
+                                                + '      <attribute name="entityimage" />'
+                                                + '    </link-entity>'
+
+
+                                                + '    <link-entity name="account" from="accountid" to="msemr_memberorganization" alias="org" link-type="outer" >'
+                                                + '      <attribute name="entityimage" />'
+                                                + '    </link-entity>'
+
+                                                + '    <link-entity name="contact" from="contactid" to="msemr_memberpatient" alias="pt" link-type="outer" >'
+                                                + '      <attribute name="entityimage" />'
+                                                + '    </link-entity>'
+
+                                                + '    <link-entity name="contact" from="contactid" to="msemr_memberpractioner" alias="prc" link-type="outer" >'
+                                                + '      <attribute name="entityimage" />'
+                                                + '    </link-entity>'
+
+                                                + '    <link-entity name="contact" from="contactid" to="msemr_memberrelatedperson" alias="rp" link-type="outer" >'
+                                                + '      <attribute name="entityimage" />'
+                                                + '    </link-entity>'
+                                                 + '  </entity>'
+                                                        //+ '    </link-entity>'
+                                                        + '</fetch>';
+
+                    var results = XrmServiceToolkit.Soap.Fetch(query);
+
+                    if (e.name == 'undefined' || e.name == undefined) {
+                        e.name = "";
+                    }
+                    if (e.roleName == 'undefined' || e.roleName == undefined) {
+                        e.roleName = "";
+                    }
+                    if (IsChildCareTeam == 1 || IsChildCareTeam == "1") {
+                        div += '<li class="chilcareteam con-tooltip careteam_parent careteamli ' + e.id + ' ' + CareteamClass + ' ' + ToolTipClass + '" id="li' + liCounter + '" ParentCareTeamId="' + e.ParentCareTeamId + '"><img src="' + e.image + '" alt="' + title + '"  onclick="RemoveToolTip()"><div class="tooltip"> <p>' + e.name + '<br />' + e.roleName + '</p></div>';
+
+                    }
+                    else {
+                        div += '<li class="chilcareteam con-tooltip careteam_parent careteamli ' + e.id + ' ' + ToolTipClass + '" id="li' + liCounter + '" ParentCareTeamId="' + e.ParentCareTeamId + '"><img src="' + e.image + '" alt="' + title + '"  onclick="RemoveToolTip()"><div class="tooltip"> <p>' + e.name + '<br />' + e.roleName + '</p></div>';
+                        $('.icon').addClass(e.ParentCareTeamId);
+                    }
+
+
+
+                    if (results.length > 0) {
+                        results.forEach(function (val, index) {
+
+                            var dataSet = val.attributes;
+                            var careteamItem = {};
+                            var memberType;
+                            var memberTypeName;
+                            var roleName;
+                            if (dataSet.hasOwnProperty('msemr_membertype')) {
+
+                                memberType = dataSet.msemr_membertype.value;
+                                memberTypeName = dataSet.msemr_membertype.formattedValue;
+
+                            }
+                            if (dataSet.hasOwnProperty('msemr_role')) {
+
+                                roleName = dataSet.msemr_role.formattedValue;
+                            }
+
+
+                            if (memberType == 935000000) {
+                                if (dataSet.hasOwnProperty('msemr_memberpractioner')) {
+                                    careteamItem.name = dataSet.msemr_memberpractioner.formattedValue;
+                                }
+                                if (dataSet.hasOwnProperty('prc.entityimage')) {
+                                    careteamItem.image = 'data:image/JPEG;base64,' + dataSet['prc.entityimage'].value;
+                                }
+                            }
+                            else if (memberType == 935000001) {
+                                if (dataSet.hasOwnProperty('msemr_memberrelatedperson')) {
+                                    careteamItem.name = dataSet.msemr_memberrelatedperson.formattedValue;
+                                }
+                                if (dataSet.hasOwnProperty('rp.entityimage')) {
+                                    careteamItem.image = 'data:image/JPEG;base64,' + dataSet['rp.entityimage'].value;
+                                }
+                            }
+                            else if (memberType == 935000002) {
+                                if (dataSet.hasOwnProperty('msemr_memberpatient')) {
+                                    careteamItem.name = dataSet.msemr_memberpatient.formattedValue;
+                                }
+                                if (dataSet.hasOwnProperty('pt.entityimage')) {
+                                    careteamItem.image = 'data:image/JPEG;base64,' + dataSet['pt.entityimage'].value;
+                                }
+                            }
+                            else if (memberType == 935000003) {
+                                if (dataSet.hasOwnProperty('msemr_memberorganization')) {
+                                    careteamItem.name = dataSet.msemr_memberorganization.formattedValue;
+                                }
+                                if (dataSet.hasOwnProperty('org.entityimage')) {
+                                    careteamItem.image = 'data:image/JPEG;base64,' + dataSet['org.entityimage'].value;
+                                }
+                            }
+                            else if (memberType == 935000004) {
+                                if (dataSet.hasOwnProperty('msemr_membercareteam')) {
+                                    careteamItem.name = dataSet.msemr_membercareteam.formattedValue;
+                                    careteamItem.id = dataSet.msemr_membercareteam.id;
+
+                                }
+                                if (dataSet.hasOwnProperty('crt.entityimage')) {
+                                    careteamItem.image = 'data:image/JPEG;base64,' + dataSet['crt.entityimage'].value;
+                                }
+                            }
+
+                            if (careteamItem.image == null || careteamItem.image == 'undefined' || careteamItem.image == "") {
+
+                                if (dataSet.hasOwnProperty('cc.entityimage')) {
+                                    careteamItem.roleimage = 'data:image/png;base64,' + dataSet['cc.entityimage'].value;
+                                }
+
+                            }
+
+
+                            careteamItem.memberTypeName = memberTypeName;
+                            careteamItem.roleName = roleName;
+                            careteamItem.memberType = memberType;
+                            careteamItem.careteamid = e.id;
+                            careteamItem.ParentCareTeamId = e.id;
+
+                            if (careteamItem != null) {
+                                careteamlist.push(careteamItem);
+                            }
+                        });
+                    }
+                    BindCareTeam(careteamlist, 1)
+                }
+                else {
+                    if (e.name == 'undefined' || e.name == undefined) {
+                        e.name = "";
+                    }
+                    if (e.roleName == 'undefined' || e.roleName == undefined) {
+                        e.roleName = "";
+                    }
+                    if (IsChildCareTeam == 1 || IsChildCareTeam == "1") {
+                        div += '<li class="chilcareteam ' + CareteamClass + ' con-tooltip customtooltip  ' + ToolTipClass + ' careteamli" onclick="onclick(this)" id="li' + liCounter + '" ParentCareTeamId="' + e.ParentCareTeamId + '"><img src="' + e.image + '" alt="' + title + '" ><div class="tooltip"> <p>' + e.name + '<br />' + e.roleName + '</p></div>';
+
+                    }
+                    else
+                    {
+                        div += '<li class="chilcareteam con-tooltip customtooltip  ' + ToolTipClass + ' careteamli" onclick="onclick(this)" id="li' + liCounter + '" ParentCareTeamId="' + e.ParentCareTeamId + '"><img src="' + e.image + '" alt="' + title + '"  id="li' + liCounter + '"><div class="tooltip"> <p>' + e.name + '<br />' + e.roleName + '</p></div>';
+                        $('.icon').addClass(e.ParentCareTeamId);
+
+                    }
+
+                }
+                div += '</li>';
+
+            });
+            if (IsChildCareTeam == 1 || IsChildCareTeam == "1") {
+                div += '</ul>';
+
+            }
+
+            $('.orbit').html('');
+            $('.orbit').html(div);
+            OldHtml = $('.container').html()
+            jQuery('ul.orbit').orbitlist({
+                onhover: false
+            });
+
+        }
+
+        function GetTootlTip($this) {
+
+        }
+        function RemoveToolTip() {
+
+            $('#svg1').html('');
+        }
+        function Triggermenu($this) {
+
+            if ($($this).hasClass("iconOpened")) {
+
+                $('.container').html('');
+
+                $('.container').html(OldHtml)
+                jQuery('ul.orbit').orbitlist({
+                    onhover: false
+                });
+                $('.orbit').hide();
+                $('.icon').removeClass('iconOpened');
+                $('.careteamli').removeClass('transaction');
+                $('.menutooltip').text('Click to Expand')
+
+            }
+            else {
+
+                $('.careteamli').addClass('transaction');
+
+                $($this).addClass('iconOpened')
+
+
+                $('.orbit').show();
+                $('.menutooltip').text('Click to Collapse')
+            }
+
+            $("#svg1").html('');
+            GetLine();
+            $(".con-tooltip").hover(function () {
+                $(this).css("z-index", "10");
+            }, function () {
+                $(this).css("z-index", "0");
+            });
+        }
+        function search(Key, myArray) {
+            for (var i = 0; i < myArray.length; i++) {
+                if (myArray[i].CareteamId === Key)
+                { return myArray[i]; }
+            }
+        }
+
+        function GetLine() {
+            PathCounter = 0;
+            $("#svg1").html('');
+
+            $('.chilcareteam').each(function (e, v) {
+                var Id = this.id;
+                var element = document.getElementById(Id),
+                    style = window.getComputedStyle(element),
+                    display = style.getPropertyValue('display');
+
+                var menu = document.getElementById('MainOrbitList'),
+                    menustyle = window.getComputedStyle(menu),
+                    menudisplay = menustyle.getPropertyValue('display');
+                if (menudisplay != "none") {
+                    if (display != "none") {
+                        var ParentCareTeamId = $(this).attr("ParentCareTeamId");
+                        if (ParentCareTeamId != undefined) {
+                            PathCounter++;
+                            var newpath = document.createElementNS('http://www.w3.org/2000/svg', "path");
+                            newpath.setAttributeNS(null, "id", "path" + PathCounter);
+                            newpath.setAttributeNS(null, "d", "M0 0");
+                            newpath.setAttributeNS(null, "stroke", "#a3a3a3");
+                            newpath.setAttributeNS(null, "stroke-width", 1);
+                            newpath.setAttributeNS(null, "fill", "none");
+
+                            $("#svg1").append(newpath);
+                            // setTimeout(function () {
+                            connectElements($("#svg1"), $("#path" + PathCounter), $("#" + Id), $("." + ParentCareTeamId));
+                            // }, 1000)
+
+
+                        }
+                    }
+                }
+            });
+        }
+
+        function includess(container, value) {
+            var returnValue = false;
+            var pos = container.indexOf(value);
+            if (pos >= 0) {
+                returnValue = true;
+            }
+            return returnValue;
+        }
+    </script>
+
+
+
+
+    <script type="text/javascript">
+        //helper functions, it turned out chrome doesn't support Math.sgn()
+        function signum(x) {
+            return (x < 0) ? -1 : 1;
+        }
+        function absolute(x) {
+            return (x < 0) ? -x : x;
+        }
+
+        function drawPath(svg, path, startX, startY, endX, endY) {
+            // get the path's stroke width (if one wanted to be  really precize, one could use half the stroke size)
+            var stroke = parseFloat(path.attr("stroke-width"));
+            // check if the svg is big enough to draw the path, if not, set heigh/width
+            if (svg.attr("height") < endY) svg.attr("height", endY);
+            if (svg.attr("width") < (startX + stroke)) svg.attr("width", (startX + stroke));
+            if (svg.attr("width") < (endX + stroke)) svg.attr("width", (endX + stroke));
+
+            var deltaX = (endX - startX) * 0.15;
+            var deltaY = (endY - startY) * 0.15;
+            // for further calculations which ever is the shortest distance
+            var delta = deltaY < absolute(deltaX) ? deltaY : absolute(deltaX);
+
+            // set sweep-flag (counter/clock-wise)
+            // if start element is closer to the left edge,
+            // draw the first arc counter-clockwise, and the second one clock-wise
+            var arc1 = 0; var arc2 = 1;
+            if (startX > endX) {
+                arc1 = 1;
+                arc2 = 0;
+            }
+            // draw tha pipe-like path
+            // 1. move a bit down, 2. arch,  3. move a bit to the right, 4.arch, 5. move down to the end
+            path.attr("d", "M" + startX + " " + startY +
+                           " L" + (endX) +
+                         //  " A" + delta + " " +  delta + " 0 0 " + arc1 + " " + (startX + delta*signum(deltaX)) + " " + (startY + 2*delta) +
+                         //  " H" + (endX - delta*signum(deltaX)) +
+                        //   " A" + delta + " " +  delta + " 0 0 " + arc2 + " " + endX + " " + (startY + 3*delta) +
+                           " " + endY);
+
+
+            //path.attr("d", "M" + startX + " " + startY +
+            //                " V" + (startY + delta) +
+            //                " A" + delta + " " + delta + " 0 0 " + arc1 + " " + (startX + delta * signum(deltaX)) + " " + (startY + 2 * delta) +
+            //                " H" + (endX - delta * signum(deltaX)) +
+            //                " A" + delta + " " + delta + " 0 0 " + arc2 + " " + endX + " " + (startY + 3 * delta) +
+            //                " V" + endY);
+
+        }
+
+        function connectElements(svg, path, startElem, endElem) {
+            try {
+                var svgContainer = $("#svgContainer");
+
+                // if first element is lower than the second, swap!
+                if (startElem.offset().top > endElem.offset().top) {
+                    var temp = startElem;
+                    startElem = endElem;
+                    endElem = temp;
+                }
+
+                // get (top, left) corner coordinates of the svg container
+                var svgTop = svgContainer.offset().top;
+                var svgLeft = svgContainer.offset().left;
+
+                // get (top, left) coordinates for the two elements
+                var startCoord = startElem.offset();
+                var endCoord = endElem.offset();
+
+                // calculate path's start (x,y)  coords
+                // we want the x coordinate to visually result in the element's mid point
+                var startX = startCoord.left + 0.5 * startElem.outerWidth() - svgLeft;    // x = left offset + 0.5*width - svg's left offset
+                var startY = startCoord.top + startElem.outerHeight() - svgTop;        // y = top offset + height - svg's top offset
+
+                // calculate path's end (x,y) coords
+                var endX = endCoord.left + 0.5 * endElem.outerWidth() - svgLeft;
+                var endY = endCoord.top - svgTop;
+
+                // call function for drawing the path
+                drawPath(svg, path, startX, startY, endX, endY);
+            }
+            catch (error) {
+
+            }
+        }
+
+
+
+
+
+        $(document).ready(function () {
+            // reset svg each time
+            $("#svg1").attr("height", "0");
+            $("#svg1").attr("width", "0");
+            // connectAll();
+        });
+
+        $(window).resize(function () {
+            // reset svg each time
+            $("#svg1").attr("height", "0");
+            $("#svg1").attr("width", "0");
+        });
+
+    </script>
+</body></html>

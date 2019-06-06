@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{a31ff07d-c418-482d-96ea-9c9c5881443a}</formid>
+    <IntroducedVersion>1.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{0955f564-6f29-4ed1-8fbf-b2aa5b5dc06c}" name="{0955f564-6f29-4ed1-8fbf-b2aa5b5dc06c}" IsUserDefined="1" verticallayout="true" showlabel="true" locklevel="0" expanded="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section id="{31f34780-52e8-4ff3-b002-9f4af8df3b7c}" IsUserDefined="0" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5d8833fc-9e9d-4faa-9a9d-232b31da555c}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_name" datafieldname="msemr_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d55d783c-aedd-76ab-019e-311469e5bde7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address City" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_addresscity" datafieldname="msemr_addresscity" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{33628b97-de64-4856-adb1-e0e6826d39a9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address Country" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_addresscountry" datafieldname="msemr_addresscountry" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d0c30bce-caa8-2e7b-07d4-3c454ce50ee7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address Distinct" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_addressdistinct" datafieldname="msemr_addressdistinct" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a934568c-bba7-c772-c3cd-ea489465b257}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address Period End" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_addressperiodend" datafieldname="msemr_addressperiodend" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e20ce17b-2656-e768-bee3-461918992ec8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address Period Start" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_addressperiodstart" datafieldname="msemr_addressperiodstart" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b04aa278-05bd-3580-7a27-30b4c72e4142}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address Postal Code" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_addresspostalcode" datafieldname="msemr_addresspostalcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8abe11a8-ee69-5c0e-a539-4a41216dbabb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address State" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_addressstate" datafieldname="msemr_addressstate" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5394ecec-2c7e-4942-7cb0-546b6b853483}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address Text" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_addresstext" datafieldname="msemr_addresstext" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3db966c1-7644-6088-9e91-89676790314d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address Type" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_addresstype" datafieldname="msemr_addresstype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{daeb254e-430b-6c71-0573-0b36bb25726e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address Use" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_addressuse" datafieldname="msemr_addressuse" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e0c94be0-67e3-2496-b636-aed76d317aab}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Street 1" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_addressline1" datafieldname="msemr_addressline1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{24e2991d-d9c2-7d27-2b6d-11cece261a3b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Street 2" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_addressline2" datafieldname="msemr_addressline2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bb872003-edd8-5329-8a85-838431c6bc36}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Street 3" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_addressline3" datafieldname="msemr_addressline3" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{31711270-1d21-b878-1868-ab3c19c85194}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Type" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_type" datafieldname="msemr_type" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{c136b8b4-ded8-c208-a48c-c6b4a511e442}" name="{0955f564-6f29-4ed1-8fbf-b2aa5b5dc06c}_section_2" IsUserDefined="0" columns="1" showbar="false" showlabel="false" locklevel="0" layout="varwidth" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b52a9149-365c-5c90-6b95-52b8c3dc2212}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{ae459089-cd7b-1754-356e-2303cc99188d}" name="{0955f564-6f29-4ed1-8fbf-b2aa5b5dc06c}_section_3" IsUserDefined="0" columns="1" showbar="false" showlabel="false" locklevel="0" layout="varwidth" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9799b7ac-86d1-6308-0788-5bbdcb3448d8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Alias 1" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_locationalias1" datafieldname="msemr_locationalias1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cb1837db-ba47-b89b-3969-d89b89b8a459}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Alias 2" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_locationalias2" datafieldname="msemr_locationalias2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{aa40eacd-ebd3-85eb-a2aa-0ba39b22ee0d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Alias 3" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_locationalias3" datafieldname="msemr_locationalias3" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{844ceba9-28c9-65eb-92dc-32914cd0b434}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_description" datafieldname="msemr_description" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{894678bc-9215-e6b0-e7ab-30959cbb66d9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Location Number" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_locationnumber" datafieldname="msemr_locationnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2d943ade-7089-961e-e5a7-9982ac7bb667}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Managing Organization" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_managingorganization" datafieldname="msemr_managingorganization" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a331ec96-b0ca-577b-156d-88a568b26cd0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Operational Status" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_operationalstatus" datafieldname="msemr_operationalstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{47685c99-3655-7421-7649-dcee877ce1d5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mode" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_mode" datafieldname="msemr_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

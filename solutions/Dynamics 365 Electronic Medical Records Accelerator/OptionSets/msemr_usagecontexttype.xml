@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="msemr_usagecontexttype" localizedName="Usage Context Type">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.4</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Usage Context Type" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="935000000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Gender" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Age Range" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000002" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Clinical Focus" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000003" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="User Type" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000004" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Workflow Setting" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000005" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Workflow Task" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000006" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Clinical Venue" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000007" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Species" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

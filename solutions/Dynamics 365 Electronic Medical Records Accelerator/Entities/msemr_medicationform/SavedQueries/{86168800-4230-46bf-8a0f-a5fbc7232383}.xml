@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{86168800-4230-46bf-8a0f-a5fbc7232383}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msemr_display" select="1" icon="1" preview="1">
+        <row name="result" id="msemr_medicationformid">
+          <cell name="msemr_display" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_medicationform">
+          <attribute name="msemr_medicationformid" />
+          <attribute name="msemr_display" />
+          <attribute name="createdon" />
+          <order attribute="msemr_display" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msemr_display" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Medication Forms" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

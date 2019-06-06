@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{7526bea8-295b-4537-a48d-3591276630f9}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="msemr_name" select="1" icon="1" preview="1">
+        <row name="msemr_familymemberhistorycondition" id="msemr_familymemberhistoryconditionid">
+          <cell name="msemr_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_familymemberhistorycondition">
+          <attribute name="msemr_familymemberhistoryconditionid" />
+          <attribute name="msemr_name" />
+          <attribute name="createdon" />
+          <order attribute="msemr_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Family Member History Condition Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{fe3dea37-5b7e-e811-a83c-000d3a33b3be}</WebResourceId>
+  <Name>msemr_tc_multiple_select_js</Name>
+  <DisplayName>Multi Select Script</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.6</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/msemr_tc_multiple_select_jsFE3DEA37-5B7E-E811-A83C-000D3A33B3BE</FileName>
+</WebResource>

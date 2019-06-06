@@ -1,6 +1,0 @@
-var formContext = null;
-function onSave(context) {
-    formContext = context.getFormContext();
-    Xrm.Utility.openEntityForm("contact", formContext.data.entity.getId());
-}
-

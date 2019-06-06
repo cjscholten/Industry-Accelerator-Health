@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{74f69304-f12d-4947-a1e1-c1d177b89373}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msemr_productname" select="1" icon="1" preview="1">
+        <row name="result" id="msemr_nutritionordersupplementid">
+          <cell name="msemr_productname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_nutritionordersupplement">
+          <attribute name="msemr_nutritionordersupplementid" />
+          <attribute name="msemr_productname" />
+          <attribute name="createdon" />
+          <order attribute="msemr_productname" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Nutrition Order Supplement Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

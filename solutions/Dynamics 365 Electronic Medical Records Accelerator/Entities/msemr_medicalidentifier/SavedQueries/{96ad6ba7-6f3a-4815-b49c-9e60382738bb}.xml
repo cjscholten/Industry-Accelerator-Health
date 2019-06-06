@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{96ad6ba7-6f3a-4815-b49c-9e60382738bb}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="msemr_value" select="1" icon="1" preview="1">
+        <row name="msemr_medicalidentifier" id="msemr_medicalidentifierid">
+          <cell name="msemr_value" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_medicalidentifier">
+          <attribute name="msemr_medicalidentifierid" />
+          <attribute name="msemr_value" />
+          <attribute name="createdon" />
+          <order attribute="msemr_value" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Medical Identifier Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

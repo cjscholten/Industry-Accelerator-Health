@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="msemr_actioncardinalitybehavior" localizedName="Action Cardinality Behavior" description="Defines behavior for an action or a group for how many times that item may be repeated.">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.4</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Action Cardinality Behavior" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="Defines behavior for an action or a group for how many times that item may be repeated." languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="935000000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Single" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Multiple" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

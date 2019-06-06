@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{3e1b704b-62dd-41d2-8b15-74cfb0ef9402}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="msemr_description">
+        <row id="msemr_careplanactivityid" name="result">
+          <cell name="msemr_description" width="300" />
+          <cell name="msemr_activitycategory" width="100" />
+          <cell name="msemr_activitydefinitiontype" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="msemr_activitystartdate" width="100" />
+          <cell name="msemr_activityenddate" width="100" />
+          <cell name="msemr_activitylocation" width="100" />
+          <cell name="msemr_activitydefinitiontypeplandefinition" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msemr_careplanactivity">
+          <attribute name="msemr_description" />
+          <attribute name="createdon" />
+          <order descending="false" attribute="msemr_description" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msemr_activitydefinitiontypeplandefinition" />
+          <attribute name="msemr_activitystartdate" />
+          <attribute name="msemr_activitylocation" />
+          <attribute name="msemr_activityenddate" />
+          <attribute name="msemr_activitydefinitiontype" />
+          <attribute name="msemr_activitycategory" />
+          <attribute name="msemr_careplanactivityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Care Plan Activities" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1cfe1a91-0fc6-49e8-8e00-948901513c10}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msemr_header" select="1" icon="1" preview="1">
+        <row name="result" id="msemr_endpointheaderid">
+          <cell name="msemr_header" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_endpointheader">
+          <attribute name="msemr_endpointheaderid" />
+          <attribute name="msemr_header" />
+          <attribute name="createdon" />
+          <order attribute="msemr_header" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msemr_header" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Endpoint Headers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

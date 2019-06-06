@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml>
+  <CustomActions>
+    <CustomAction Id="msemr.activitypointer.Button2.Button.CustomAction" Location="Mscrm.HomepageGrid.activitypointer.NewAppointment.Controls._children" Sequence="25">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:msemr.activitypointer.Button2.Button.Alt" Command="msemr.activitypointer.Command0.AppointmentEMR" Id="msemr.activitypointer.Button2.Button" Image32by32="/_imgs/ribbon/entity32_4201.png" Image16by16="/_imgs/ribbon/entity16_4201.png" LabelText="$LocLabels:msemr.activitypointer.Button2.Button.LabelText" Sequence="25" ToolTipTitle="$LocLabels:msemr.activitypointer.Button2.Button.ToolTipTitle" ModernImage="NewAppointment" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="msemr.activitypointer.Command0.AppointmentEMR">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="openAppointmentEMRForm" Library="$webresource:msemr_OpenEntities" />
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="msemr.activitypointer.Button2.Button.Alt">
+      <Titles>
+        <Title description="Appointment (EMR)" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="msemr.activitypointer.Button2.Button.LabelText">
+      <Titles>
+        <Title description="Appointment (EMR)" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="msemr.activitypointer.Button2.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Appointment (EMR)" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{665de729-3b1e-4675-849f-9b12ed0538bb}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msemr_name" select="1" icon="1" preview="1">
+        <row name="result" id="msemr_encounterepisodeofcareid">
+          <cell name="msemr_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_encounterepisodeofcare">
+          <attribute name="msemr_encounterepisodeofcareid" />
+          <attribute name="msemr_name" />
+          <attribute name="createdon" />
+          <order attribute="msemr_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Encounter Episodes Of Care" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{43481007-2681-e811-a83b-000d3a33bdbd}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="fullname">
+        <row id="contactid" name="result">
+          <cell name="fullname" width="150" />
+          <cell name="address1_composite" width="100" disableSorting="1" />
+          <cell name="mobilephone" width="100" />
+          <cell name="birthdate" width="100" />
+          <cell name="msemr_medicalrecordnumber" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0" distinct="false">
+        <entity name="contact">
+          <attribute name="fullname" />
+          <attribute name="mobilephone" />
+          <attribute name="msemr_medicalrecordnumber" />
+          <attribute name="birthdate" />
+          <attribute name="address1_composite" />
+          <order descending="false" attribute="fullname" />
+          <filter type="and">
+            <condition value="935000000" attribute="msemr_contacttype" operator="eq" />
+          </filter>
+          <attribute name="contactid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Practitioners" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

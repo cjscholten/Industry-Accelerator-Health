@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{7a9a9bde-51bd-42fa-98db-777a5061216c}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="msemr_name" select="1" icon="1" preview="0">
+        <row name="msemr_episodeofcareaccount" id="msemr_episodeofcareaccountid">
+          <cell name="msemr_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_episodeofcareaccount">
+          <attribute name="msemr_episodeofcareaccountid" />
+          <attribute name="msemr_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Episode Of Care Account Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

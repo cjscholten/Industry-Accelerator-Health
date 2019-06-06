@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Microsoft.Dynamics.Health.PatientActivityDate: Create of msemr_devicerequest" SdkMessageProcessingStepId="{022e3e6b-1881-e811-a839-000d3a33b56b}">
+  <PluginTypeName>Microsoft.Dynamics.Health.PatientActivityDate, Microsoft.Dynamics.Health, Version=1.0.0.0, Culture=neutral, PublicKeyToken=20f0165d2cb5406f</PluginTypeName>
+  <PluginTypeId>ef10a14c-29f9-48c4-a0d2-6509408bf427</PluginTypeId>
+  <PrimaryEntity>msemr_devicerequest</PrimaryEntity>
+  <AsyncAutoDelete>1</AsyncAutoDelete>
+  <Description>Microsoft.Dynamics.Health.PatientActivityDate: Create of msemr_devicerequest</Description>
+  <FilteringAttributes></FilteringAttributes>
+  <InvocationSource>1</InvocationSource>
+  <Mode>1</Mode>
+  <Rank>1</Rank>
+  <SdkMessageId>{9ebdbb1b-ea3e-db11-86a7-000a3a5473e8}</SdkMessageId>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>40</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages>
+    <SdkMessageProcessingStepImage Name="msemr_devicerequest">
+      <SdkMessageProcessingStepImageId>{3f0ec3bf-1981-e811-a83f-000d3a33b5cc}</SdkMessageProcessingStepImageId>
+      <Attributes>msemr_authoredon,msemr_subjecttypepatient</Attributes>
+      <EntityAlias>msemr_devicerequest</EntityAlias>
+      <ImageType>1</ImageType>
+      <MessagePropertyName>id</MessagePropertyName>
+      <IsCustomizable>1</IsCustomizable>
+    </SdkMessageProcessingStepImage>
+  </SdkMessageProcessingStepImages>
+</SdkMessageProcessingStep>

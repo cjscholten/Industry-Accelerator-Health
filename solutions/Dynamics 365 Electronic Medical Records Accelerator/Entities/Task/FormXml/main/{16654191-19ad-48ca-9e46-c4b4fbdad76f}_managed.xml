@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{16654191-19ad-48ca-9e46-c4b4fbdad76f}</formid>
+    <IntroducedVersion>6.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="TASK_TAB" verticallayout="true" id="{ADFD103B-691E-4A92-B4CF-F844B645A1F7}" IsUserDefined="0" showlabel="false" expanded="true" ordinalvalue="0">
+          <columns>
+            <column width="67%" id="0">
+              <sections>
+                <section name="TASK" showlabel="false" showbar="false" id="{EBB3C46D-5E9B-4EBB-A9E4-B8C25D364BB3}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelposition="Left" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{5FD2BE87-C1CF-41A6-9AD9-4D273733422E}" showlabel="true" locklevel="0" colspan="2" labelid="{f670bd68-6ea9-4665-b504-834f4c254a07}" ordinalvalue="10002" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{1a505462-5327-5e6d-a8bd-89a99a47cd45}" showlabel="false" ordinalvalue="10000" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{185aa631-6ab7-27a1-8bcd-0156adce0bb1}" showlabel="false" ordinalvalue="20001" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b77da756-ec94-b1d5-ee96-575e1a2336b2}" showlabel="true" locklevel="0" ordinalvalue="10003" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_tasknumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_tasknumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{96e49ce1-3145-c872-c93e-4c118a793cbb}" showlabel="true" locklevel="0" ordinalvalue="10004" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_taskpriority" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_taskpriority" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bcec07c4-e810-13c0-a5a9-3368d4215671}" showlabel="true" locklevel="0" ordinalvalue="10005" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_descriptionfor" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_descriptionfor" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{93294c83-a93c-94d7-5aca-edb080558d28}" showlabel="true" locklevel="0" ordinalvalue="10006" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_requesteragentpatient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_requesteragentpatient" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3b2dd74e-473c-bc3e-17e4-827e865e0cb8}" showlabel="true" locklevel="0" ordinalvalue="10007" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="scheduledend" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="scheduledend" disabled="false" uniqueid="{722cd323-a896-ae32-e242-877742e436a2}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5ae71180-6bce-8689-c150-339b5dc73c21}" showlabel="true" locklevel="0" ordinalvalue="10008" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_groupidentifier" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_groupidentifier" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8518ad4e-e38d-2200-c96d-eab37ca1c66b}" showlabel="true" locklevel="0" ordinalvalue="10009" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_intent" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_intent" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d50bc2d8-3ddc-d9e3-737a-73e6a2bbc859}" showlabel="true" locklevel="0" ordinalvalue="10010" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_businessstatus" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_businessstatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a637b877-ce60-883d-7a62-d22a1cd6eb25}" showlabel="true" locklevel="0" ordinalvalue="10011" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_code" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_code" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6e204e38-ebb5-43d5-5d13-525d84d282e3}" showlabel="true" locklevel="0" ordinalvalue="10012" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_contexttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_contexttype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{408ed361-eba1-7a68-2e1b-8b799916ee64}" showlabel="true" locklevel="0" ordinalvalue="10013" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_reference" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_reference" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d289c377-226d-1e89-b240-87d403c30ca5}" showlabel="true" locklevel="0" ordinalvalue="10014" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_descriptionfocus" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_descriptionfocus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4485621c-02b0-a707-5d78-4ccb55ae70b9}" showlabel="true" locklevel="0" ordinalvalue="10015" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_definitionuri" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_definitionuri" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{eb7c7d65-9323-688c-a3c1-4e45a270c4a7}" showlabel="true" locklevel="0" ordinalvalue="10016" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_restrictionperiodenddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_restrictionperiodenddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{091b7ddb-9bd6-3e3b-ebac-638a7906a2bc}" showlabel="true" locklevel="0" ordinalvalue="10017" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_restrictionperiodstartdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_restrictionperiodstartdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1a4b5403-956d-1084-46a6-90bde6c418b0}" showlabel="true" locklevel="0" ordinalvalue="10018" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_restrictionrepetitions" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="msemr_restrictionrepetitions" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c8dc9225-3a8c-0b7c-7d7c-d03c3db26abc}" showlabel="true" locklevel="0" ordinalvalue="10019" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%" id="1">
+              <sections>
+                <section name="addl_taskdetails" showlabel="false" showbar="false" locklevel="0" id="{7a19c1aa-7ac9-5449-dcb0-208db3ecd341}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" labelid="{bb6af410-fa41-4b02-aed7-2d9c15d663d5}" celllabelalignment="Left" celllabelposition="Left" ordinalvalue="0" solutionaction="Modified">
+                  <labels>
+                    <label description="Additional Task Details" languagecode="1033" solutionaction="Added" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7d876160-d484-670c-a05b-aea2bd5a292b}" showlabel="false" labelid="{c16bb453-38f2-472f-920a-648107da0c58}" ordinalvalue="10000" solutionaction="Removed" />
+                      <cell id="{2865be8d-138b-996d-6897-01ee807e1bc7}" showlabel="false" labelid="{a41321b5-ed73-4022-b3a9-2b107dd9a08e}" ordinalvalue="20001" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{63565aa7-11c6-de7d-b55b-838587bae025}" showlabel="true" locklevel="0" ordinalvalue="10000" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_performerownertype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_performerownertype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8554b607-33ce-8711-d1ca-139eec1cdb0b}" showlabel="true" locklevel="0" ordinalvalue="10001" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_performerowneragentdevice" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_performerowneragentdevice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d1c9cd7a-8664-6753-ad1e-461818e438a9}" showlabel="true" locklevel="0" ordinalvalue="10002" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_performerownerorganization" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_performerownerorganization" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2b0eb033-9468-a62d-99ae-e2d3ba654c68}" showlabel="true" locklevel="0" ordinalvalue="10003" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_performerownerpatient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_performerownerpatient" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0494d905-853d-59c0-d293-2acd98805155}" showlabel="true" locklevel="0" ordinalvalue="10004" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_performerownerpractitioner" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_performerownerpractitioner" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c6139606-9b30-378b-6eae-1ce103db5b42}" showlabel="true" locklevel="0" ordinalvalue="10005" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_performerownerrelatedperson" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_performerownerrelatedperson" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5373b03b-da67-04c4-2e48-69c38c20ea4d}" showlabel="true" locklevel="0" ordinalvalue="10006" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_requesteragentdevice" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_requesteragentdevice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a7290784-29de-1cbe-7669-12c840569677}" showlabel="true" locklevel="0" ordinalvalue="10007" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_requesteragentorganization" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_requesteragentorganization" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7b33b758-7a93-2a37-e344-b49a399dbc46}" showlabel="true" locklevel="0" ordinalvalue="10008" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_requesteragent" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_requesteragent" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{07a79452-851b-d6b7-e2c1-a05ba5dbe014}" showlabel="true" locklevel="0" ordinalvalue="10009" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_requesteragentpractitioner" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_requesteragentpractitioner" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{021adb13-a14d-2793-d356-10c173e49698}" showlabel="true" locklevel="0" ordinalvalue="10010" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_contextencounter" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_contextencounter" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80459e91-7a4a-745b-9865-30aca212c72e}" showlabel="true" locklevel="0" ordinalvalue="10011" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_contextepisodeofcare" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_contextepisodeofcare" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation solutionaction="Added">
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions solutionaction="Added" />
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Task" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Task form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

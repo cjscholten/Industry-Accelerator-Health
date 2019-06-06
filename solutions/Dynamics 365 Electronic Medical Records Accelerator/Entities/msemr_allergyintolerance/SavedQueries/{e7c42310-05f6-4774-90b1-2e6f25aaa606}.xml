@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e7c42310-05f6-4774-90b1-2e6f25aaa606}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="msemr_name">
+        <row id="msemr_allergyintoleranceid" name="result">
+          <cell name="msemr_name" width="300" />
+          <cell name="msemr_patient" width="100" />
+          <cell name="msemr_type" width="100" />
+          <cell name="msemr_code" width="100" />
+          <cell name="msemr_criticality" width="100" />
+          <cell name="msemr_verificationstatus" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="msemr_allergyintolerance">
+          <attribute name="msemr_name" />
+          <attribute name="createdon" />
+          <order descending="false" attribute="msemr_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="msemr_verificationstatus" />
+          <attribute name="msemr_type" />
+          <attribute name="msemr_patient" />
+          <attribute name="msemr_criticality" />
+          <attribute name="msemr_code" />
+          <attribute name="msemr_allergyintoleranceid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Allergy Intolerances" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

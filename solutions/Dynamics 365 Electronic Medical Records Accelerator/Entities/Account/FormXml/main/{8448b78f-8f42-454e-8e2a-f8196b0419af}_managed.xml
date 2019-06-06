@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{8448b78f-8f42-454e-8e2a-f8196b0419af}</formid>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form showImage="true">
+      <tabs>
+        <tab name="urstab" id="{c89e4b42-29b5-63b1-4666-65574779eddd}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false" ordinalvalue="4">
+          <columns>
+            <column width="33%" id="1">
+              <sections>
+                <section name="tab_3_section_2" showlabel="false" showbar="false" locklevel="0" id="{26e829cb-9a5d-a0b5-b062-0a931e082a1e}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{5e53af7f-dcff-4561-ac5e-3465c9895b46}" showlabel="false" ordinalvalue="10000" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%" id="2">
+              <sections>
+                <section name="tab_3_section_3" showlabel="false" showbar="false" locklevel="0" id="{329c50b5-c80d-155e-aae5-50ca4db32d1a}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{1f726b18-74dd-4bb1-85c9-4a9d8e881c7e}" showlabel="false" ordinalvalue="10000" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="Account_CustomerAddress" Id="navAddresses" Show="false" Sequence="21" Area="Info" solutionaction="Modified">
+            <Privileges solutionaction="Removed" />
+            <Titles>
+              <Title LCID="1025" Text="العناوين" solutionaction="Removed" />
+              <Title LCID="1026" Text="Адреси" solutionaction="Removed" />
+              <Title LCID="1027" Text="Adreces" solutionaction="Removed" />
+              <Title LCID="1029" Text="Adresy" solutionaction="Removed" />
+              <Title LCID="1030" Text="Adresser" solutionaction="Removed" />
+              <Title LCID="1031" Text="Adressen" solutionaction="Removed" />
+              <Title LCID="1032" Text="Διευθύνσεις" solutionaction="Removed" />
+              <Title LCID="3082" Text="Direcciones" solutionaction="Removed" />
+              <Title LCID="1061" Text="Aadressid" solutionaction="Removed" />
+              <Title LCID="1069" Text="Helbideak" solutionaction="Removed" />
+              <Title LCID="1035" Text="Osoitteet" solutionaction="Removed" />
+              <Title LCID="1036" Text="Adresses" solutionaction="Removed" />
+              <Title LCID="1110" Text="Enderezos" solutionaction="Removed" />
+              <Title LCID="1037" Text="כתובות" solutionaction="Removed" />
+              <Title LCID="1081" Text="पते" solutionaction="Removed" />
+              <Title LCID="1050" Text="Adrese" solutionaction="Removed" />
+              <Title LCID="1038" Text="Címek" solutionaction="Removed" />
+              <Title LCID="1057" Text="Alamat" solutionaction="Removed" />
+              <Title LCID="1040" Text="Indirizzi" solutionaction="Removed" />
+              <Title LCID="1041" Text="住所" solutionaction="Removed" />
+              <Title LCID="1087" Text="Мекенжайлар" solutionaction="Removed" />
+              <Title LCID="1042" Text="주소" solutionaction="Removed" />
+              <Title LCID="1063" Text="Adresai" solutionaction="Removed" />
+              <Title LCID="1062" Text="Adreses" solutionaction="Removed" />
+              <Title LCID="1086" Text="Alamat" solutionaction="Removed" />
+              <Title LCID="1044" Text="Adresser" solutionaction="Removed" />
+              <Title LCID="1043" Text="Adressen" solutionaction="Removed" />
+              <Title LCID="1045" Text="Adresy" solutionaction="Removed" />
+              <Title LCID="1046" Text="Endereços" solutionaction="Removed" />
+              <Title LCID="2070" Text="Endereços" solutionaction="Removed" />
+              <Title LCID="1048" Text="Adrese" solutionaction="Removed" />
+              <Title LCID="1049" Text="Адреса" solutionaction="Removed" />
+              <Title LCID="1051" Text="Adresy" solutionaction="Removed" />
+              <Title LCID="1060" Text="Naslovi" solutionaction="Removed" />
+              <Title LCID="10266" Text="Адресе" solutionaction="Removed" />
+              <Title LCID="9242" Text="Adrese" solutionaction="Removed" />
+              <Title LCID="1053" Text="Adresser" solutionaction="Removed" />
+              <Title LCID="1054" Text="ที่อยู่" solutionaction="Removed" />
+              <Title LCID="1055" Text="Adresler" solutionaction="Removed" />
+              <Title LCID="1058" Text="Адреси" solutionaction="Removed" />
+              <Title LCID="1066" Text="Địa chỉ" solutionaction="Removed" />
+              <Title LCID="2052" Text="地址" solutionaction="Removed" />
+              <Title LCID="3076" Text="地址" solutionaction="Removed" />
+              <Title LCID="1028" Text="地址" solutionaction="Removed" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="account_customer_relationship_customer" Id="navRelationships" Show="false" Sequence="10007" Area="Info" solutionaction="Modified" />
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navCampaignsInSFA" Sequence="22" Area="Marketing" Id="navCampaignsInSFA" Show="false" solutionaction="Removed" />
+          <NavBarByRelationshipItem RelationshipName="Account_ActivityPointers" Sequence="22" Area="Info" Id="navActivities" solutionaction="Modified" />
+          <NavBarByRelationshipItem RelationshipName="msdyn_account_msdyn_actualfact_AccountCustomer" Sequence="10002" Area="Info" Id="nav_msdyn_account_msdyn_actualfact_AccountCustomer" Show="false" solutionaction="Removed" />
+          <NavBarByRelationshipItem RelationshipName="msdyn_account_msdyn_actualfact_AccountVendor" Sequence="10003" Area="Info" Id="nav_msdyn_account_msdyn_actualfact_AccountVendor" Show="false" solutionaction="Removed" />
+          <NavBarByRelationshipItem RelationshipName="account_entitlement_Customer" Sequence="10006" Area="Info" Id="navEntitlement" solutionaction="Modified" />
+          <NavBarByRelationshipItem RelationshipName="msdyn_account_msdyn_requirementresourcepreference_Account" Sequence="10001" Area="Info" Id="nav_msdyn_account_msdyn_requirementresourcepreference_Account" solutionaction="Added">
+            <Titles>
+              <Title LCID="1033" Text="Resource Preferences" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msdyn_account_opportunityproduct_ServiceAccount" Sequence="10002" Area="Info" Id="nav_msdyn_account_opportunityproduct_ServiceAccount" solutionaction="Added">
+            <Titles>
+              <Title LCID="1033" Text="Opportunity Lines" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msdyn_account_quote_Account" Sequence="10003" Area="Info" Id="nav_msdyn_account_quote_Account" solutionaction="Added">
+            <Titles>
+              <Title LCID="1033" Text="Quotes" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msdyn_account_quotedetail_ServiceAccount" Sequence="10004" Area="Info" Id="nav_msdyn_account_quotedetail_ServiceAccount" solutionaction="Added">
+            <Titles>
+              <Title LCID="1033" Text="Quote Lines" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msdyn_account_salesorder_Account" Sequence="10005" Area="Info" Id="nav_msdyn_account_salesorder_Account" solutionaction="Added">
+            <Titles>
+              <Title LCID="1033" Text="Orders" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+      </Navigation>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Account" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Account form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

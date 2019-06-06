@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{66e21676-4153-47e3-8d7c-3ccd0ceedd11}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="msemr_name" select="1" icon="1" preview="1">
+        <row name="msemr_episodeofcarediagnosis" id="msemr_episodeofcarediagnosisid">
+          <cell name="msemr_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_episodeofcarediagnosis">
+          <attribute name="msemr_episodeofcarediagnosisid" />
+          <attribute name="msemr_name" />
+          <attribute name="createdon" />
+          <order attribute="msemr_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Episode Of Care Diagnosis Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

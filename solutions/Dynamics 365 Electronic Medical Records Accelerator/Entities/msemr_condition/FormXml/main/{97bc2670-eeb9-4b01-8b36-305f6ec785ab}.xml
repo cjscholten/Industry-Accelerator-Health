@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{97bc2670-eeb9-4b01-8b36-305f6ec785ab}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{7fb41aaf-760d-4a93-aac0-e9326d224e06}" IsUserDefined="1" name="{7fb41aaf-760d-4a93-aac0-e9326d224e06}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{a9aebb7f-1286-4e56-8000-30aee85d3d22}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9ae426b8-0f6e-415f-9659-a2bcc986b798}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1d869267-a3d7-d402-d217-ba0599768947}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Condition Code" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_conditioncode" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_conditioncode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6690c1d1-176c-03e8-d18e-1476993a8744}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Severity" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_severity" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_severity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{66352459-6c12-53ea-98be-0521ad2139a1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Patient" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_subjecttypepatient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_subjecttypepatient" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5dbead2e-30b4-7ecd-ab77-39085d78c16c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Practitioner" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_practitioner" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_practitioner" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c5ae5664-a451-b5b9-a4ea-bcc63505ab90}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Subject Type" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_subjecttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_subjecttype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{91467b01-d1e2-4bb3-c79d-d512c1bbe127}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Stage" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_stage" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_stage" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b684bab3-bd8d-cee7-82dc-3d02cb0cc587}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Context" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_contextencounter" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_contextencounter" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e6b04556-c997-48ba-36ba-3432c086a9ea}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Context Type" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_contexttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_contexttype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3dbad2bc-535e-041d-4496-884a483380d2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Encounter" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_encounter" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_encounter" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e2821d95-b3ec-b7ee-7d10-9534a4761019}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Category" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_category" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_category" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c1b37c55-9ccb-04b6-aa83-4e719ceddc4d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Care Plan" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_careplan" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_careplan" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{74e35db0-52b2-be39-8a8d-13a8795c6cbb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Appointment" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_appointment" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_appointment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{201ba6ba-b15e-b2a0-2c4a-10cd52bb5652}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Group" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_subjecttypegroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_subjecttypegroup" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{47ba529c-1dba-e92d-0d92-1356aeba149b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Verification Status" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_verificationstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_verificationstatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{68510b5d-b507-3e77-c4d7-5dedd3d10866}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Clinical Status" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_clinicalstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_clinicalstatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c414c11e-e20e-494b-8e86-2765485f7480}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="{7fb41aaf-760d-4a93-aac0-e9326d224e06}_section_3" showlabel="false" showbar="false" locklevel="0" id="{d40c9b36-4da1-a009-ce72-8b8b23cd3a69}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2584a2d6-4755-571b-5625-6be28925c596}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Is Abatement" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_isabatement" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="msemr_isabatement" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ed6aad4a-e998-6aae-4752-bea7b2b0e219}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Abatement Age" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_abatementage" classid="{0D2C745A-E5A8-4c8f-BA63-C6D3BB604660}" datafieldname="msemr_abatementage" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cb327c8e-418b-68ad-9826-6b910457ed0c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Abatement Date" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_abatementdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_abatementdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0985b06e-37d1-edac-463d-795035c81e72}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Abatement Period End Date" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_abatementperiodenddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_abatementperiodenddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a245682-3dd3-3839-9625-b9e5d1d886aa}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Abatement Period Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_abatementperiodstartdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_abatementperiodstartdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b1ce5c83-c736-617d-a290-c301961781d6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Abatement Range High" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_abatementrangehigh" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="msemr_abatementrangehigh" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{61734a18-e110-d1b0-0320-d7ceeca39300}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Abatement Range Low" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_abatementrangelow" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="msemr_abatementrangelow" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{81b83922-aeb8-3a6c-0ab5-7e792cbe89a9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Abatement String" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_abatementstring" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_abatementstring" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a73c2b52-5228-5c42-7d64-30e88a2b9d88}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Abatement Type" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_abatementtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_abatementtype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e78d86b8-3d76-02b3-aae6-b51ad5a22e15}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Onset Age" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_onsetage" classid="{0D2C745A-E5A8-4c8f-BA63-C6D3BB604660}" datafieldname="msemr_onsetage" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d7bba323-9da7-a792-e97d-65a1be1c9c03}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Onset Date" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_onsetdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_onsetdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7ca533ad-e9b0-be37-12db-6d5a41085347}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Onset Period End Date" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_onsetperiodenddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_onsetperiodenddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7b5d1ac7-7d74-3bb1-d910-8ea3930ed503}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Onset Period Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_onsetperiodstartdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_onsetperiodstartdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{144b5074-0258-41cb-762c-664378d76681}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Onset Range High" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_onsetrangehigh" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="msemr_onsetrangehigh" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8611ac82-1b78-ac38-624a-d6179c247caa}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Onset Range Low" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_onsetrangelow" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="msemr_onsetrangelow" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{47db82c0-a2ec-17c1-c63a-e35158a26ea3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Onset String" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_onsetstring" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_onsetstring" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dea5e3c7-064c-c264-9e27-024aa7e1d544}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Onset Type" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_onsettype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msemr_onsettype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{125acde7-6248-591d-a8b1-12bc0c177aa0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Asserted Date" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_asserteddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_asserteddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{db627cc1-cb36-9b64-a90c-ad32774bd31b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Asserter" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_asserter" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_asserter" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{b749321b-64b5-411e-a520-923857f93c58}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="15" auto="false" id="{21cee9b1-f1f8-4647-9595-52241728d7c0}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+                <section name="{7fb41aaf-760d-4a93-aac0-e9326d224e06}_section_4" showlabel="false" showbar="false" locklevel="0" id="{8393d64c-b1d1-3912-3777-4e2ece428bb5}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{59b69b09-2e86-a0a8-6e27-99e0e69368ac}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{6a69a409-0e40-dc8c-462b-a48d6edd6ced}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{3b9d840e-86ad-4b1d-901e-fff0f3b1b071}</formid>
+    <IntroducedVersion>1.4</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{9dbfdc62-7f39-4e0c-87a7-8db8cf05bfd7}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{87bc57d8-e028-44a5-b21a-28d221451ba8}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0578129d-e3a0-469c-9500-2466a6664767}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msemr_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{70b5edb8-2c25-648c-4272-e998409ae9da}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Code" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_code" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_code" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{59958320-2d86-b92b-2db4-3865ea09a4cd}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Subject (Patient)" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_subjectpatient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_subjectpatient" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d6d281a9-610e-0747-268c-11407bd510d2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Authored On" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_authoredon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msemr_authoredon" disabled="false" uniqueid="{386365b0-4367-c68e-9e84-431d33158801}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{aa083f44-b136-419e-ad6c-c95d5a8c3df0}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

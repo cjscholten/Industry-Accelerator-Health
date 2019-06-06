@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="msemr_valuesampleddatatype" localizedName="Value Sampled Data Type">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.1</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Value Sampled Data Type" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="935000000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Origin" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Period" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000002" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Factor" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000003" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Lower Limit" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000004" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Upper Limit" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000005" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Dimensions" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000006" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Data" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

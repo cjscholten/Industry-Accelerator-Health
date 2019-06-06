@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{a4dc8094-5e75-e811-a838-000d3a33b56b}</savedqueryid>
+    <querytype>8192</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" output-format="xml-platform">
+        <entity name="msemr_plandefinitionactioncondition">
+          <attribute name="msemr_plandefinitionactionconditionid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.4</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Plan Definition Action Conditions" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="All active Plan Definition Action Conditions" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="msemr_measurementprinciple" localizedName="Measurement Principle">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.1</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Measurement Principle" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="935000000" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Other" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000001" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Chemical" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000002" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Electrical" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000003" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Impedance" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000004" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Nuclear" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000005" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Optical" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000006" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Thermal" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000007" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Biological" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000008" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Mechanical" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000009" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Acoustical" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="935000010" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Manual" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

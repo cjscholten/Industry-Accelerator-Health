@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{85dd8e66-6281-42c0-9b52-7dc2e0751eff}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msemr_title" select="1" icon="1" preview="1">
+        <row name="result" id="msemr_careplanid">
+          <cell name="msemr_title" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msemr_careplan">
+          <attribute name="msemr_careplanid" />
+          <attribute name="msemr_title" />
+          <attribute name="createdon" />
+          <order attribute="msemr_title" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msemr_title" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Care Plans" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

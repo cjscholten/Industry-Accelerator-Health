@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{0a290c64-3849-49d0-805c-471438e29df2}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="subject">
+        <row id="activityid" name="result">
+          <cell name="subject" width="300" />
+          <cell name="msemr_appointmenttype" width="100" />
+          <cell name="msemr_actorlocation" width="100" />
+          <cell name="msemr_actorpatient" width="100" />
+          <cell name="msemr_actorpractitioner" width="100" />
+          <cell name="msemr_actorrelatedperson" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="true" mapping="logical" version="1.0">
+        <entity name="msemr_appointmentemr">
+          <attribute name="subject" />
+          <attribute name="createdon" />
+          <order descending="false" attribute="subject" />
+          <filter type="and">
+            <condition attribute="statecode" operator="in">
+              <value>0</value>
+              <value>3</value>
+            </condition>
+          </filter>
+          <link-entity name="activityparty" alias="aa" to="activityid" from="activityid">
+            <filter type="and">
+              <condition attribute="partyid" operator="eq-userid" />
+            </filter>
+          </link-entity>
+          <attribute name="msemr_appointmenttype" />
+          <attribute name="msemr_actorrelatedperson" />
+          <attribute name="msemr_actorpractitioner" />
+          <attribute name="msemr_actorpatient" />
+          <attribute name="msemr_actorlocation" />
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Open Appointments (EMR)" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
