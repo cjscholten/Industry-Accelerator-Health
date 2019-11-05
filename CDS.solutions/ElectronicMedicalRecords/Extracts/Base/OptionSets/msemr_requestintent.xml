@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<optionset Name="msemr_requestintent" localizedName="Request Intent" description="Codes indicating the degree of authority/intentionality associated with a request.">
+<optionset Name="msemr_requestintent" localizedName="Request Intent" description="Codes indicating the degree of authority/intentionality associated with a request." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <OptionSetType>picklist</OptionSetType>
   <IsGlobal>1</IsGlobal>
   <IntroducedVersion>1.4</IntroducedVersion>

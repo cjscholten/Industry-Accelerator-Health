@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Entity>
+<Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name LocalizedName="Address" OriginalName="">CustomerAddress</Name>
   <EntityInfo>
     <entity Name="CustomerAddress">
@@ -122,6 +122,7 @@
           <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>2</Behavior>
@@ -157,6 +158,7 @@
           <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>2</Behavior>
@@ -192,7 +194,7 @@
       <IsReplicationUserFiltered>0</IsReplicationUserFiltered>
       <IsMailMergeEnabled>0</IsMailMergeEnabled>
       <IsVisibleInMobile>0</IsVisibleInMobile>
-      <IsVisibleInMobileClient>0</IsVisibleInMobileClient>
+      <IsVisibleInMobileClient>1</IsVisibleInMobileClient>
       <IsReadOnlyInMobileClient>0</IsReadOnlyInMobileClient>
       <IsOfflineInMobileClient>0</IsOfflineInMobileClient>
       <DaysSinceRecordLastModified>0</DaysSinceRecordLastModified>

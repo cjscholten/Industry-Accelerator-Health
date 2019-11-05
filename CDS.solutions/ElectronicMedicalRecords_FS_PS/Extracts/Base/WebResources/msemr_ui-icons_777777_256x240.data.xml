@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{e2be7ae4-2481-e811-a83c-000d3a33b3be}</WebResourceId>
   <Name>msemr_ui-icons_777777_256x240</Name>
   <DisplayName>ui-icons_777777_256x240</DisplayName>

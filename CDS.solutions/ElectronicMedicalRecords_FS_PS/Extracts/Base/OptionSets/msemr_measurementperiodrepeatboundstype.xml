@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<optionset Name="msemr_measurementperiodrepeatboundstype" localizedName="Measurement Period BoundsType" description="Either a duration for the length of the timing schedule, a range of possible length, or outer bounds for start and/or end limits of the timing schedule.">
+<optionset Name="msemr_measurementperiodrepeatboundstype" localizedName="Measurement Period BoundsType" description="Either a duration for the length of the timing schedule, a range of possible length, or outer bounds for start and/or end limits of the timing schedule." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <OptionSetType>picklist</OptionSetType>
   <IsGlobal>1</IsGlobal>
   <IntroducedVersion>1.0</IntroducedVersion>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<EntityRelationships>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <EntityRelationship Name="account_msemr_appointmentemrs" />
   <EntityRelationship Name="activity_pointer_msemr_appointmentemr" />
   <EntityRelationship Name="bookableresourcebooking_msemr_appointmentemrs" />
@@ -952,6 +952,7 @@
   <EntityRelationship Name="msdyn_paymentdetail_msemr_appointmentemrs" />
   <EntityRelationship Name="msdyn_paymentmethod_msemr_appointmentemrs" />
   <EntityRelationship Name="msdyn_paymentterm_msemr_appointmentemrs" />
+  <EntityRelationship Name="msdyn_playbookinstance_msemr_appointmentemrs" />
   <EntityRelationship Name="msdyn_postalbum_msemr_appointmentemrs" />
   <EntityRelationship Name="msdyn_postalcode_msemr_appointmentemrs" />
   <EntityRelationship Name="msdyn_processnotes_msemr_appointmentemrs" />

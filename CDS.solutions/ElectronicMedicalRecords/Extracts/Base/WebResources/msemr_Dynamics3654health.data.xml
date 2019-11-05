@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{1f58e6ca-7479-e811-a838-000d3a33b56b}</WebResourceId>
   <Name>msemr_Dynamics3654health</Name>
   <DisplayName>Dynamics 365 for Health</DisplayName>

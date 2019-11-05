@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{4382cfd8-c57e-e811-a83f-000d3a33b3a3}</WebResourceId>
   <Name>msemr_nutritionorder32</Name>
   <WebResourceType>5</WebResourceType>

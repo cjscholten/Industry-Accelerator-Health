@@ -3,7 +3,6 @@
     <title>CareTeam Circle Menu</title>
 
     <script src="../WebResources/msemr_jquery214" type="text/javascript"></script>
-    <script src="../WebResources/msemr_JSON2_JS" type="text/javascript"></script>
     <script src="../WebResources/msemr_XrmServiceToolkit_JS" type="text/javascript"></script>
     <script src="../WebResources/msemr_Controller_js" type="text/javascript"></script>
 
@@ -760,7 +759,6 @@
 
 
         function BindCareTeam(list, IsChildCareTeam) {
-            debugger;
             if (IsChildCareTeam == 1 || IsChildCareTeam == "1") {
                 div += '<ul>';
 

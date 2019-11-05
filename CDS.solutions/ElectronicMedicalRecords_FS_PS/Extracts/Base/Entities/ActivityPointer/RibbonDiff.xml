@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RibbonDiffXml>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <CustomActions>
     <CustomAction Id="msemr.activitypointer.Button2.Button.CustomAction" Location="Mscrm.HomepageGrid.activitypointer.NewAppointment.Controls._children" Sequence="25">
       <CommandUIDefinition>

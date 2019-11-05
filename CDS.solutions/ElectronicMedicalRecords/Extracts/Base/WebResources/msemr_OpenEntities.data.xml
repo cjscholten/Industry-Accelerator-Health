@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{a8af6c9a-5d76-e811-a83b-000d3a33b3be}</WebResourceId>
   <Name>msemr_OpenEntities</Name>
   <DisplayName>Open Entities</DisplayName>

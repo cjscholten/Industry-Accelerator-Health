@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{e3964af3-e379-e811-a83b-000d3a33b5cc}</WebResourceId>
   <Name>msemr_tc_icon_appointment_svg</Name>
   <DisplayName>icon appointment</DisplayName>

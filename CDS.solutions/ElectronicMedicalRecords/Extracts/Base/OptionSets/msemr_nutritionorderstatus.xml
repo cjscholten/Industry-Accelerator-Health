@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<optionset Name="msemr_nutritionorderstatus" localizedName="Nutrition Order Status">
+<optionset Name="msemr_nutritionorderstatus" localizedName="Nutrition Order Status" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <OptionSetType>picklist</OptionSetType>
   <IsGlobal>1</IsGlobal>
   <IntroducedVersion>1.4</IntroducedVersion>

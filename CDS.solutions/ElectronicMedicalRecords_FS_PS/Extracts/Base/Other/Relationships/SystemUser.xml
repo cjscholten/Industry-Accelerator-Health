@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<EntityRelationships>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <EntityRelationship Name="lk_msemr_accounttype_createdby">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
@@ -12505,7 +12505,7 @@
   <EntityRelationship Name="msemr_appointmentemr_systemuser_createdby">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>1.0</IntroducedVersion>
+    <IntroducedVersion>1.8.1</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msemr_appointmentemr</ReferencingEntityName>
     <ReferencedEntityName>SystemUser</ReferencedEntityName>
@@ -12525,7 +12525,7 @@
   <EntityRelationship Name="msemr_appointmentemr_systemuser_modifiedby">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>1.0</IntroducedVersion>
+    <IntroducedVersion>1.8.1</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msemr_appointmentemr</ReferencingEntityName>
     <ReferencedEntityName>SystemUser</ReferencedEntityName>
@@ -12545,7 +12545,7 @@
   <EntityRelationship Name="msemr_appointmentemr_systemuser_owninguser">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>1.0</IntroducedVersion>
+    <IntroducedVersion>1.8.1</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>msemr_appointmentemr</ReferencingEntityName>
     <ReferencedEntityName>SystemUser</ReferencedEntityName>

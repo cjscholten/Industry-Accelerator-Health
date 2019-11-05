@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{4663b0f9-c091-e811-a83b-000d3a33bdbd}</WebResourceId>
   <Name>new_PatientReadings</Name>
   <LanguageCode>1033</LanguageCode>

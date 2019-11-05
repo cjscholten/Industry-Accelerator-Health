@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<optionset Name="msemr_devicemetriccategory" localizedName="Device Metric Category" description="Indicates the category of the observation generation process. A Device Metric can be for example a setting, measurement, or calculation.">
+<optionset Name="msemr_devicemetriccategory" localizedName="Device Metric Category" description="Indicates the category of the observation generation process. A Device Metric can be for example a setting, measurement, or calculation." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <OptionSetType>picklist</OptionSetType>
   <IsGlobal>1</IsGlobal>
   <IntroducedVersion>1.0</IntroducedVersion>
