@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SdkMessageProcessingStep Name="Microsoft.Dynamics.Health.PatientActivityDate: Create of msemr_devicerequest" SdkMessageProcessingStepId="{022e3e6b-1881-e811-a839-000d3a33b56b}">
+<SdkMessageProcessingStep Name="Microsoft.Dynamics.Health.PatientActivityDate: Create of msemr_devicerequest" SdkMessageProcessingStepId="{022e3e6b-1881-e811-a839-000d3a33b56b}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <PluginTypeName>Microsoft.Dynamics.Health.PatientActivityDate, Microsoft.Dynamics.Health, Version=1.0.0.0, Culture=neutral, PublicKeyToken=20f0165d2cb5406f</PluginTypeName>
   <PluginTypeId>ef10a14c-29f9-48c4-a0d2-6509408bf427</PluginTypeId>
   <PrimaryEntity>msemr_devicerequest</PrimaryEntity>

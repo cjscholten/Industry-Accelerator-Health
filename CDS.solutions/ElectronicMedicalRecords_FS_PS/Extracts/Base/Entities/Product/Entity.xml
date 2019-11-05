@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Entity>
+<Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name LocalizedName="Product" OriginalName="Product">Product</Name>
   <EntityInfo>
     <entity Name="Product">
@@ -38,6 +38,7 @@
           <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -72,6 +73,7 @@
           <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
           <AppDefaultValue>0</AppDefaultValue>
           <optionset Name="msemr_product_msemr_isbrand">
             <OptionSetType>bit</OptionSetType>
@@ -128,6 +130,7 @@
           <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
           <AppDefaultValue>0</AppDefaultValue>
           <optionset Name="msemr_product_msemr_isoverthecounter">
             <OptionSetType>bit</OptionSetType>
@@ -184,6 +187,7 @@
           <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -218,6 +222,7 @@
           <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>

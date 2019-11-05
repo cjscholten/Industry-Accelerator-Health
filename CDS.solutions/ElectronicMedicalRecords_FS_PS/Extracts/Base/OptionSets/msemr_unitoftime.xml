@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<optionset Name="msemr_unitoftime" localizedName="Unit of Time" description="The units of time for the duration/Period, in UCUM units.">
+<optionset Name="msemr_unitoftime" localizedName="Unit of Time" description="The units of time for the duration/Period, in UCUM units." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <OptionSetType>picklist</OptionSetType>
   <IsGlobal>1</IsGlobal>
   <IntroducedVersion>1.0</IntroducedVersion>

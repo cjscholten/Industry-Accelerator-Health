@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<AppModuleSiteMap>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SiteMapUniqueName>msemr_DynamicsHealth365</SiteMapUniqueName>
   <SiteMap IntroducedVersion="undefined">
     <Area Id="NewArea_Health" ResourceId="SitemapDesigner.NewArea" Icon="/WebResources/msemr_d365forhealthtile" ShowGroups="false">

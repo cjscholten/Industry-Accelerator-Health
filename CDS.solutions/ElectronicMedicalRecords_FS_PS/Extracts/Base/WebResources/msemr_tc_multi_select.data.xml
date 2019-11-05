@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{344a74aa-5a7e-e811-a83c-000d3a33b3be}</WebResourceId>
   <Name>msemr_tc_multi_select</Name>
   <DisplayName>Multi select image</DisplayName>

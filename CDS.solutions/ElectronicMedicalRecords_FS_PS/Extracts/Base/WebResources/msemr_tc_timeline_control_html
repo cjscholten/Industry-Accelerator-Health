@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../WebResources/msemr_tc_common_css">
     <link rel="stylesheet" href="../WebResources/msemr_tc_multi_select_css">
     <script src="../WebResources/msemr_jquery214" type="text/javascript"></script>
-    <script src="../WebResources/msemr_JSON2_JS" type="text/javascript"></script>
     <script src="../WebResources/msemr_moment" type="text/javascript"></script>
     <script src="../WebResources/msemr_XrmServiceToolkit_JS" type="text/javascript"></script>   
     <script src="../WebResources/msemr_jquery-ui.min" type="text/javascript"></script>
@@ -517,8 +516,8 @@
                     }
 
                     if (dataSet.hasOwnProperty('msemr_starttime')) {
-                        item.date = moment(dataSet.msemr_starttime.formattedValue).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_starttime.formattedValue).format('YYYY-MM-DD HH:mm:ss');
+                        item.date = moment(dataSet.msemr_starttime).format('MM/DD/YYYY');
+                        item.dateTime = moment(dataSet.msemr_starttime).format('YYYY-MM-DD HH:mm:ss');
                     }
                     item.type = 1;
                     item.entity = "msemr_appointmentemr";
@@ -573,8 +572,8 @@
                     }
 
                     if (dataSet.hasOwnProperty('msemr_authoredon')) {
-                        item.date = moment(dataSet.msemr_authoredon.formattedValue).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_authoredon.formattedValue).format('YYYY-MM-DD HH:mm:ss');
+                        item.date = moment(dataSet.msemr_authoredon).format('MM/DD/YYYY');
+                        item.dateTime = moment(dataSet.msemr_authoredon).format('YYYY-MM-DD HH:mm:ss');
                     }
                     item.type = 2;
                     item.entity = "msemr_devicerequest";
@@ -629,8 +628,8 @@
                     }
 
                     if (dataSet.hasOwnProperty('msemr_authoredon')) {
-                        item.date = moment(dataSet.msemr_authoredon.formattedValue).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_authoredon.formattedValue).format('YYYY-MM-DD HH:mm:ss');
+                        item.date = moment(dataSet.msemr_authoredon).format('MM/DD/YYYY');
+                        item.dateTime = moment(dataSet.msemr_authoredon).format('YYYY-MM-DD HH:mm:ss');
                     }
                     item.type = 3;
                     item.entity = "msemr_medicationrequest";
@@ -668,8 +667,8 @@
                     //}
 
                     if (dataSet.hasOwnProperty('msemr_datetime')) {
-                        item.date = moment(dataSet.msemr_datetime.formattedValue).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_datetime.formattedValue).format('YYYY-MM-DD HH:mm:ss');
+                        item.date = moment(dataSet.msemr_datetime).format('MM/DD/YYYY');
+                        item.dateTime = moment(dataSet.msemr_datetime).format('YYYY-MM-DD HH:mm:ss');
                     }
                     item.type = 4;
                     item.entity = "msemr_nutritionorder";
@@ -709,8 +708,8 @@
                     }
 
                     if (dataSet.hasOwnProperty('createdon')) {
-                        item.date = moment(dataSet.createdon.formattedValue).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.createdon.formattedValue).format('YYYY-MM-DD HH:mm:ss');
+                        item.date = moment(dataSet.createdon).format('MM/DD/YYYY');
+                        item.dateTime = moment(dataSet.createdon).format('YYYY-MM-DD HH:mm:ss');
                     }
                     item.type = 5;
                     item.entity = "task";
@@ -753,8 +752,8 @@
                     }
 
                     if (dataSet.hasOwnProperty('msemr_authoredon')) {
-                        item.date = moment(dataSet.msemr_authoredon.formattedValue).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_authoredon.formattedValue).format('YYYY-MM-DD HH:mm:ss');
+                        item.date = moment(dataSet.msemr_authoredon).format('MM/DD/YYYY');
+                        item.dateTime = moment(dataSet.msemr_authoredon).format('YYYY-MM-DD HH:mm:ss');
                     }
                     item.type = 6;
                     item.entity = "msemr_procedurerequest";
@@ -794,8 +793,8 @@
                     }
 
                     if (dataSet.hasOwnProperty('msemr_authoredon')) {
-                        item.date = moment(dataSet.msemr_authoredon.formattedValue).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_authoredon.formattedValue).format('YYYY-MM-DD HH:mm:ss');
+                        item.date = moment(dataSet.msemr_authoredon).format('MM/DD/YYYY');
+                        item.dateTime = moment(dataSet.msemr_authoredon).format('YYYY-MM-DD HH:mm:ss');
                     }
                     item.type = 7;
                     item.entity = "msemr_referralrequest";
@@ -841,8 +840,8 @@
                     }
 
                     if (dataSet.hasOwnProperty('msemr_periodstart')) {
-                        item.date = moment(dataSet.msemr_periodstart.formattedValue).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_periodstart.formattedValue).format('YYYY-MM-DD HH:mm:ss');
+                        item.date = moment(dataSet.msemr_periodstart).format('MM/DD/YYYY');
+                        item.dateTime = moment(dataSet.msemr_periodstart).format('YYYY-MM-DD HH:mm:ss');
                     }
                     item.type = 8;
                     item.entity = "msemr_encounter";

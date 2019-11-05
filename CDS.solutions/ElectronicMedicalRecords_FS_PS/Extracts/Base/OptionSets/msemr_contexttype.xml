@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<optionset Name="msemr_contexttype" localizedName="Context Type" description="The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made.">
+<optionset Name="msemr_contexttype" localizedName="Context Type" description="The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <OptionSetType>picklist</OptionSetType>
   <IsGlobal>1</IsGlobal>
   <IntroducedVersion>1.1</IntroducedVersion>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<forms>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <systemform unmodified="1">
     <formid>{eb01b060-e060-42db-9764-6cdcba86da84}</formid>
     <IntroducedVersion>8.1.0.0</IntroducedVersion>
@@ -86,7 +86,7 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_2" id="{c7c50bc1-1588-dc5d-b938-929b772dbe38}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+        <tab name="tab_2" id="{c7c50bc1-1588-dc5d-b938-929b772dbe38}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
           <labels>
             <label description="Common" languagecode="1033" />
           </labels>
@@ -207,6 +207,32 @@
             </column>
           </columns>
         </tab>
+        <tab name="ProjectService" id="{2a899edd-3084-e904-c709-535c8a13a10e}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Project Service" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="ProjectService_section_1" showlabel="false" showbar="false" locklevel="0" id="{ab204541-ceb6-668d-9ae2-34d933231d68}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{34261cac-79a2-0ed0-78ca-4ab2257814dd}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Commit Type" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_committype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyn_committype" disabled="false" uniqueid="{3c6a31bb-0180-daeb-2d30-0b250b621d25}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
       </tabs>
       <Navigation>
         <NavBar>
@@ -215,8 +241,8 @@
               <Title LCID="1033" Text="Field Service Settings" />
               <Title LCID="1025" Text="إعدادات Field Service" />
               <Title LCID="1026" Text="Настройки на Field Service" />
-              <Title LCID="1027" Text="Configuracions del Field Service" />
-              <Title LCID="1029" Text="Nastavení řešení Field Service" />
+              <Title LCID="1027" Text="Configuració del Field Service" />
+              <Title LCID="1029" Text="Nastavení aplikace Field Service" />
               <Title LCID="1030" Text="Indstillinger for Field Service" />
               <Title LCID="1031" Text="Field Service-Einstellungen" />
               <Title LCID="1032" Text="Ρυθμίσεις Field Service" />
@@ -225,10 +251,10 @@
               <Title LCID="1069" Text="Field Service-ren ezarpenak" />
               <Title LCID="1035" Text="Field Servicen asetukset" />
               <Title LCID="1036" Text="Paramètres de Field Service" />
-              <Title LCID="1110" Text="Configuracións de Field Service" />
+              <Title LCID="1110" Text="Configuración de Field Service" />
               <Title LCID="1037" Text="הגדרות Field Service" />
               <Title LCID="1081" Text="Field Service सेटिंग" />
-              <Title LCID="1050" Text="Postavke usluge Field Service" />
+              <Title LCID="1050" Text="Postavke za Field Service" />
               <Title LCID="1038" Text="Field Service beállításai" />
               <Title LCID="1057" Text="Pengaturan Field Service" />
               <Title LCID="1040" Text="Impostazioni Field Service" />
@@ -239,8 +265,8 @@
               <Title LCID="1062" Text="Field Service iestatījumi" />
               <Title LCID="1086" Text="Tetapan Field Service" />
               <Title LCID="1044" Text="Innstillinger for Field Service" />
-              <Title LCID="1043" Text="Instellingen voor Field Service" />
-              <Title LCID="1045" Text="Ustawienia usługi Field Service" />
+              <Title LCID="1043" Text="Field Service-instellingen" />
+              <Title LCID="1045" Text="Ustawienia rozwiązania Field Service" />
               <Title LCID="1046" Text="Configurações do Field Service" />
               <Title LCID="2070" Text="Definições do Field Service" />
               <Title LCID="1048" Text="Setări Field Service" />
@@ -249,10 +275,10 @@
               <Title LCID="1060" Text="Nastavitve rešitve Field Service" />
               <Title LCID="3098" Text="Field Service подешавања" />
               <Title LCID="2074" Text="Field Service podešavanja" />
-              <Title LCID="1053" Text="Field Service-inställningar" />
+              <Title LCID="1053" Text="Inställningar för Field Service" />
               <Title LCID="1054" Text="การตั้งค่า Field Service" />
               <Title LCID="1055" Text="Field Service Ayarları" />
-              <Title LCID="1058" Text="Настройки Field Service" />
+              <Title LCID="1058" Text="Параметри Field Service" />
               <Title LCID="1066" Text="Thiết đặt Field Service" />
               <Title LCID="2052" Text="Field Service 设置" />
               <Title LCID="3076" Text="Field Service 設定" />
@@ -264,8 +290,8 @@
               <Title LCID="1033" Text="Field Service Settings" />
               <Title LCID="1025" Text="إعدادات Field Service" />
               <Title LCID="1026" Text="Настройки на Field Service" />
-              <Title LCID="1027" Text="Configuracions del Field Service" />
-              <Title LCID="1029" Text="Nastavení řešení Field Service" />
+              <Title LCID="1027" Text="Configuració del Field Service" />
+              <Title LCID="1029" Text="Nastavení aplikace Field Service" />
               <Title LCID="1030" Text="Indstillinger for Field Service" />
               <Title LCID="1031" Text="Field Service-Einstellungen" />
               <Title LCID="1032" Text="Ρυθμίσεις Field Service" />
@@ -274,10 +300,10 @@
               <Title LCID="1069" Text="Field Service-ren ezarpenak" />
               <Title LCID="1035" Text="Field Servicen asetukset" />
               <Title LCID="1036" Text="Paramètres de Field Service" />
-              <Title LCID="1110" Text="Configuracións de Field Service" />
+              <Title LCID="1110" Text="Configuración de Field Service" />
               <Title LCID="1037" Text="הגדרות Field Service" />
               <Title LCID="1081" Text="Field Service सेटिंग" />
-              <Title LCID="1050" Text="Postavke usluge Field Service" />
+              <Title LCID="1050" Text="Postavke za Field Service" />
               <Title LCID="1038" Text="Field Service beállításai" />
               <Title LCID="1057" Text="Pengaturan Field Service" />
               <Title LCID="1040" Text="Impostazioni Field Service" />
@@ -288,8 +314,8 @@
               <Title LCID="1062" Text="Field Service iestatījumi" />
               <Title LCID="1086" Text="Tetapan Field Service" />
               <Title LCID="1044" Text="Innstillinger for Field Service" />
-              <Title LCID="1043" Text="Instellingen voor Field Service" />
-              <Title LCID="1045" Text="Ustawienia usługi Field Service" />
+              <Title LCID="1043" Text="Field Service-instellingen" />
+              <Title LCID="1045" Text="Ustawienia rozwiązania Field Service" />
               <Title LCID="1046" Text="Configurações do Field Service" />
               <Title LCID="2070" Text="Definições do Field Service" />
               <Title LCID="1048" Text="Setări Field Service" />
@@ -298,10 +324,10 @@
               <Title LCID="1060" Text="Nastavitve rešitve Field Service" />
               <Title LCID="3098" Text="Field Service подешавања" />
               <Title LCID="2074" Text="Field Service podešavanja" />
-              <Title LCID="1053" Text="Field Service-inställningar" />
+              <Title LCID="1053" Text="Inställningar för Field Service" />
               <Title LCID="1054" Text="การตั้งค่า Field Service" />
               <Title LCID="1055" Text="Field Service Ayarları" />
-              <Title LCID="1058" Text="Настройки Field Service" />
+              <Title LCID="1058" Text="Параметри Field Service" />
               <Title LCID="1066" Text="Thiết đặt Field Service" />
               <Title LCID="2052" Text="Field Service 设置" />
               <Title LCID="3076" Text="Field Service 設定" />
@@ -338,6 +364,16 @@
         </NavBarAreas>
       </Navigation>
       <controlDescriptions />
+      <formLibraries>
+        <Library name="msdyn_/ScheduleCommon/BookingStatus/Scripts/BookingStatusActions.js" libraryUniqueId="{4C08BB5D-A960-46A5-970A-CACF953A8043}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="true" active="true">
+          <Handlers>
+            <Handler functionName="OnLoad" libraryName="msdyn_/ScheduleCommon/BookingStatus/Scripts/BookingStatusActions.js" handlerUniqueId="{21f9771f-2ee1-4827-92f4-0ad3ecae0a43}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
     </form>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />

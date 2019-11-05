@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<optionset Name="msemr_careplanactivitystatus" localizedName="Care Plan Activity Status" description="Identifies what progress is being made for the specific activity.">
+<optionset Name="msemr_careplanactivitystatus" localizedName="Care Plan Activity Status" description="Identifies what progress is being made for the specific activity." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <OptionSetType>picklist</OptionSetType>
   <IsGlobal>1</IsGlobal>
   <IntroducedVersion>1.4</IntroducedVersion>

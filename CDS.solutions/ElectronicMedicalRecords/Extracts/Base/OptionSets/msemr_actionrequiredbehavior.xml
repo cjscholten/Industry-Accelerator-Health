@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<optionset Name="msemr_actionrequiredbehavior" localizedName="Action Required Behavior" description="Must, Could, Must-unless-documented">
+<optionset Name="msemr_actionrequiredbehavior" localizedName="Action Required Behavior" description="Must, Could, Must-unless-documented" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <OptionSetType>picklist</OptionSetType>
   <IsGlobal>1</IsGlobal>
   <IntroducedVersion>1.4</IntroducedVersion>

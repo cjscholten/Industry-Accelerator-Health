@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{251004fd-c67e-e811-a83f-000d3a33b3a3}</WebResourceId>
   <Name>msemr_observation32</Name>
   <WebResourceType>5</WebResourceType>

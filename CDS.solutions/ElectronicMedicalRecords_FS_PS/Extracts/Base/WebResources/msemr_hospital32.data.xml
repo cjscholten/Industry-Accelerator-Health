@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{5b48c486-9f80-e811-a83b-000d3a33bdbd}</WebResourceId>
   <Name>msemr_hospital32</Name>
   <WebResourceType>5</WebResourceType>

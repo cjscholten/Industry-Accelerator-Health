@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{173a87f1-1b7a-e811-a83b-000d3a33b1e4}</WebResourceId>
   <Name>msemr_harrymindset</Name>
   <DisplayName>harryMindset</DisplayName>

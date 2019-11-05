@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{b7c1989e-6f7e-e811-a83f-000d3a33b3a3}</WebResourceId>
   <Name>msemr_allergyintoleranceicon</Name>
   <LanguageCode>1033</LanguageCode>

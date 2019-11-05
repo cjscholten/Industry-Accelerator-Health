@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{d5371924-a97a-e811-a83b-000d3a33b3be}</WebResourceId>
   <Name>msemr_icon_nurse</Name>
   <DisplayName>Icon Nurse</DisplayName>

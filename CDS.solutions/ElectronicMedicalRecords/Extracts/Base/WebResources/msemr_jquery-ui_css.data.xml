@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{7721c44c-2681-e811-a83c-000d3a33b3be}</WebResourceId>
   <Name>msemr_jquery-ui_css</Name>
   <DisplayName>jquery-ui_css</DisplayName>

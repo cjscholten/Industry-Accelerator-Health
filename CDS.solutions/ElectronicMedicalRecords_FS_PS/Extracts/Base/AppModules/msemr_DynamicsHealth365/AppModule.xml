@@ -5,6 +5,7 @@
   <WebResourceId>1ed57b56-af79-e811-a838-000d3a33b56b</WebResourceId>
   <FormFactor>1</FormFactor>
   <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
   <AppModuleComponents>
     <AppModuleComponent type="62" schemaName="msemr_DynamicsHealth365" />
     <AppModuleComponent type="1" schemaName="account" />
@@ -452,8 +453,8 @@
     <AppModuleComponent type="1" schemaName="msdyn_workhourtemplate" />
   </AppModuleComponents>
   <AppModuleRoleMaps>
-    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
     <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
   </AppModuleRoleMaps>
   <LocalizedNames>
     <LocalizedName description="Dynamics Health 365" languagecode="1033" />

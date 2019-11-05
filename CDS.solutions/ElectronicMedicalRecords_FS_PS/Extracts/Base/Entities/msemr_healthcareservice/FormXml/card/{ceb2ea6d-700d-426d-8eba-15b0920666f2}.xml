@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<forms>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <systemform>
     <formid>{ceb2ea6d-700d-426d-8eba-15b0920666f2}</formid>
     <IntroducedVersion>1.4</IntroducedVersion>

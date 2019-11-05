@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{ea214d36-8374-e811-a83a-000d3a33bdbd}</WebResourceId>
   <Name>msemr_tc_ithing_css</Name>
   <DisplayName>iThing</DisplayName>
