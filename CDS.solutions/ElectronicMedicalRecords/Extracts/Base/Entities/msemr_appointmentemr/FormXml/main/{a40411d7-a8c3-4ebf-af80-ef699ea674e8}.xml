@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form headerdensity="HighWithControls">
       <tabs>
         <tab id="{438b9f88-3906-4e2c-85bb-b0922fe0c451}" name="{438b9f88-3906-4e2c-85bb-b0922fe0c451}" IsUserDefined="1" showlabel="true" expanded="true" locklevel="0" verticallayout="true">
           <labels>
@@ -81,6 +81,14 @@
                           <label description="Owner" languagecode="1033" />
                         </labels>
                         <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{494cbd58-6b0f-432c-9409-320c97b2850d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Appointment Status" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_appointmentstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="msemr_appointmentstatus" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -281,7 +289,7 @@
         </rows>
       </header>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar />
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
@@ -310,6 +318,28 @@
           </NavBarArea>
         </NavBarAreas>
       </Navigation>
+      <footer id="{04dda75b-1472-4ea1-87ef-6998dac2f3a1}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{69c3f827-a4d3-4603-99ec-c95df93bf910}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c6686637-79e8-4b13-9094-27043f0edbab}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{05829e0e-21f2-4ae4-a101-29adcb2b9d06}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true" />
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

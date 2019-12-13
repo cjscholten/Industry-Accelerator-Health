@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="msemr_appointmenttype" localizedName="Appointment Type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.8.3.2</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Appointment Type" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="935000000">
+      <labels>
+        <label description="Check Up" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="935000001">
+      <labels>
+        <label description="Emergency" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="935000002">
+      <labels>
+        <label description="Follow Up" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="935000003">
+      <labels>
+        <label description="Routine" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="935000004">
+      <labels>
+        <label description="Walk In" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

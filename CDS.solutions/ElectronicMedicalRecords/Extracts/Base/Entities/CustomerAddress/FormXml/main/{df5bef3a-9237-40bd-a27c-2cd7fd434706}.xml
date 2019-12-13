@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <systemform unmodified="1">
+  <systemform>
     <formid>{df5bef3a-9237-40bd-a27c-2cd7fd434706}</formid>
     <IntroducedVersion>5.0.0.0</IntroducedVersion>
     <FormPresentation>0</FormPresentation>
@@ -87,7 +87,7 @@
                         </labels>
                         <control id="city" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="city" />
                       </cell>
-                      <cell id="{a427cb71-edc1-4800-a0c4-aa921820f17f}">
+                      <cell id="{b8c54b77-2905-3125-b30a-3e04de577bdc}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -121,7 +121,7 @@
                         </labels>
                         <control id="telephone2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="telephone2" />
                       </cell>
-                      <cell id="{6d915df1-ae01-463b-a735-e8850bc58e63}">
+                      <cell id="{6d915df1-ae01-463b-a735-e8850bc58e63}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -155,7 +155,7 @@
                         </labels>
                         <control id="freighttermscode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="freighttermscode" />
                       </cell>
-                      <cell id="{8073d79b-05e9-4a3f-9278-577fae9f9bb0}">
+                      <cell id="{8073d79b-05e9-4a3f-9278-577fae9f9bb0}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -168,6 +168,36 @@
           </columns>
         </tab>
       </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
     </form>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />

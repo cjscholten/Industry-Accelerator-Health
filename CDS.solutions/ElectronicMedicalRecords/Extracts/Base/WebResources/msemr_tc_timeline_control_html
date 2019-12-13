@@ -1,132 +1,167 @@
 <html><head>
-<meta></head>
-<body style="word-wrap: break-word;">
-    <meta charset="utf-8">
     <title>Timeline Control</title>
-    <link rel="stylesheet" href="../WebResources/msemr_tc_ithing_css">
+
     <link rel="stylesheet" href="../WebResources/msemr_tc_common_css">
-    <link rel="stylesheet" href="../WebResources/msemr_tc_multi_select_css">
+    <link rel="stylesheet" href="../WebResources/msemr_jquery-ui_css">
+
     <script src="../WebResources/msemr_jquery214" type="text/javascript"></script>
     <script src="../WebResources/msemr_moment" type="text/javascript"></script>
-    <script src="../WebResources/msemr_XrmServiceToolkit_JS" type="text/javascript"></script>   
+    <script src="../WebResources/msemr_XrmServiceToolkit_JS" type="text/javascript"></script>
     <script src="../WebResources/msemr_jquery-ui.min" type="text/javascript"></script>
-    <link rel="stylesheet" href="../WebResources/msemr_jquery-ui_css">   
-    <script src="../WebResources/msemr_tc_jqdaterangeslider_js"></script>
-    <script src="../WebResources/msemr_tc_multiple_select_js"></script>
     <script src="../WebResources/msemr_Controller_js" type="text/javascript"></script>
-
+    <script src="ClientGlobalContext.js.aspx" type="text/javascript"></script>
+<meta></head>
+<body style="word-wrap: break-word;">
     <div class="wrapper" style="font-family: undefined;">
+
         <div class="timelineControl">
             <div class="subSet">
                 <div class="left searchControl">
+
+                    <!-- event selection control -->
+                    <div id="eventSelect" onclick="javascript:showCheckboxOptions()">All Events ▼</div>
+
+                    <div id="checkboxEventList" style="display:none">
+                        <div>
+                            <input type="checkbox" value="0" checked="">[All Events]
+                        </div>
+                        <div>
+                            <input type="checkbox" value="1" name="events" checked="">Appointment
+                        </div>
+                        <div>
+                            <input type="checkbox" value="9" name="events" checked=""> Care Plan
+                        </div>
+                        <div>
+                            <input type="checkbox" value="10" name="events" checked=""> Care Plan Goal
+                        </div>
+                        <div>
+                            <input type="checkbox" value="2" name="events" checked=""> Device Request
+                        </div>
+                        <div>
+                            <input type="checkbox" value="8" name="events" checked=""> Encounter
+                        </div>
+                        <div>
+                            <input type="checkbox" value="3" name="events" checked=""> Medication
+                        </div>
+                        <div>
+                            <input type="checkbox" value="4" name="events" checked=""> Nutrition Order
+                        </div>
+                        <div>
+                            <input type="checkbox" value="6" name="events" checked=""> Procedure Request
+                        </div>
+                        <div>
+                            <input type="checkbox" value="7" name="events" checked=""> Referral
+                        </div>
+                        <div>
+                            <input type="checkbox" value="5" name="events" checked=""> Task
+                        </div>
+                    </div>
+                    <!-- end event selection control -->
+
                     <span>Start</span>
                     <input id="txtStartDate" class="datepicker">
+
+
                     <span>End</span>
                     <input id="txtEndDate" class="datepicker">
-                    <select id="eventList" multiple="multiple">
-                        <option value="1" selected="selected">Appointment</option>
-                        <option value="2" selected="selected">Device</option>
-                        <option value="3" selected="selected">Medication</option>
-                        <option value="4" selected="selected">Nutrition Order</option>
-                        <option value="5" selected="selected">Task</option>
-                        <option value="6" selected="selected">Procedure</option>
-                        <option value="7" selected="selected">Referral</option>
-                        <option value="8" selected="selected">Encounter</option>
-                    </select>
+
+
                     <div class="swicth">
-                        <span id="monthMenu">Month</span>
+                        <span id="monthMenu" class="active">Month</span>
                         <span id="weekMenu">Week</span>
-                        <span id="dayMenu" class="active">Day</span>
+                        <span id="dayMenu">Day</span>
                     </div>
-                </div>
-                <div class="right heading">
-                    <div class="rangebar">
-                        <span class="startDate" style="display:none;"></span>
-                        <span class="endDate" style="display:none;"></span>
-                    </div>
-                    <div id="dateSlider"></div>
                 </div>
             </div>
+
             <div class="subSet draggableEvents">
-                <ul class="monthly monthlyHeader" style="display:none;"></ul>
+                <ul class="monthly monthlyHeader"></ul>
                 <ul class="weekly weeklyHeader" style="display:none;"></ul>
-                <ul class="daily dailyHeader"></ul>
+                <ul class="daily dailyHeader" style="display:none;"></ul>
             </div>
-            <div class="dTable monthly transition" id="monthlyTab" style="display:none;">
+
+            <div class="dTable monthly transition" id="monthlyTab">
             </div>
             <div class="dTable weekly transition" id="weeklyTab" style="display:none;">
             </div>
-            <div class="dTable daily transition" id="dailyTab">
+            <div class="dTable daily transition" id="dailyTab" style="display:none;">
             </div>
+
             <div class="_loader" style="display:none;z-index: 1">
                 <img class="loading" src="/_imgs/processing_loader.gif">
             </div>
         </div>
+
         <div class="errorMessage" style="display:none;">
             <p class="messageText">To enable this content, create the record.</p>
         </div>
-    </div>
-    <script type="text/javascript">
 
+    </div>
+
+    <script type="text/javascript">
         var list = [];
         var regDate = pregDate = new Date();
-        var event = ['1', '2', '3', '4', '5', '6', '7', '8'];
-        var viewType = 1 ;
-        var pid = GetId();
+        var currentStartDate;
+        var currentEndDate;
+        var checkedEvents = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+        var viewType = 3;
+        var pid = parent.Xrm.Page.data.entity.getId();
+        var userId = parent.Xrm.Page.context.getUserId();
+        var userDateFormat = 'MM/DD/YYYY';
         var isChanged = false;
         var defaultName = "NA";
+        var timeLineFooter = '<div class="timelineFooter"> <a class="previousnext round" href = "javascript:movePrevious()"> &#8249 </a> <a  class="previousnext round" href="javascript:moveNext()"> &#8250 </a>  </div> ';
+        var checkboxesVisible = false;
 
         if (pid == '' || pid == null) {
             $('.timelineControl').hide();
             $('.errorMessage').show();
-          
+
         } else {
             $('.errorMessage').hide();
             $('.timelineControl').show();
             getPatientRegistrationDate();
-            loadData(true);            
-        } 
-      
 
-        $("#dateSlider").on("userValuesChanged", function (e, data) {
-          
-            if (!isChanged) {               
-                loadData(true);                
+            var selectedDates = getMinMaxDates();
+            var sDate = moment(selectedDates.min).format('MM/DD/YYYY');
+            var eDate = moment(selectedDates.max).format('MM/DD/YYYY');
 
-                isChanged = true;
-            } else {
-                isChanged = false;
+            loadData(true, sDate, eDate);
+        }
+
+        // EVENTS
+        $("input[type=checkbox]").on("click", function () {
+            var ev = $("input[name=events]");
+
+            if (this.value == 0) //select all
+            {
+                for (var index = 0; index < ev.length; index++) {
+                    ev[index].checked = this.checked;
+                }
             }
 
-        });
-
-        $('#dateSlider').on('valuesChanging', function (e, data) {
-            if (viewType == 1) {
-                $('#dailyTab').html('');
-            } else if (viewType == 2) {
-                $('#weeklyTab').html('');
-            } else if (viewType == 3) {
-                $('#monthlyTab').html('');
+            checkedEvents = [];
+            for (var index = 0; index < ev.length; index++) {
+                if (ev[index].checked)
+                    checkedEvents.push(ev[index].value);
             }
-            isChanged = false;
 
-        });
-        $('select').multipleSelect({
-            selectAllText: 'All Activities',
-            onClick: function (view) {
-                event = $('select').val() == null ? '' : $('select').val();
-                loadData(false);
-            },
-            onCheckAll: function () {
-                event = $('select').val() == null ? '' : $('select').val();
-                loadData(false);
-            },
-            onUncheckAll: function () {
-                event = $('select').val() == null ? '' : $('select').val();
-                loadData(false);
-            },
-            placeholder: "Activities"
+            var selectedDates = getMinMaxDates();
+            var sDate = moment(selectedDates.min).format('MM/DD/YYYY');
+            var eDate = moment(selectedDates.max).format('MM/DD/YYYY');
 
+            var eventSelect = document.getElementById("eventSelect");        
+            var arrow = eventSelect.innerText.slice(-1);
+            if (checkedEvents.length == 0)
+                eventSelect.innerText = "Events " + arrow;
+            else
+                if (checkedEvents.length == ev.length)
+                    eventSelect.innerText = "All Events " + arrow;
+                else
+                    eventSelect.innerText = checkedEvents.length + " out of " + ev.length + " events " + arrow
+
+
+            loadData(false, sDate, eDate);
         });
 
         $("#dayMenu").click(function () {
@@ -134,7 +169,7 @@
                 isChanged = false;
                 $(this).addClass("active");
                 $("#weekMenu").removeClass("active");
-                $("#monthMenu").removeClass("active");              
+                $("#monthMenu").removeClass("active");
                 viewType = 1;
                 regDate = pregDate;
                 var minDate = '';
@@ -154,8 +189,8 @@
                 $('#txtStartDate').val(minDate);
                 $('#txtEndDate').val(maxDate);
 
-                loadSlider();
-                $('#dateSlider').trigger("userValuesChanged");
+
+                refreshTimeline();
                 $('.weekly').hide();
                 $('.monthly').hide();
                 $('.daily').show();
@@ -189,8 +224,7 @@
                 $('#txtStartDate').val(minDate);
                 $('#txtEndDate').val(moment().format('MM/DD/YYYY'));
 
-                loadSlider();
-                $('#dateSlider').trigger("userValuesChanged");
+                refreshTimeline();
                 $('.daily').hide();
                 $('.monthly').hide();
                 $('.weekly').show();
@@ -202,7 +236,7 @@
                 $(this).addClass("active");
                 isChanged = false;
                 $("#weekMenu").removeClass("active");
-                $("#dayMenu").removeClass("active");              
+                $("#dayMenu").removeClass("active");
 
                 viewType = 3;
                 regDate = pregDate;
@@ -223,652 +257,989 @@
                 $('#txtStartDate').val(minDate);
                 $('#txtEndDate').val(maxDate);
 
-                loadSlider();
-                $('#dateSlider').trigger("userValuesChanged");
+                refreshTimeline();
                 $('.weekly').hide();
                 $('.daily').hide();
                 $('.monthly').show();
             }
         });
 
-        function loadData(doSync) {
-            $("._loader").show();
-            setTimeout(function () {           
-            var selectedDates = $("#dateSlider").dateRangeSlider('values');
-            var sDate = moment(selectedDates.min).format('MM/DD/YYYY');
-            var eDate = moment(selectedDates.max).format('MM/DD/YYYY');
-           
-            var startDate = moment(selectedDates.min).format('MM/DD/YYYY');
-            var endDate = moment(selectedDates.max).format('MM/DD/YYYY');
+        $("#txtStartDate").change(function () {
+            isChanged = false;
+            var Date = '', currDate = '';
 
-            $('#txtStartDate').val(sDate);
-            $('#txtEndDate').val(eDate);
-
-            if (doSync) {
-                list = [];
-                if (event.indexOf('1') > -1) {
-                    loadAppointments(sDate, eDate);
-                }
-                if (event.indexOf('2') > -1) {
-                    loadDevices(sDate, eDate);
-                }
-                if (event.indexOf('3') > -1) {
-                    loadMedications(sDate, eDate);
-                }
-                if (event.indexOf('4') > -1) {
-                    NutritionOrders(sDate, eDate);
-                }
-                if (event.indexOf('5') > -1) {
-                    Tasks(sDate, eDate);
-                }
-                if (event.indexOf('6') > -1) {
-                    Procedures(sDate, eDate);
-                }
-                if (event.indexOf('7') > -1) {
-                    Referrals(sDate, eDate);
-                }
-                if (event.indexOf('8') > -1) {
-                    Encounter(sDate, eDate);
-                }
-            }
-
-            event = $('select').val() == null ? '' : $('select').val();
-            var fltrData = list.filter(function (e) { return this.indexOf(e.type.toString()) > -1; }, event);
-            fltrData.sort(dateSort);
+            if (moment($(this).datepicker('getDate')).diff(pregDate) < 0)
+                currDate = pregDate;
+            else if (moment().diff($(this).datepicker('getDate')) < 0)
+                currDate = moment().format('MM/DD/YYYY');
+            else
+                currDate = moment($(this).datepicker('getDate')).format('MM/DD/YYYY');
+            $(this).datepicker('setDate', currDate);
 
             if (viewType == 1) {
-                var dates = getDateRange(startDate, endDate, 'MM/DD/YYYY');
-                $('.dailyHeader').empty();
-                $('#dailyTab').empty();
-                $('.weeklyHeader').empty();
-                $('#weeklyTab').empty();
-                $('.monthlyHeader').empty();
-                $('#monthlyTab').empty();
+                var daysdiff = moment().diff(currDate, 'days');
 
-                for (var i = dates.length - 1; i >= 0 ; i--) {
-                    $('.dailyHeader').append('<li>' + dates[i] + '</li>');
-                }
-                for (var i = dates.length - 1; i >= 0 ; i--) {
-                    var innercol = '';
-                    var tblrow = '';
-
-                    var filterData = $.grep(fltrData, function (v) {
-                        return (v.date === dates[i] && moment(v.date) >= moment(startDate) && moment(v.date) <= moment(endDate));
-                    });
-
-                    if (filterData.length > 0) {
-                        for (var j = 0; j < filterData.length; j++) {
-                            if ($('#r-' + j).length == 0) {
-                                var tempcol = '';
-                                for (var k = dates.length - 1 ; k >= 0; k--) {
-                                    if (filterData[j].date == dates[k]) {
-                                        tempcol += '<div class="cellFlex" id="c-' + j + k + '"><div class="note"><img src="' + getTypeImageName(filterData[j].type) + '" alt="' + getTypeImageAltName(filterData[j].type) + '"> <p><a class="truncate openLink" data-id="' + filterData[j].id + '" data-entity="' + filterData[j].entity + '">' + filterData[j].name + '</a></p> </div></div>';
-                                    }
-                                    else if (moment(dates[k]) < moment(pregDate)) {
-                                        tempcol += '<div class="cellFlex greyOut" id="c-' + j + k + '"></div>';
-                                    }
-                                    else {
-                                        tempcol += '<div class="cellFlex" id="c-' + j + k + '"></div>';
-                                    }
-                                }
-                                $('#dailyTab').append('<div class="rowFlex" id="r-' + j + '">' + tempcol + '</div>');
-                            }
-                            else if ($('#r-' + j).length > 0) {
-                                var tempcol = '';
-                                for (var k = dates.length - 1 ; k >= 0; k--) {
-                                    if (filterData[j].date == dates[k]) {
-                                        tempcol = '<div class="note"><img src="' + getTypeImageName(filterData[j].type) + '" alt="' + getTypeImageAltName(filterData[j].type) + '"> <p><a class="truncate openLink" data-id="' + filterData[j].id + '" data-entity="' + filterData[j].entity + '">' + filterData[j].name + '</a></p> </div>';
-                                        $('#c-' + j + k).append(tempcol);
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                }
-                if ($('#dailyTab').is(':empty')) {
-                    $('#dailyTab').append('<div class="noRecordFound">' + '<img src="/_imgs/EmptyStates/default.png"><p>No Record(s) found.</p>' + '</div>');
-                }
-
+                if (currDate == $('#txtEndDate').val())
+                    Date = currDate;
+                else if (daysdiff < 6)
+                    Date = moment().format('MM/DD/YYYY');
+                else
+                    Date = moment(currDate).add(6, 'd').format('MM/DD/YYYY');
             }
             else if (viewType == 2) {
-                var dates = getDateRange(startDate, endDate, 'MM/DD/YYYY');
-
-                $('.dailyHeader').empty();
-                $('#dailyTab').empty();
-                $('.weeklyHeader').empty();
-                $('#weeklyTab').empty();
-                $('.monthlyHeader').empty();
-                $('#monthlyTab').empty();
-
-                for (var i = dates.length - 1; i >= 0 ; i--) {
-                    $('.weeklyHeader').append('<li>' + dates[i] + '</li>');
-                }
-                for (var i = 0 ; i <= dates.length - 1; i++) {
-                    var innercol = '';
-                    var tblrow = '';
-
-                    var filterData = $.grep(fltrData, function (v) {                        
-                        if (i == 0) {
-                            return (moment(v.date) >= moment(dates[i]) && moment(v.date) >= moment(startDate) && moment(v.date) <= moment(endDate));
-                        }
-                        else {
-                            return (moment(v.date) >= moment(dates[i]) && (((moment(v.date) < moment(dates[i - 1])) && dates[i - 1] != undefined) || (v.date == dates[i] && i == 0)) && moment(v.date) >= moment(startDate) && moment(v.date) <= moment(endDate));
-                        }
-                    });
-
-
-
-                    if (filterData.length > 0) {
-                        for (var j = 0; j < filterData.length; j++) {
-                            if ($('#r-' + j).length == 0) {
-                                var tempcol = '';
-                                var isMatch = false;
-                                for (var k = dates.length - 1 ; k >= 0; k--) {                                    
-
-                                    if (moment(filterData[j].date) >= moment(dates[k]) && moment(filterData[j].date) < moment(dates[k - 1]) && isMatch == false) {
-                                        tempcol += '<div class="cellFlex" id="c-' + j + k + '"><div class="note"><img src="' + getTypeImageName(filterData[j].type) + '" alt="' + getTypeImageAltName(filterData[j].type) + '"> <p><a class="truncate openLink" data-id="' + filterData[j].id + '" data-entity="' + filterData[j].entity + '">' + filterData[j].name + '</a></p> </div></div>';
-                                        isMatch = true;
-                                    }                                 
-                                    else if (moment(dates[k]) < moment(pregDate).startOf('week')) {                
-                                        tempcol += '<div class="cellFlex greyOut" id="c-' + j + k + '"></div>';
-                                    }
-                                    else {
-                                        tempcol += '<div class="cellFlex" id="c-' + j + k + '"></div>';
-                                    }
-                                }
-                                $('#weeklyTab').append('<div class="rowFlex" id="r-' + j + '">' + tempcol + '</div>');
-                            }
-                            else if ($('#r-' + j).length > 0) {
-                                var tempcol = '';
-                                for (var k = 0; k <= dates.length - 1; k++) {                                   
-                                    if (moment(filterData[j].date) >= moment(dates[k]) && moment(filterData[j].date) < moment(dates[k - 1])) {
-                                        tempcol = '<div class="note"><img src="' + getTypeImageName(filterData[j].type) + '" alt="' + getTypeImageAltName(filterData[j].type) + '"> <p><a class="truncate openLink" data-id="' + filterData[j].id + '" data-entity="' + filterData[j].entity + '">' + filterData[j].name + '</a></p> </div>';
-                                      
-                                        $('#c-' + j + k).append(tempcol);
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                }
-
-                if ($('#weeklyTab').is(':empty')) {
-                    $('#weeklyTab').append('<div class="noRecordFound">' + '<img src="/_imgs/EmptyStates/default.png"><p>No Record(s) found.</p>' + '</div>');
-                }
+                var weeksdiff = moment().diff(currDate, 'weeks');
+                if (currDate == $('#txtEndDate').val())
+                    Date = currDate;
+                else if (weeksdiff < 3)
+                    Date = moment().format('MM/DD/YYYY');
+                else
+                    Date = moment(currDate).add(3, 'weeks').format('MM/DD/YYYY');
             }
             else if (viewType == 3) {
-                var dates = getDateRange(startDate, endDate, 'MM/DD/YYYY');
-                $('.dailyHeader').empty();
-                $('#dailyTab').empty();
-                $('.weeklyHeader').empty();
-                $('#weeklyTab').empty();
-                $('.monthlyHeader').empty();
-                $('#monthlyTab').empty();
+                var monthsdiff = moment().diff(currDate, 'months');
+                if (currDate == $('#txtEndDate').val())
+                    Date = currDate;
+                else if (monthsdiff < 5)
+                    Date = moment().format('MM/DD/YYYY');
+                else
+                    Date = moment(currDate).add(5, 'months').format('MM/DD/YYYY');
+            }
+            $('#txtEndDate').val(Date);
 
-                for (var i = dates.length - 1; i >= 0 ; i--) {
-                    $('.monthlyHeader').append('<li>' + moment(dates[i]).format('MMM') + ' ' + moment(dates[i]).year() + '</li>');
+            refreshTimeline();
+        });
+
+        $("#txtEndDate").change(function () {
+            isChanged = false;
+            var Date = '', currDate = '';
+
+            if (moment($(this).datepicker('getDate')).diff(pregDate) < 0)
+                currDate = pregDate;
+            else if (moment().diff($(this).datepicker('getDate')) < 0)
+                currDate = moment().format('MM/DD/YYYY');
+            else
+                currDate = moment($(this).datepicker('getDate')).format('MM/DD/YYYY');
+
+            $(this).datepicker('setDate', currDate);
+            regDate = currDate;
+
+            if (viewType == 1) {
+                var daysdiff = moment(currDate).diff(moment(pregDate).format('MM/DD/YYYY'), 'days');
+                if (currDate == $('#txtStartDate').val())
+                    Date = currDate;
+                else if (daysdiff < 6)
+                    Date = moment(pregDate).format('MM/DD/YYYY');
+                else
+                    Date = moment(currDate).subtract(6, 'd').format('MM/DD/YYYY');
+            }
+            else if (viewType == 2) {
+                var weeksdiff = moment(currDate).diff(moment(pregDate).format('MM/DD/YYYY'), 'weeks');
+                if (currDate == $('#txtStartDate').val())
+                    Date = currDate;
+                else if (weeksdiff < 3)
+                    Date = moment(pregDate).format('MM/DD/YYYY');
+                else
+                    Date = moment(currDate).subtract(3, 'weeks').format('MM/DD/YYYY');
+            }
+            else if (viewType == 3) {
+                var monthsdiff = moment(currDate).diff(moment(pregDate).format('MM/DD/YYYY'), 'months');
+                if (currDate == $('#txtStartDate').val())
+                    Date = currDate;
+                else if (monthsdiff < 5)
+                    Date = moment(pregDate).format('MM/DD/YYYY');
+                else
+                    Date = moment(currDate).subtract(5, 'months').format('MM/DD/YYYY');
+            }
+            $('#txtStartDate').val(Date);
+
+            refreshTimeline();
+        });
+
+        // FUNCTIONS
+
+        function showCheckboxOptions() {
+            var checkboxes = document.getElementById("checkboxEventList");
+            var eventSelect = document.getElementById("eventSelect");
+            if (!checkboxesVisible) {
+                eventSelect.innerText = eventSelect.innerText.replace("▼", "▲");
+                checkboxes.style.display = '';
+                checkboxesVisible = true;
+            }
+            else {
+                eventSelect.innerText = eventSelect.innerText.replace("▲","▼");
+                checkboxes.style.display = 'none';
+                checkboxesVisible = false;
+            }
+        }
+
+        function loadData(doSync, sDate, eDate) {
+            $("._loader").show();
+            setTimeout(async function () {
+
+                currentStartDate = sDate;
+                currentEndDate = eDate;
+
+                var startDate = sDate; //moment(selectedDates.min).format('MM/DD/YYYY');
+                var endDate = eDate; //moment(selectedDates.max).format('MM/DD/YYYY');
+
+                $('#txtStartDate').val(sDate);
+                $('#txtEndDate').val(eDate);
+
+                if (doSync) {
+                    await loadUserDateFormat();
+
+                    list = [];
+                    if (checkedEvents.indexOf('1') > -1) {
+                        await loadAppointments(sDate, eDate);
+                    }
+                    if (checkedEvents.indexOf('2') > -1) {
+                        await loadDevices(sDate, eDate);
+                    }
+                    if (checkedEvents.indexOf('3') > -1) {
+                        await loadMedications(sDate, eDate);
+                    }
+                    if (checkedEvents.indexOf('4') > -1) {
+                        await NutritionOrders(sDate, eDate);
+                    }
+                    if (checkedEvents.indexOf('5') > -1) {
+                        await Tasks(sDate, eDate);
+                    }
+                    if (checkedEvents.indexOf('6') > -1) {
+                        await Procedures(sDate, eDate);
+                    }
+                    if (checkedEvents.indexOf('7') > -1) {
+                        await Referrals(sDate, eDate);
+                    }
+                    if (checkedEvents.indexOf('8') > -1) {
+                        await Encounter(sDate, eDate);
+                    }
+                    if (checkedEvents.indexOf('9') > -1) {
+                        await CarePlan(sDate, eDate);
+                    }
+                    if (checkedEvents.indexOf('10') > -1) {
+                        await CarePlanGoal(sDate, eDate);
+                    }
                 }
-                for (var i = 0 ; i <= dates.length - 1; i++) {
-                    var innercol = '';
-                    var tblrow = '';
-                    var filterData = $.grep(fltrData, function (v) {
-                        return (moment(v.date).month() + 1 == moment(dates[i]).month() + 1 && moment(v.date).year() == moment(dates[i]).year() &&
-                            moment(v.date) >= moment(startDate) &&
-                            moment(v.date) <= moment(endDate));
-                    });
-                    if (filterData.length > 0) {
-                        for (var j = 0; j < filterData.length; j++) {
-                            if ($('#r-' + j).length == 0) {
-                                var tempcol = '';
-                                var isMatch = false;
-                                for (var k = dates.length - 1 ; k >= 0; k--) {
-                                    if (moment(filterData[j].date).month() + 1 == moment(dates[k]).month() + 1 && moment(filterData[j].date).year() == moment(dates[k]).year() && isMatch == false) {
-                                        tempcol += '<div class="cellFlex" id="c-' + j + k + '"><div class="note"><img src="' + getTypeImageName(filterData[j].type) + '" alt="' + getTypeImageAltName(filterData[j].type) + '"> <p><a class="truncate openLink" data-id="' + filterData[j].id + '" data-entity="' + filterData[j].entity + '">' + filterData[j].name + '</a></p> </div></div>';
-                                        isMatch = true;
+
+                //event = $('select').val() == null ? '' : $('select').val();
+                var fltrData = list.filter(function (e) { return this.indexOf(e.type.toString()) > -1; }, checkedEvents);
+                fltrData.sort(dateSort);
+
+                var rowCount = 0;
+                var minRowCount = 10; // used to store the minimum rows to be shown in the grid, regardless the number of matching events.
+
+                if (viewType == 1) {
+                    var dates = getDateRange(startDate, endDate, 'MM/DD/YYYY');
+                    $('.dailyHeader').empty();
+                    $('#dailyTab').empty();
+                    $('.weeklyHeader').empty();
+                    $('#weeklyTab').empty();
+                    $('.monthlyHeader').empty();
+                    $('#monthlyTab').empty();
+
+                    for (var i = dates.length - 1; i >= 0; i--) {
+                        $('.dailyHeader').append('<li>' + dates[i] + '</li>');
+                    }
+                    for (var i = dates.length - 1; i >= 0; i--) {
+                        var innercol = '';
+                        var tblrow = '';
+
+                        var filterData = $.grep(fltrData, function (v) {
+                            return (v.date === dates[i] && moment(v.date) >= moment(startDate) && moment(v.date) <= moment(endDate));
+                        });
+
+                        if (filterData.length > 0) {
+                            for (var j = 0; j < filterData.length; j++) {
+                                if ($('#r-' + j).length == 0) {
+                                    var tempcol = '';
+                                    for (var k = dates.length - 1; k >= 0; k--) {
+                                        if (filterData[j].date == dates[k]) {
+                                            tempcol += '<div class="cellFlex" id="c-' + j + k + '"><div class="note"><img src="' + getTypeImageName(filterData[j].type) + '" alt="' + getTypeImageAltName(filterData[j].type) + '"> <p><a class="truncate openLink" data-id="' + filterData[j].id + '" data-entity="' + filterData[j].entity + '">' + filterData[j].name + '</a></p> </div></div>';
+                                        }
+                                        else if (moment(dates[k]) < moment(pregDate)) {
+                                            tempcol += '<div class="cellFlex greyOut" id="c-' + j + k + '"></div>';
+                                        }
+                                        else {
+                                            tempcol += '<div class="cellFlex" id="c-' + j + k + '"></div>';
+                                        }
                                     }
-                                    else if (moment(dates[k]) < moment(pregDate)) {
-                                        tempcol += '<div class="cellFlex greyOut" id="c-' + j + k + '"></div>';
-                                    }
-                                    else {
-                                        tempcol += '<div class="cellFlex" id="c-' + j + k + '"></div>';
-                                    }
+                                    $('#dailyTab').append('<div class="rowFlex" id="r-' + j + '">' + tempcol + '</div>');
+                                    rowCount += 1;
                                 }
-                                $('#monthlyTab').append('<div class="rowFlex" id="r-' + j + '">' + tempcol + '</div>');
-                            }
-                            else if ($('#r-' + j).length > 0) {
-                                var tempcol = '';
-                                for (var k = 0; k <= dates.length - 1; k++) {
-                                    if (moment(filterData[j].date).month() + 1 == moment(dates[k]).month() + 1 && moment(filterData[j].date).year() == moment(dates[k]).year()) {
-                                        tempcol = '<div class="note"><img src="' + getTypeImageName(filterData[j].type) + '" alt="' + getTypeImageAltName(filterData[j].type) + '"> <p><a class="truncate openLink" data-id="' + filterData[j].id + '" data-entity="' + filterData[j].entity + '">' + filterData[j].name + '</a></p> </div>';
-                                        $('#c-' + j + k).append(tempcol);
+                                else if ($('#r-' + j).length > 0) {
+                                    var tempcol = '';
+                                    for (var k = dates.length - 1; k >= 0; k--) {
+                                        if (filterData[j].date == dates[k]) {
+                                            tempcol = '<div class="note"><img src="' + getTypeImageName(filterData[j].type) + '" alt="' + getTypeImageAltName(filterData[j].type) + '"> <p><a class="truncate openLink" data-id="' + filterData[j].id + '" data-entity="' + filterData[j].entity + '">' + filterData[j].name + '</a></p> </div>';
+                                            $('#c-' + j + k).append(tempcol);
+                                        }
                                     }
                                 }
                             }
                         }
+
+                    }
+                    if ($('#dailyTab').is(':empty')) {
+                        $('#dailyTab').append('<div class="noRecordFound">' + '<img src="/_imgs/EmptyStates/default.png"><p>No Record(s) found.</p>' + '</div>');
+                    }
+                    else {
+                        while (rowCount < minRowCount) {
+                            var tempcol = '';
+                            for (var k = dates.length - 1; k >= 0; k--) {
+                                if (moment(dates[k]) < moment(pregDate)) {
+                                    tempcol += '<div class="cellFlex greyOut" id="c-' + j + k + '"></div>';
+                                }
+                                else {
+                                    tempcol += '<div class="cellFlex" id="c-' + j + k + '"></div>';
+                                }
+                            }
+                            $('#dailyTab').append('<div class="rowFlex" id="r-' + j + '">' + tempcol + '</div>');
+                            rowCount += 1;
+                        }
+                    }
+                    
+                    $('#dailyTab').append(timeLineFooter);
+                }
+                else if (viewType == 2) {
+                    var dates = getDateRange(startDate, endDate, 'MM/DD/YYYY');
+
+                    $('.dailyHeader').empty();
+                    $('#dailyTab').empty();
+                    $('.weeklyHeader').empty();
+                    $('#weeklyTab').empty();
+                    $('.monthlyHeader').empty();
+                    $('#monthlyTab').empty();
+
+                    for (var i = dates.length - 1; i >= 0; i--) {
+                        //var nextWeek = eDate = moment(dates[i]).add(7, 'days').format('MM/DD/YYYY');
+                        $('.weeklyHeader').append('<li><a href=javascript:openWeek("' + dates[i] + '")>' + dates[i] + '</a></li>');
+                    }
+                    for (var i = 0; i <= dates.length - 1; i++) {
+                        var innercol = '';
+                        var tblrow = '';
+
+                        var filterData = $.grep(fltrData, function (v) {
+                            if (i == 0) {
+                                return (moment(v.date) >= moment(dates[i]) && moment(v.date) >= moment(startDate) && moment(v.date) <= moment(endDate));
+                            }
+                            else {
+                                return (moment(v.date) >= moment(dates[i]) && (((moment(v.date) < moment(dates[i - 1])) && dates[i - 1] != undefined) || (v.date == dates[i] && i == 0)) && moment(v.date) >= moment(startDate) && moment(v.date) <= moment(endDate));
+                            }
+                        });
+
+
+                        if (filterData.length > 0) {
+                            for (var j = 0; j < filterData.length; j++) {
+                                if ($('#r-' + j).length == 0) {
+                                    var tempcol = '';
+                                    var isMatch = false;
+                                    for (var k = dates.length - 1; k >= 0; k--) {
+
+                                        if (moment(filterData[j].date) >= moment(dates[k]) && moment(filterData[j].date) < moment(dates[k - 1]) && isMatch == false) {
+                                            tempcol += '<div class="cellFlex" id="c-' + j + k + '"><div class="note"><img src="' + getTypeImageName(filterData[j].type) + '" alt="' + getTypeImageAltName(filterData[j].type) + '"> <p><a class="truncate openLink" data-id="' + filterData[j].id + '" data-entity="' + filterData[j].entity + '">' + filterData[j].name + '</a></p> </div></div>';
+                                            isMatch = true;
+                                        }
+                                        else if (moment(dates[k]) < moment(pregDate).startOf('week')) {
+                                            tempcol += '<div class="cellFlex greyOut" id="c-' + j + k + '"></div>';
+                                        }
+                                        else {
+                                            tempcol += '<div class="cellFlex" id="c-' + j + k + '"></div>';
+                                        }
+                                    }
+                                    $('#weeklyTab').append('<div class="rowFlex" id="r-' + j + '">' + tempcol + '</div>');
+                                    rowCount += 1;
+                                }
+                                else if ($('#r-' + j).length > 0) {
+                                    var tempcol = '';
+                                    for (var k = 0; k <= dates.length - 1; k++) {
+                                        if (moment(filterData[j].date) >= moment(dates[k]) && moment(filterData[j].date) < moment(dates[k - 1])) {
+                                            tempcol = '<div class="note"><img src="' + getTypeImageName(filterData[j].type) + '" alt="' + getTypeImageAltName(filterData[j].type) + '"> <p><a class="truncate openLink" data-id="' + filterData[j].id + '" data-entity="' + filterData[j].entity + '">' + filterData[j].name + '</a></p> </div>';
+
+                                            $('#c-' + j + k).append(tempcol);
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
                     }
 
+                    if ($('#weeklyTab').is(':empty')) {
+                        $('#weeklyTab').append('<div class="noRecordFound">' + '<img src="/_imgs/EmptyStates/default.png"><p>No Record(s) found.</p>' + '</div>');
+                    }
+                    else {
+                        while (rowCount < minRowCount) {
+                            var tempcol = '';
+                            for (var k = dates.length - 1; k >= 0; k--) {
+                                if (moment(dates[k]) < moment(pregDate)) {
+                                    tempcol += '<div class="cellFlex greyOut" id="c-' + j + k + '"></div>';
+                                }
+                                else {
+                                    tempcol += '<div class="cellFlex" id="c-' + j + k + '"></div>';
+                                }
+                            }
+                            $('#weeklyTab').append('<div class="rowFlex" id="r-' + j + '">' + tempcol + '</div>');
+                            rowCount += 1;
+                        }
+                    }
+                    $('#weeklyTab').append(timeLineFooter);
                 }
-                if ($('#monthlyTab').is(':empty')) {
-                    $('#monthlyTab').append('<div class="noRecordFound">' + '<img src="/_imgs/EmptyStates/default.png"><p>No Record(s) found.</p>' + '</div>');
+                else if (viewType == 3) {
+                    var dates = getDateRange(startDate, endDate, 'MM/DD/YYYY');
+                    $('.dailyHeader').empty();
+                    $('#dailyTab').empty();
+                    $('.weeklyHeader').empty();
+                    $('#weeklyTab').empty();
+                    $('.monthlyHeader').empty();
+                    $('#monthlyTab').empty();
+ 
+
+                    for (var i = dates.length - 1; i >= 0; i--) {
+                        var firstOfMonth = (moment(dates[i]).month() + 01) + "/01/" + moment(dates[i]).year();
+                        $('.monthlyHeader').append('<li><a href=javascript:openMonth("' + firstOfMonth + '")>' + moment(dates[i]).format('MMM') + ' ' + moment(dates[i]).year() + '</li>');
+                    }
+                    for (var i = 0; i <= dates.length - 1; i++) {
+                        var innercol = '';
+                        var tblrow = '';
+                        var filterData = $.grep(fltrData, function (v) {
+                            return (moment(v.date).month() + 1 == moment(dates[i]).month() + 1 && moment(v.date).year() == moment(dates[i]).year() &&
+                                moment(v.date) >= moment(startDate) &&
+                                moment(v.date) <= moment(endDate));
+                        });
+
+
+                        if (filterData.length > 0) {
+                            for (var j = 0; j < filterData.length; j++) {
+                                if ($('#r-' + j).length == 0) {
+                                    var tempcol = '';
+                                    var isMatch = false;
+                                    for (var k = dates.length - 1; k >= 0; k--) {
+                                        if (moment(filterData[j].date).month() + 1 == moment(dates[k]).month() + 1 && moment(filterData[j].date).year() == moment(dates[k]).year() && isMatch == false) {
+                                            tempcol += '<div class="cellFlex" id="c-' + j + k + '"><div class="note"><img src="' + getTypeImageName(filterData[j].type) + '" alt="' + getTypeImageAltName(filterData[j].type) + '"> <p><a class="truncate openLink" data-id="' + filterData[j].id + '" data-entity="' + filterData[j].entity + '">' + filterData[j].name + '</a></p> </div></div>';
+                                            isMatch = true;
+                                        }
+                                        else if (moment(dates[k]) < moment(pregDate)) {
+                                            tempcol += '<div class="cellFlex greyOut" id="c-' + j + k + '"></div>';
+                                        }
+                                        else {
+                                            tempcol += '<div class="cellFlex" id="c-' + j + k + '"></div>';
+                                        }
+                                    }
+                                    $('#monthlyTab').append('<div class="rowFlex" id="r-' + j + '">' + tempcol + '</div>');
+                                    rowCount += 1;
+                                }
+                                else if ($('#r-' + j).length > 0) {
+                                    var tempcol = '';
+                                    for (var k = 0; k <= dates.length - 1; k++) {
+                                        if (moment(filterData[j].date).month() + 1 == moment(dates[k]).month() + 1 && moment(filterData[j].date).year() == moment(dates[k]).year()) {
+                                            tempcol = '<div class="note"><img src="' + getTypeImageName(filterData[j].type) + '" alt="' + getTypeImageAltName(filterData[j].type) + '"> <p><a class="truncate openLink" data-id="' + filterData[j].id + '" data-entity="' + filterData[j].entity + '">' + filterData[j].name + '</a></p> </div>';
+                                            $('#c-' + j + k).append(tempcol);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                    if ($('#monthlyTab').is(':empty')) {
+                        $('#monthlyTab').append('<div class="noRecordFound">' + '<img src="/_imgs/EmptyStates/default.png"><p>No Record(s) found.</p>' + '</div>');
+                    }
+                    else {
+                        while (rowCount < minRowCount) {
+                            var tempcol = '';
+                            for (var k = dates.length - 1; k >= 0; k--) {
+                                if (moment(dates[k]) < moment(pregDate)) {
+                                    tempcol += '<div class="cellFlex greyOut" id="c-' + j + k + '"></div>';
+                                }
+                                else {
+                                    tempcol += '<div class="cellFlex" id="c-' + j + k + '"></div>';
+                                }
+                            }
+                            $('#monthlyTab').append('<div class="rowFlex" id="r-' + j + '">' + tempcol + '</div>');
+                            rowCount += 1;
+                        }
+                    }
+                    $('#monthlyTab').append(timeLineFooter);
                 }
-            }
 
-            $(".note img").click(function () {
-                var $control = $(this).next('p');
-                if ($control.is(":not(:visible)")) {
-                    $control.removeClass('addTranslate');
-                    $control.addClass('removeTranslate');
-                    setTimeout(function () {
-                        $control.show();
-                    }, 300);
-                } else {
-                    $control.addClass('addTranslate');
-                    $control.removeClass('removeTranslate');
-                    setTimeout(function () {
-                        $control.hide();
-                    }, 300);
-                }
-            });
+                $(".note img").click(function () {
+                    var $control = $(this).next('p');
+                    if ($control.is(":not(:visible)")) {
+                        $control.removeClass('addTranslate');
+                        $control.addClass('removeTranslate');
+                        setTimeout(function () {
+                            $control.show();
+                        }, 300);
+                    } else {
+                        $control.addClass('addTranslate');
+                        $control.removeClass('removeTranslate');
+                        setTimeout(function () {
+                            $control.hide();
+                        }, 300);
+                    }
+                });
 
-            $(".openLink").click(function () {
-                var id = $(this).data("id");
-                var entity = $(this).data("entity");
-                openForm(id, entity);
-            });
+                $(".openLink").click(function () {
+                    var id = $(this).data("id");
+                    var entity = $(this).data("entity");
+                    openForm(id, entity);
+                });
 
-            $("._loader").hide();
+                enableDisableBackForward();
+                $("._loader").hide();
+
             }, 500);
         }
 
-        function loadAppointments(sdate, edate) {
-            var query = '<fetch mapping="logical" version="1.0" distinct="false" output-format="xml-platform">'
-                          + '  <entity name="msemr_appointmentemr">'
-                          + '    <attribute name="activityid" />'
-                          + '    <attribute name="subject" />'
-                          + '    <attribute name="msemr_starttime" />'
-                          + '    <filter type="and">'
-                          + '      <condition attribute="msemr_actorpatient" operator="eq" value="'+ pid +'" />'
-                          + '      <condition value="' + sdate + '" attribute="msemr_starttime"  operator="on-or-after"  />'
-                          + '      <condition value="' + edate + '" attribute="msemr_starttime"  operator="on-or-before"  />'
-                          //+ '      <condition value="'+edate+'" attribute="msemr_endtime" operator="on-or-before" />'
-                          + '    </filter>'
-                          + '  </entity>'
-                          + '</fetch>';
+        async function loadUserDateFormat() {
+            var query = "?$select=dateformatstring&$filter=" + encodeURIComponent("systemuserid eq " + userId.replace(/[{}]/g, "")) + "";
 
-            var results = XrmServiceToolkit.Soap.Fetch(query);
-
-            if (results.length > 0) {
-                results.forEach(function (val, index) {
-                    var dataSet = val.attributes;
-                    var item = {};
-
-                    if (dataSet.hasOwnProperty('activityid')) {
-                        item.id = dataSet.activityid.value;
+            return parent.Xrm.WebApi.retrieveMultipleRecords("usersettings", query).then(
+                function success(results) {
+                    if (results.entities.length > 0) {
+                        userDateFormat = results.entities[0].dateformatstring.toUpperCase();
                     }
-
-                    if (dataSet.hasOwnProperty('subject')) {
-                        item.name = dataSet.subject.value;
-                    } else {
-                        item.name = "Appoinment";
-                    }
-
-                    if (dataSet.hasOwnProperty('msemr_starttime')) {
-                        item.date = moment(dataSet.msemr_starttime).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_starttime).format('YYYY-MM-DD HH:mm:ss');
-                    }
-                    item.type = 1;
-                    item.entity = "msemr_appointmentemr";
-                    list.push(item);
-                });
-            }
+                },
+                function (error) {
+                    console.log(error.message);
+                    return Promise.reject(error.message);
+                }
+            );
         }
-        function loadDevices(sdate,edate) {           
+
+        async function loadAppointments(sdate, edate) {
             var query = '<fetch mapping="logical" version="1.0" distinct="false" output-format="xml-platform">'
-                            + '  <entity name="msemr_devicerequest">'
-                            + '    <attribute name="msemr_devicerequestid" />'
-                            + '    <attribute name="msemr_codetype" />'
-                            + '    <attribute name="msemr_codetypererence" />'
-                            + '    <attribute name="msemr_codetypecodeableconcept" />'
-                            + '    <attribute name="msemr_authoredon" />'
-                            + '    <filter type="and">'
-                            + '      <condition value="' + pid + '" attribute="msemr_subjecttypepatient" operator="eq" />'
-                            + '      <condition value="' + edate + '" attribute="msemr_authoredon"  operator="on-or-before"  />'
-                            + '      <condition value="' + sdate + '" attribute="msemr_authoredon" operator="on-or-after" />'
-                            + '    </filter>'
-                            + '  </entity>'
-                            + '</fetch>';
+                + '  <entity name="msemr_appointmentemr">'
+                + '    <attribute name="activityid" />'
+                + '    <attribute name="subject" />'
+                + '    <attribute name="msemr_starttime" />'
+                + '    <filter type="and">'
+                + '      <condition attribute="msemr_actorpatient" operator="eq" value="' + pid + '" />'
+                + '      <condition value="' + sdate + '" attribute="msemr_starttime"  operator="on-or-after"  />'
+                + '      <condition value="' + edate + '" attribute="msemr_starttime"  operator="on-or-before"  />'
+                //+ '      <condition value="'+edate+'" attribute="msemr_endtime" operator="on-or-before" />'
+                + '    </filter>'
+                + '  </entity>'
+                + '</fetch>';
 
-            var results = XrmServiceToolkit.Soap.Fetch(query);
+                return parent.Xrm.WebApi.retrieveMultipleRecords("msemr_appointmentemr", "?fetchXml=" + encodeURIComponent(query)).then(
+                function success(results) {
+                    for (var i = 0; i < results.entities.length; i++) {
+                        var dataSet = results.entities[i];
+                        var item = {};
 
-            if (results.length > 0) {
-                results.forEach(function (val, index) {
-                    var dataSet = val.attributes;
-                    var item = {};
+                        if (dataSet.hasOwnProperty('activityid')) {
+                            item.id = dataSet.activityid;
+                        }
 
-                    if (dataSet.hasOwnProperty('msemr_devicerequestid')) {
-                        item.id = dataSet.msemr_devicerequestid.value;
-                    }
+                        if (dataSet.hasOwnProperty('subject')) {
+                            item.name = dataSet.subject;
+                        } else {
+                            item.name = "Appointment";
+                        }
 
-                    if (dataSet.hasOwnProperty('msemr_codetype')) {
-                        var type = dataSet.msemr_codetype.value;
-                        if (type == 935000000) {
-                            if (dataSet.hasOwnProperty('msemr_codetypererence')) {
-                                item.name = dataSet.msemr_codetypererence.formattedValue;
-                            } else {
-                                item.name = defaultName;
-                            }
-                        } else if (type == 935000001) {
-                            if (dataSet.hasOwnProperty('msemr_codetypecodeableconcept')) {
-                                item.name = dataSet.msemr_codetypecodeableconcept.formattedValue;
+                        if (dataSet.hasOwnProperty('msemr_starttime')) {
+                            item.date = moment(dataSet['msemr_starttime@OData.Community.Display.V1.FormattedValue'], userDateFormat).format('MM/DD/YYYY');
+                            item.dateTime = moment.utc(dataSet.msemr_starttime).format('YYYY-MM-DD HH:mm:ss');
+                        }
+                        item.type = 1;
+                        item.entity = "msemr_appointmentemr";
+                        list.push(item);
+                    };
+                    return Promise.resolve();
+                },
+                function (error) {
+                    console.log(error.message);
+                    return Promise.reject(error.message);
+                }
+            );
+        }
+
+        async function loadDevices(sdate, edate) {
+            var query = '<fetch mapping="logical" version="1.0" distinct="false" output-format="xml-platform">'
+                + '  <entity name="msemr_devicerequest">'
+                + '    <attribute name="msemr_devicerequestid" />'
+                + '    <attribute name="msemr_codetype" />'
+                + '    <attribute name="msemr_codetypererence" />'
+                + '    <attribute name="msemr_codetypecodeableconcept" />'
+                + '    <attribute name="msemr_authoredon" />'
+                + '    <filter type="and">'
+                + '      <condition value="' + pid + '" attribute="msemr_subjecttypepatient" operator="eq" />'
+                + '      <condition value="' + edate + '" attribute="msemr_authoredon"  operator="on-or-before"  />'
+                + '      <condition value="' + sdate + '" attribute="msemr_authoredon" operator="on-or-after" />'
+                + '    </filter>'
+                + '  </entity>'
+                + '</fetch>';
+
+                return parent.Xrm.WebApi.retrieveMultipleRecords("msemr_devicerequest", "?fetchXml=" + encodeURIComponent(query)).then(
+                function success(results) {
+                    for (var i = 0; i < results.entities.length; i++) {
+                        var dataSet = results.entities[i];
+                        var item = {};
+
+                        if (dataSet.hasOwnProperty('msemr_devicerequestid')) {
+                            item.id = dataSet.msemr_devicerequestid;
+                        }
+
+                        if (dataSet.hasOwnProperty('msemr_codetype')) {
+                            var type = dataSet.msemr_codetype;
+                            if (type == 935000000) {
+                                if (dataSet.hasOwnProperty('_msemr_codetypererence_value@OData.Community.Display.V1.FormattedValue')) {
+                                    item.name = dataSet['_msemr_codetypererence_value@OData.Community.Display.V1.FormattedValue'];
+                                } else {
+                                    item.name = defaultName;
+                                }
+                            } else if (type == 935000001) {
+                                if (dataSet.hasOwnProperty('_msemr_codetypecodeableconcept_value@OData.Community.Display.V1.FormattedValue')) {
+                                    item.name = dataSet['_msemr_codetypecodeableconcept_value@OData.Community.Display.V1.FormattedValue'];
+                                } else {
+                                    item.name = "Device Request";
+                                }
                             } else {
                                 item.name = "Device Request";
                             }
-                        } else {
-                            item.name = "Device Request";
                         }
-                    }
 
-                    if (dataSet.hasOwnProperty('msemr_authoredon')) {
-                        item.date = moment(dataSet.msemr_authoredon).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_authoredon).format('YYYY-MM-DD HH:mm:ss');
-                    }
-                    item.type = 2;
-                    item.entity = "msemr_devicerequest";
-                    list.push(item);
-                });
-            }
+                        if (dataSet.hasOwnProperty('msemr_authoredon')) {
+                            item.date = moment(dataSet['msemr_authoredon@OData.Community.Display.V1.FormattedValue'], userDateFormat).format('MM/DD/YYYY');
+                            item.dateTime = moment.utc(dataSet.msemr_authoredon).format('YYYY-MM-DD HH:mm:ss');
+                        }
+                        item.type = 2;
+                        item.entity = "msemr_devicerequest";
+                        list.push(item);
+                    };
+                    return Promise.resolve();
+                },
+                function (error) {
+                    console.log(error.message);
+                    return Promise.reject(error.message);
+                }
+            );
+
         }
-        function loadMedications(sdate, edate) {
+
+        async function loadMedications(sdate, edate) {
             var query = '<fetch mapping="logical" version="1.0" distinct="false" output-format="xml-platform">'
-                              + '  <entity name="msemr_medicationrequest">'
-                              + '    <attribute name="msemr_medicationrequestid" />'
-                              + '    <attribute name="msemr_medicationtype" />'
-                              + '    <attribute name="msemr_medicationtypereference" />'
-                              + '    <attribute name="msemr_medicationtypecodeableconcept" />'
-                              + '    <attribute name="msemr_authoredon" />'
-                              + '    <filter type="and">'
-                              + '      <condition value="' + pid + '" attribute="msemr_subjecttypepatient" operator="eq" />'
-                              + '      <condition value="' + edate + '" attribute="msemr_authoredon"  operator="on-or-before"  />'
-                              + '      <condition value="' + sdate + '" attribute="msemr_authoredon" operator="on-or-after" />'
-                              + '    </filter>'
-                              + '  </entity>'
-                              + '</fetch>';
+                + '  <entity name="msemr_medicationrequest">'
+                + '    <attribute name="msemr_medicationrequestid" />'
+                + '    <attribute name="msemr_medicationtype" />'
+                + '    <attribute name="msemr_medicationreferencenew" />'
+                + '    <attribute name="msemr_medicationtypecodeableconcept" />'
+                + '    <attribute name="msemr_authoredon" />'
+                + '    <filter type="and">'
+                + '      <condition value="' + pid + '" attribute="msemr_subjecttypepatient" operator="eq" />'
+                + '      <condition value="' + edate + '" attribute="msemr_authoredon"  operator="on-or-before"  />'
+                + '      <condition value="' + sdate + '" attribute="msemr_authoredon" operator="on-or-after" />'
+                + '    </filter>'
+                + '  </entity>'
+                + '</fetch>';
 
-            var results = XrmServiceToolkit.Soap.Fetch(query);
+            parent.Xrm.WebApi.retrieveMultipleRecords("msemr_medicationrequest", "?fetchXml=" + encodeURIComponent(query)).then(
+                function success(results) {
+                    for (var i = 0; i < results.entities.length; i++) {
+                        var dataSet = results.entities[i];
+                       var item = {};
 
-            if (results.length > 0) {
-                results.forEach(function (val, index) {
-                    var dataSet = val.attributes;
-                    var item = {};
+                        if (dataSet.hasOwnProperty('msemr_medicationrequestid')) {
+                            item.id = dataSet.msemr_medicationrequestid;
+                        }
 
-                    if (dataSet.hasOwnProperty('msemr_medicationrequestid')) {
-                        item.id = dataSet.msemr_medicationrequestid.value;
-                    }
-
-                    if (dataSet.hasOwnProperty('msemr_medicationtype')) {
-                        var type = dataSet.msemr_medicationtype.value;
-                        if (type == 935000000) {
-                            if (dataSet.hasOwnProperty('msemr_medicationtypecodeableconcept')) {
-                                item.name = dataSet.msemr_medicationtypecodeableconcept.formattedValue;
-                            } else {
-                                item.name = defaultName;
-                            }
-                        } else if (type == 935000001) {
-                            if (dataSet.hasOwnProperty('msemr_medicationtypereference')) {
-                                item.name = dataSet.msemr_medicationtypereference.formattedValue;
+                        if (dataSet.hasOwnProperty('msemr_medicationtype')) {
+                            var type = dataSet.msemr_medicationtype;
+                            if (type == 935000000) {
+                                if (dataSet.hasOwnProperty('_msemr_medicationtypecodeableconcept_value@OData.Community.Display.V1.FormattedValue')) {
+                                    item.name = dataSet['_msemr_medicationtypecodeableconcept_value@OData.Community.Display.V1.FormattedValue'];
+                                } else {
+                                    item.name = defaultName;
+                                }
+                            } else if (type == 935000001) {
+                                if (dataSet.hasOwnProperty('_msemr_medicationtypereference_value@OData.Community.Display.V1.FormattedValue')) {
+                                    item.name = dataSet['_msemr_medicationtypereference_value@OData.Community.Display.V1.FormattedValue'];
+                                } else {
+                                    item.name = "Medication Request";
+                                }
                             } else {
                                 item.name = "Medication Request";
                             }
-                        } else {
-                            item.name = "Medication Request";
                         }
-                    }
 
-                    if (dataSet.hasOwnProperty('msemr_authoredon')) {
-                        item.date = moment(dataSet.msemr_authoredon).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_authoredon).format('YYYY-MM-DD HH:mm:ss');
-                    }
-                    item.type = 3;
-                    item.entity = "msemr_medicationrequest";
-                    list.push(item);
-                });
-            }
+                        if (dataSet.hasOwnProperty('msemr_authoredon')) {
+                            item.date = moment(dataSet['msemr_authoredon@OData.Community.Display.V1.FormattedValue'], userDateFormat).format('MM/DD/YYYY');
+                            item.dateTime = moment.utc(dataSet.msemr_authoredon).format('YYYY-MM-DD HH:mm:ss');
+                        }
+                        item.type = 3;
+                        item.entity = "msemr_medicationrequest";
+                        list.push(item);    
+                    };
+                    return Promise.resolve();
+                },
+                function (error) {
+                    console.log(error.message);
+                    return Promise.reject(error.message);
+                }
+            );
         }
-        function NutritionOrders(sdate, edate) {
+
+        async function NutritionOrders(sdate, edate) {
             var query = '<fetch mapping="logical" version="1.0" distinct="false" output-format="xml-platform">'
-                              + '  <entity name="msemr_nutritionorder">'
-                              + '    <attribute name="msemr_nutritionorderid" />'
-                              //+ '    <attribute name="msemr_name" />'
-                              + '    <attribute name="msemr_datetime" />'
-                              + '    <filter type="and">'
-                              + '      <condition value="' + pid + '" attribute="msemr_patient" operator="eq" />'
-                              + '      <condition value="' + edate + '" attribute="msemr_datetime"  operator="on-or-before"  />'
-                              + '      <condition value="' + sdate + '" attribute="msemr_datetime" operator="on-or-after" />'
-                              + '    </filter>'
-                              + '  </entity>'
-                              + '</fetch>';
+                + '  <entity name="msemr_nutritionorder">'
+                + '    <attribute name="msemr_nutritionorderid" />'
+                //+ '    <attribute name="msemr_name" />'
+                + '    <attribute name="msemr_datetime" />'
+                + '    <filter type="and">'
+                + '      <condition value="' + pid + '" attribute="msemr_patient" operator="eq" />'
+                + '      <condition value="' + edate + '" attribute="msemr_datetime"  operator="on-or-before"  />'
+                + '      <condition value="' + sdate + '" attribute="msemr_datetime" operator="on-or-after" />'
+                + '    </filter>'
+                + '  </entity>'
+                + '</fetch>';
 
-            var results = XrmServiceToolkit.Soap.Fetch(query);
+            parent.Xrm.WebApi.retrieveMultipleRecords("msemr_nutritionorder", "?fetchXml=" + encodeURIComponent(query)).then(
+                function success(results) {
+                    for (var i = 0; i < results.entities.length; i++) {
+                        var dataSet = results.entities[i];
+                        var item = {};
 
-            if (results.length > 0) {
-                results.forEach(function (val, index) {
-                    var dataSet = val.attributes;
-                    var item = {};
+                        if (dataSet.hasOwnProperty('msemr_nutritionorderid')) {
+                            item.id = dataSet.msemr_nutritionorderid;
+                        }
 
-                    if (dataSet.hasOwnProperty('msemr_nutritionorderid')) {
-                        item.id = dataSet.msemr_nutritionorderid.value;
-                    }
+                        //if (dataSet.hasOwnProperty('msemr_name')) {
+                        item.name = "Nutrition Order";
+                        //}
 
-                    //if (dataSet.hasOwnProperty('msemr_name')) {
-                    item.name = "Nutrition Order";
-                    //}
-
-                    if (dataSet.hasOwnProperty('msemr_datetime')) {
-                        item.date = moment(dataSet.msemr_datetime).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_datetime).format('YYYY-MM-DD HH:mm:ss');
-                    }
-                    item.type = 4;
-                    item.entity = "msemr_nutritionorder";
-                    list.push(item);
-                });
-            }
+                        if (dataSet.hasOwnProperty('msemr_datetime')) {
+                            item.date = moment(dataSet['msemr_datetime@OData.Community.Display.V1.FormattedValue'], userDateFormat).format('MM/DD/YYYY');
+                            item.dateTime = moment.utc(dataSet.msemr_datetime).format('YYYY-MM-DD HH:mm:ss');
+                        }
+                        item.type = 4;
+                        item.entity = "msemr_nutritionorder";
+                        list.push(item); 
+                    };
+                    return Promise.resolve();
+                },
+                function (error) {
+                    console.log(error.message);
+                    return Promise.reject(error.message);
+                }
+            );
         }
-        function Tasks(sdate, edate) {           
+
+        async function Tasks(sdate, edate) {
             var query = '<fetch mapping="logical" version="1.0" distinct="false" output-format="xml-platform">'
-                            + '  <entity name="task">'
-                            + '    <attribute name="activityid" />'
-                            + '    <attribute name="subject" />'
-                            + '    <attribute name="createdon" />'
-                            + '    <filter type="and">'
-                            + '      <condition value="' + pid + '" attribute="msemr_requesteragentpatient" operator="eq" />'
-                            + '      <condition value="' + edate + '" attribute="createdon"  operator="on-or-before"  />'
-                            + '      <condition value="' + sdate + '" attribute="createdon" operator="on-or-after" />'
-                            + '    </filter>'
-                            + '  </entity>'
-                            + '</fetch>';
+                + '  <entity name="task">'
+                + '    <attribute name="activityid" />'
+                + '    <attribute name="subject" />'
+                + '    <attribute name="createdon" />'
+                + '    <filter type="and">'
+                + '      <condition value="' + pid + '" attribute="msemr_requesteragentpatient" operator="eq" />'
+                + '      <condition value="' + edate + '" attribute="createdon"  operator="on-or-before"  />'
+                + '      <condition value="' + sdate + '" attribute="createdon" operator="on-or-after" />'
+                + '    </filter>'
+                + '  </entity>'
+                + '</fetch>';
 
-            var results = XrmServiceToolkit.Soap.Fetch(query);
+            return parent.Xrm.WebApi.retrieveMultipleRecords("task", "?fetchXml=" + encodeURIComponent(query)).then(
+                function success(results) {
+                    for (var i = 0; i < results.entities.length; i++) {
+                        var dataSet = results.entities[i];
+                        var item = {};
 
-            if (results.length > 0) {
-                results.forEach(function (val, index) {
-                    var dataSet = val.attributes;
-                    var item = {};
+                        if (dataSet.hasOwnProperty('activityid')) {
+                            item.id = dataSet.activityid;
+                        }
 
-                    if (dataSet.hasOwnProperty('activityid')) {
-                        item.id = dataSet.activityid.value;
-                    }
+                        if (dataSet.hasOwnProperty('subject')) {
+                            item.name = dataSet.subject;
+                        } else {
+                            item.name = "Assigned Task";
+                        }
 
-                    if (dataSet.hasOwnProperty('subject')) {
-                        item.name = dataSet.subject.value;
-                    } else {
-                        item.name = "Assigned Task";
-                    }
-
-                    if (dataSet.hasOwnProperty('createdon')) {
-                        item.date = moment(dataSet.createdon).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.createdon).format('YYYY-MM-DD HH:mm:ss');
-                    }
-                    item.type = 5;
-                    item.entity = "task";
-                    list.push(item);
-                });
-            }
-            console.log(list);
+                        if (dataSet.hasOwnProperty('createdon')) {
+                            item.date = moment(dataSet['createdon@OData.Community.Display.V1.FormattedValue'], userDateFormat).format('MM/DD/YYYY');
+                            item.dateTime = moment.utc(dataSet.createdon).format('YYYY-MM-DD HH:mm:ss');
+                        }
+                        item.type = 5;
+                        item.entity = "task";
+                        list.push(item);
+                    };
+                    return Promise.resolve();
+                },
+                function (error) {
+                    console.log(error.message);
+                    return Promise.reject(error.message);
+                }
+            );
         }
-        function Procedures(sdate, edate) {
+
+        async function Procedures(sdate, edate) {
             var query = '<fetch mapping="logical" version="1.0" distinct="false" output-format="xml-platform">'
-                                 + '  <entity name="msemr_procedurerequest">'
-                                 + '    <attribute name="msemr_procedurerequestid" />'
-                                 + '    <attribute name="msemr_code" />'
-                                 + '    <attribute name="msemr_code" />'
-                                 + '    <attribute name="msemr_code" />'
-                                 + '    <attribute name="msemr_authoredon" />'
-                                 + '    <filter type="and">'
-                                 + '      <condition value="' + pid + '" attribute="msemr_subjectpatient" operator="eq" />'
-                                 + '      <condition value="' + edate + '" attribute="msemr_authoredon"  operator="on-or-before"  />'
-                                 + '      <condition value="' + sdate + '" attribute="msemr_authoredon" operator="on-or-after" />'
-                                 + '    </filter>'
-                                 + '  </entity>'
-                                 + '</fetch>';
+                + '  <entity name="msemr_procedurerequest">'
+                + '    <attribute name="msemr_procedurerequestid" />'
+                + '    <attribute name="msemr_code" />'
+                + '    <attribute name="msemr_code" />'
+                + '    <attribute name="msemr_code" />'
+                + '    <attribute name="msemr_authoredon" />'
+                + '    <filter type="and">'
+                + '      <condition value="' + pid + '" attribute="msemr_subjectpatient" operator="eq" />'
+                + '      <condition value="' + edate + '" attribute="msemr_authoredon"  operator="on-or-before"  />'
+                + '      <condition value="' + sdate + '" attribute="msemr_authoredon" operator="on-or-after" />'
+                + '    </filter>'
+                + '  </entity>'
+                + '</fetch>';
 
-            var results = XrmServiceToolkit.Soap.Fetch(query);
+            return parent.Xrm.WebApi.retrieveMultipleRecords("msemr_procedurerequest", "?fetchXml=" + encodeURIComponent(query)).then(
+                function success(results) {
+                    for (var i = 0; i < results.entities.length; i++) {
+                        var dataSet = results.entities[i];
+                        var item = {};
 
-            if (results.length > 0) {
-                results.forEach(function (val, index) {
-                    var dataSet = val.attributes;
-                    var item = {};
+                        if (dataSet.hasOwnProperty('msemr_procedurerequestid')) {
+                            item.id = dataSet.msemr_procedurerequestid;
+                        }
 
-                    if (dataSet.hasOwnProperty('msemr_procedurerequestid')) {
-                        item.id = dataSet.msemr_procedurerequestid.value;
-                    }
+                        if (dataSet.hasOwnProperty('_msemr_code_value@OData.Community.Display.V1.FormattedValue')) {
+                            item.name = dataSet['_msemr_code_value@OData.Community.Display.V1.FormattedValue'];
+                        } else {
+                            item.name = "Procedure Request";
+                        }
 
-                    if (dataSet.hasOwnProperty('msemr_code')) {
-                        item.name = dataSet.msemr_code.formattedValue;
-                    } else {
-                        item.name = "Procedure Request";
-                    }
-
-                    if (dataSet.hasOwnProperty('msemr_authoredon')) {
-                        item.date = moment(dataSet.msemr_authoredon).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_authoredon).format('YYYY-MM-DD HH:mm:ss');
-                    }
-                    item.type = 6;
-                    item.entity = "msemr_procedurerequest";
-                    list.push(item);
-                });
-            }
+                        if (dataSet.hasOwnProperty('msemr_authoredon')) {
+                            item.date = moment(dataSet['msemr_authoredon@OData.Community.Display.V1.FormattedValue'], userDateFormat).format('MM/DD/YYYY');
+                            item.dateTime = moment.utc(dataSet.msemr_authoredon).format('YYYY-MM-DD HH:mm:ss');
+                        }
+                        item.type = 6;
+                        item.entity = "msemr_procedurerequest";
+                        list.push(item); 
+                    };
+                    return Promise.resolve();
+                },
+                function (error) {
+                    console.log(error.message);
+                    return Promise.rejec(error.message);
+                }
+            );
         }
-        function Referrals(sdate, edate) {
+
+        async function Referrals(sdate, edate) {
             var query = '<fetch mapping="logical" version="1.0" distinct="false" output-format="xml-platform">'
-                                     + '  <entity name="msemr_referralrequest">'
-                                     + '    <attribute name="msemr_referralrequestid" />'
-                                     + '    <attribute name="msemr_type" />'
-                                     + '    <attribute name="msemr_authoredon" />'
-                                     + '    <filter type="and">'
-                                     + '      <condition value="' + pid + '" attribute="msemr_subjectpatient" operator="eq" />'
-                                     + '      <condition value="' + edate + '" attribute="msemr_authoredon"  operator="on-or-before"  />'
-                                     + '      <condition value="' + sdate + '" attribute="msemr_authoredon" operator="on-or-after" />'
-                                     + '    </filter>'
-                                     + '  </entity>'
-                                     + '</fetch>';
+                + '  <entity name="msemr_referralrequest">'
+                + '    <attribute name="msemr_referralrequestid" />'
+                + '    <attribute name="msemr_type" />'
+                + '    <attribute name="msemr_authoredon" />'
+                + '    <filter type="and">'
+                + '      <condition value="' + pid + '" attribute="msemr_subjectpatient" operator="eq" />'
+                + '      <condition value="' + edate + '" attribute="msemr_authoredon"  operator="on-or-before"  />'
+                + '      <condition value="' + sdate + '" attribute="msemr_authoredon" operator="on-or-after" />'
+                + '    </filter>'
+                + '  </entity>'
+                + '</fetch>';
 
-            var results = XrmServiceToolkit.Soap.Fetch(query);
+            return parent.Xrm.WebApi.retrieveMultipleRecords("msemr_referralrequest", "?fetchXml=" + encodeURIComponent(query)).then(
+                function success(results) {
+                    for (var i = 0; i < results.entities.length; i++) {
+                        var dataSet = results.entities[i];
+                        var item = {};
 
-            if (results.length > 0) {
-                results.forEach(function (val, index) {
-                    var dataSet = val.attributes;
-                    var item = {};
+                        if (dataSet.hasOwnProperty('msemr_referralrequestid')) {
+                            item.id = dataSet.msemr_referralrequestid;
+                        }
 
-                    if (dataSet.hasOwnProperty('msemr_referralrequestid')) {
-                        item.id = dataSet.msemr_referralrequestid.value;
-                    }
+                        if (dataSet.hasOwnProperty('_msemr_type_value@OData.Community.Display.V1.FormattedValue')) {
+                            item.name = dataSet['_msemr_type_value@OData.Community.Display.V1.FormattedValue'];
+                        } else {
+                            item.name = "Referral Request";
+                        }
 
-                    if (dataSet.hasOwnProperty('msemr_type')) {
-                        item.name = dataSet.msemr_type.formattedValue;
-                    } else {
-                        item.name = "Referral Request";
-                    }
-
-                    if (dataSet.hasOwnProperty('msemr_authoredon')) {
-                        item.date = moment(dataSet.msemr_authoredon).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_authoredon).format('YYYY-MM-DD HH:mm:ss');
-                    }
-                    item.type = 7;
-                    item.entity = "msemr_referralrequest";
-                    list.push(item);
-                });
-            }
+                        if (dataSet.hasOwnProperty('msemr_authoredon')) {
+                            item.date = moment(dataSet['msemr_authoredon@OData.Community.Display.V1.FormattedValue'], userDateFormat).format('MM/DD/YYYY');
+                            item.dateTime = moment.utc(dataSet.msemr_authoredon).format('YYYY-MM-DD HH:mm:ss');
+                        }
+                        item.type = 7;
+                        item.entity = "msemr_referralrequest";
+                        list.push(item);   
+                    };
+                    return Promise.resolve();
+                },
+                function (error) {
+                    console.log(error.message);
+                    return Promise.reject(error.message);
+                }
+            );
         }
-        function Encounter(sdate, edate) {
+
+        async function Encounter(sdate, edate) {
             var query = '<fetch mapping="logical" version="1.0" distinct="false" output-format="xml-platform">'
-                            + '  <entity name="msemr_encounter">'
-                            + '    <attribute name="msemr_encounterid" />'
-                            //+ '    <attribute name="msemr_name" />'
-                            + '    <attribute name="msemr_periodstart" />'
-                            + '    <filter type="and">'
-                            + '      <condition value="' + pid + '" attribute="msemr_encounterpatientidentifier" operator="eq" />'
-                            + '      <condition value="' + edate + '" attribute="msemr_periodstart"  operator="on-or-before"  />'
-                            + '      <condition value="' + sdate + '" attribute="msemr_periodstart" operator="on-or-after" />'
-                            + '    </filter>'
-                            + '     <link-entity name="msemr_encounterparticipant" from="msemr_encounterparticipantdetailsid" to="msemr_encounterid" link-type="inner" alias="aa">'
-                            + '         <attribute name="msemr_individualtypepractitioner" />'
-                            +'          <filter type="and">'
-                            +'              <condition attribute="msemr_individualtypepractitioner" operator="not-null" />'
-                            +'          </filter>'
-                            +'      </link-entity>'
-                            + '  </entity>'
-                            + '</fetch>';
+                + '  <entity name="msemr_encounter">'
+                + '    <attribute name="msemr_encounterid" />'
+                //+ '    <attribute name="msemr_name" />'
+                + '    <attribute name="msemr_periodstart" />'
+                + '    <filter type="and">'
+                + '      <condition value="' + pid + '" attribute="msemr_encounterpatientidentifier" operator="eq" />'
+                + '      <condition value="' + edate + '" attribute="msemr_periodstart"  operator="on-or-before"  />'
+                + '      <condition value="' + sdate + '" attribute="msemr_periodstart" operator="on-or-after" />'
+                + '    </filter>'
+                + '     <link-entity name="msemr_encounterparticipant" from="msemr_encounterparticipantdetailsid" to="msemr_encounterid" link-type="inner" alias="aa">'
+                + '         <attribute name="msemr_individualtypepractitioner" />'
+                + '          <filter type="and">'
+                + '              <condition attribute="msemr_individualtypepractitioner" operator="not-null" />'
+                + '          </filter>'
+                + '      </link-entity>'
+                + '  </entity>'
+                + '</fetch>';
 
-            var results = XrmServiceToolkit.Soap.Fetch(query);
 
-            if (results.length > 0) {
-                results.forEach(function (val, index) {
-                    var dataSet = val.attributes;
-                    var item = {};
+                return parent.Xrm.WebApi.retrieveMultipleRecords("msemr_encounter", "?fetchXml=" + encodeURIComponent(query)).then(
+                function success(results) {
+                    for (var i = 0; i < results.entities.length; i++) {
+                        var dataSet = results.entities[i];
+                        var item = {};
 
-                    if (dataSet.hasOwnProperty('msemr_encounterid')) {
-                        item.id = dataSet.msemr_encounterid.value;
-                    }
+                        if (dataSet.hasOwnProperty('msemr_encounterid')) {
+                            item.id = dataSet.msemr_encounterid;
+                        }
 
-                    if (dataSet.hasOwnProperty('aa.msemr_individualtypepractitioner')) {
-                        item.name = dataSet["aa.msemr_individualtypepractitioner"].formattedValue;
-                    } else {
-                        item.name = "Encounter";
-                    }
+                        if (dataSet.hasOwnProperty('aa.msemr_individualtypepractitioner@OData.Community.Display.V1.FormattedValue')) {
+                            item.name = dataSet["aa.msemr_individualtypepractitioner@OData.Community.Display.V1.FormattedValue"];
+                        } else {
+                            item.name = "Encounter";
+                        }
 
-                    if (dataSet.hasOwnProperty('msemr_periodstart')) {
-                        item.date = moment(dataSet.msemr_periodstart).format('MM/DD/YYYY');
-                        item.dateTime = moment(dataSet.msemr_periodstart).format('YYYY-MM-DD HH:mm:ss');
-                    }
-                    item.type = 8;
-                    item.entity = "msemr_encounter";
-                    list.push(item);
-                });
-            }
+                        if (dataSet.hasOwnProperty('msemr_periodstart')) {
+                            item.date = moment(dataSet['msemr_periodstart@OData.Community.Display.V1.FormattedValue'], userDateFormat).format('MM/DD/YYYY');
+                            item.dateTime = moment.utc(dataSet.msemr_periodstart).format('YYYY-MM-DD HH:mm:ss');
+                        }
+                        item.type = 8;
+                        item.entity = "msemr_encounter";
+                        list.push(item); 
+                    };
+                    return Promise.resolve();
+                },
+                function (error) {
+                    console.log(error.message);
+                    return Promise.reject(error.message);
+                }
+            );
+        }
+
+        async function CarePlan(sdate, edate) {
+            var query = '<fetch mapping="logical" version="1.0" distinct="false" output-format="xml-platform">'
+                + '  <entity name="msemr_careplan">'
+                + '    <attribute name="msemr_careplanid" />'
+                + '    <attribute name="msemr_title" />'
+                + '    <attribute name="msemr_planstartdate" />'
+                + '    <filter type="and">'
+                + '      <condition value="' + pid + '" attribute="msemr_patientidentifier" operator="eq" />'
+                + '      <condition value="' + edate + '" attribute="msemr_planstartdate"  operator="on-or-before"  />'
+                + '      <condition value="' + sdate + '" attribute="msemr_planstartdate" operator="on-or-after" />'
+                + '    </filter>'
+                + '  </entity>'
+                + '</fetch>';
+
+                return parent.Xrm.WebApi.retrieveMultipleRecords("msemr_careplan", "?fetchXml=" + encodeURIComponent(query)).then(
+                function success(results) {
+                    for (var i = 0; i < results.entities.length; i++) {
+                        var dataSet = results.entities[i];
+                        var item = {};
+
+                        if (dataSet.hasOwnProperty('msemr_careplanid')) {
+                            item.id = dataSet.msemr_careplanid;
+                        }
+                        item.name = dataSet.msemr_title;
+
+                        if (dataSet.hasOwnProperty('msemr_planstartdate')) {
+                            item.date = moment(dataSet['msemr_planstartdate@OData.Community.Display.V1.FormattedValue'], userDateFormat).format('MM/DD/YYYY');
+                            item.dateTime = moment.utc(dataSet.msemr_planstartdate).format('YYYY-MM-DD HH:mm:ss');
+                        }
+                        item.type = 9;
+                        item.entity = "msemr_careplan";
+                        list.push(item); 
+                    };
+                    return Promise.resolve();
+                },
+                function (error) {
+                    console.log(error.message);
+                    return Promise.reject(error.message);
+                }
+            );
+        }
+
+
+        async function CarePlanGoal(sdate, edate) {
+           var query = '<fetch mapping="logical" version="1.0" distinct="false" output-format="xml-platform">'
+                + '  <entity name="msemr_careplangoal">'
+                + '    <attribute name="createdon" />'
+                + '    <attribute name="msemr_name" />'     
+                + '    <attribute name="msemr_careplangoalid" />'  
+                + '    <filter type="and">'
+                + '      <condition value="' + edate + '" attribute="createdon"  operator="on-or-before"  />'
+                + '      <condition value="' + sdate + '" attribute="createdon" operator="on-or-after" />'
+                + '    </filter>'
+                + '    <link-entity name="msemr_careplan" from="msemr_careplanid" to="msemr_careplan" link-type="inner" alias="ad">'
+                + '         <filter type="and">'
+               + '             <condition attribute="msemr_patientidentifier" operator="eq" value="'  + pid + '" />'
+                + '         </filter>'
+                + '    </link-entity>'
+                + '  </entity>'
+                + '</fetch>';
+
+            return parent.Xrm.WebApi.retrieveMultipleRecords("msemr_careplangoal", "?fetchXml=" + encodeURIComponent(query)).then(
+                function success(results) {
+                    for (var i = 0; i < results.entities.length; i++) {
+                        var dataSet = results.entities[i];
+                        var item = {};
+
+                        if (dataSet.hasOwnProperty('msemr_careplangoalid')) {
+                            item.id = dataSet.msemr_careplangoalid;
+                        }
+                        item.name = dataSet.msemr_name;
+
+                        if (dataSet.hasOwnProperty('createdon')) {
+                            item.date = moment(dataSet['createdon@OData.Community.Display.V1.FormattedValue'], userDateFormat).format('MM/DD/YYYY');
+                            item.dateTime = moment.utc(dataSet.createdon).format('YYYY-MM-DD HH:mm:ss');
+                        }
+                        item.type = 10;
+                        item.entity = "msemr_careplangoal";
+                        list.push(item);    
+                    };
+                    return Promise.resolve();
+                },
+                function (error) {
+                    console.log(error.message);
+                    return Promise.reject(error.message);
+                }
+            );
         }
 
         function getPatientRegistrationDate() {
-            XrmServiceToolkit.Rest.Retrieve(pid, "ContactSet", "msemr_ActivityStartDate", null, function (result) {
+                   XrmServiceToolkit.Rest.Retrieve(pid, "ContactSet", "msemr_ActivityStartDate", null, function (result) {
                 if (result) {
                     if (result.hasOwnProperty('msemr_ActivityStartDate')) {
                         if (result.msemr_ActivityStartDate != null) {
                             regDate = pregDate = moment(result.msemr_ActivityStartDate).format('MM/DD/YYYY');
                         }
-                    }                   
+                    }
                     var maxDate = moment().format('MM/DD/YYYY');
                     $('.startDate').text(pregDate);
                     $('.endDate').text(maxDate);
 
-                    var minDate = '';
+                     var minDate = '';
                     if (viewType == 1) {
                         var daysdiff = moment().diff(moment(pregDate).format('MM/DD/YYYY'), 'days');
                         if (daysdiff < 6)
                             minDate = moment(pregDate).format('MM/DD/YYYY');
                         else
                             minDate = moment().subtract(6, 'd').format('MM/DD/YYYY');
+                    }
+                    else {
+                        if (viewType == 3) {
+                            var monthsdiff = moment().diff(moment(pregDate).format('MM/DD/YYYY'), 'months');
+                            if (monthsdiff < 5)
+                                minDate = moment(pregDate).format('MM/DD/YYYY');
+                            else
+                                minDate = moment(new Date()).subtract(5, 'months').startOf('month').format('MM/DD/YYYY');
+                        }
                     }
                     $("#txtStartDate").datepicker({
                         showOn: "button",
@@ -889,44 +1260,25 @@
 
                     var d = new Date();
                     d.setDate(d.getDate() - 6);
-
-                    $("#dateSlider").dateRangeSlider({
-                        bounds: {
-                            min: new Date(pregDate),
-                            max: new Date()
-                        },
-                        defaultValues: {
-                            min: new Date(moment(minDate).format('MM/DD/YYYY')),
-                            max: new Date()
-                        },
-                        range: {
-                            min: { days: 6 },
-                            max: { days: 6 }
-                        }, formatter: function (val) {
-                            return moment(val).format('MM/DD/YYYY');
-                        },
-                        arrows: false,
-                        valueLabels: "change"
-                    });
-
                 }
             }, function (error) {
                 Xrm.Utility.alertDialog(error.message);
             }, false);
-
         }
 
         function getTypeImageName(a) {
             switch (a) {
-                case 1: return "../webresources/msemr_tc_icon_appointment_svg";
-                case 2: return "../webresources/msemr_tc_icon_device_svg";
-                case 3: return "../webresources/msemr_tc_icon_medication_svg";
-                case 4: return "../webresources/msemr_tc_icon_nutritionOrder_svg";
+                case 1: return "../webresources/msemr_AppointmentsEMRSVG";
+                case 2: return "../webresources/msemr_devicesvg";
+                case 3: return "../webresources/msemr_medicationrequestSVG";
+                case 4: return "../webresources/msemr_NutritionOrdersSVG";
                 case 5: return "../webresources/msemr_tc_icon_task_svg";
-                case 6: return "../webresources/msemr_tc_icon_Procedure_svg";
-                case 7: return "../webresources/msemr_tc_icon_referral_svg";
-                case 8: return "../webresources/msemr_tc_icon_visionPrescription_svg";
-                default: return "../webresources/msemr_tc_icon_appointment_svg";
+                case 6: return "../webresources/msemr_ProceduresSVG";
+                case 7: return "../webresources/msemr_ReferralRequestsSVG";
+                case 8: return "../webresources/msemr_EncountersSVG";
+                case 9: return "../webresources/msemr_careplanSVG";
+                case 10: return "../webresources/msemr_CarePlanGoalSVG";
+                default: return "../webresources/msemr_AppointmentsEMRSVG";
             }
         }
 
@@ -940,6 +1292,8 @@
                 case 6: return "Procedure";
                 case 7: return "Referral";
                 case 8: return "Encounter";
+                case 9: return "Care Plan";
+                case 10: return "Goal";
                 default: return "";
             }
         }
@@ -995,7 +1349,7 @@
                     dates.push(end.format(dateFormat));
                 }
                 for (var i = 0; i < monthdiff; i++) {
-                    dates.push(end.subtract(1, 'months').format(dateFormat));                    
+                    dates.push(end.subtract(1, 'months').format(dateFormat));
                 }
                 if (monthdiff < 5) {
                     for (var i = 0; i < 5 - monthdiff; i++) {
@@ -1006,112 +1360,154 @@
             return dates;
         }
 
-        function loadSlider() {
-            var d = new Date();
-            var minBound = '';
-            var maxBound = '';
-            var mindefaultVal = '';
-            var maxdefaultVal ='';
-            var minrange = '';
-            var maxrange = '';
-            if ($(".ui-dateRangeSlider").length > 0)
-                $("#dateSlider").dateRangeSlider("destroy");
-
-            if (viewType == 1) {
-                minBound = new Date(pregDate);
-                maxBound = new Date();
-                minrange = 0;
-                maxrange = 6;
-                $("#dateSlider").dateRangeSlider({
-                    bounds: {
-                        min: minBound,
-                        max: maxBound
-                    },
-                    defaultValues: {
-                        min: new Date(moment($('#txtStartDate').datepicker('getDate')).format('MM/DD/YYYY')),
-                        max: new Date(moment($('#txtEndDate').datepicker('getDate')).format('MM/DD/YYYY'))
-                    },
-                    range: {
-                        min: { days: maxrange },
-                        max: { days: maxrange }
-                    }, formatter: function (val) {
-                        return moment(val).format('MM/DD/YYYY');
-                    },
-                    arrows: false,
-                    valueLabels: "change"
-                });
-
+        function moveNext() {
+            var sDate, eDate;
+            switch (viewType) {
+                case 1:
+                    sDate = moment(currentStartDate).add(7, 'days').format('MM/DD/YYYY');
+                    eDate = moment(currentEndDate).add(7, 'days').format('MM/DD/YYYY');
+                    break;
+                case 2:
+                    sDate = moment(currentStartDate).add(4, 'weeks').format('MM/DD/YYYY');
+                    eDate = moment(currentEndDate).add(4, 'weeks').format('MM/DD/YYYY');
+                    break;
+                case 3:
+                    sDate = moment(currentStartDate).add(6, 'months').format('MM/DD/YYYY');
+                    eDate = moment(currentEndDate).add(6, 'months').format('MM/DD/YYYY');
+                    break;
             }
-            if (viewType == 2) {
-                minBound = new Date(pregDate);
-                maxBound = new Date();
-                mindefaultVal = new Date(moment($('#txtStartDate').datepicker('getDate')).format('MM/DD/YYYY'));
-                maxdefaultVal = new Date(moment($('#txtEndDate').datepicker('getDate')).format('MM/DD/YYYY'));
-                minrange = 28;
-                maxrange = 28;
 
-                if (moment($('#txtEndDate').datepicker('getDate')) >= moment().startOf('week')) {
-                    var ddiff = moment(moment($('#txtEndDate').datepicker('getDate')).format('MM/DD/YYY')).diff(moment().startOf('week').format('MM/DD/YYY'), 'days')
-                    if (ddiff >= 0)
-                        minrange = 21 + ddiff;
-                }
+            loadData(true, sDate, eDate);
+        }
 
-                $("#dateSlider").dateRangeSlider({
-                    bounds: {
-                        min: minBound,
-                        max: maxBound
-                    },
-                    defaultValues: {
-                        min: mindefaultVal,
-                        max: maxdefaultVal
-                    },
-                    range: {                       
-                        min: { days: minrange },
-                        max: { days: minrange }
-                    }, formatter: function (val) {
-                        return moment(val).format('MM/DD/YYYY');
-                    },
-                    arrows: false,
-                    valueLabels: "change"
-                });
+        function getMinMaxDates() {
+            var MinMaxDates = {
+                min: moment($('#txtStartDate').datepicker('getDate')),
+                max: moment($('#txtEndDate').datepicker('getDate'))
+            };
+            return MinMaxDates;
+        }
 
+        function movePrevious() {
+            var sDate, eDate;
+            switch (viewType) {
+                case 1:
+                    sDate = moment(currentStartDate).subtract(7, 'days').format('MM/DD/YYYY');
+                    eDate = moment(currentEndDate).subtract(7, 'days').format('MM/DD/YYYY');
+                    break;
+                case 2:
+                    sDate = moment(currentStartDate).subtract(4, 'weeks').format('MM/DD/YYYY');
+                    eDate = moment(currentEndDate).subtract(4, 'weeks').format('MM/DD/YYYY');
+                    break;
+                case 3:
+                    sDate = moment(currentStartDate).subtract(6, 'months').format('MM/DD/YYYY');
+                    eDate = moment(currentEndDate).subtract(6, 'months').format('MM/DD/YYYY');
+                    break;
             }
-            if (viewType == 3) {
-                var mFDt = moment().subtract(5, 'months').startOf('month').format('MM/DD/YYYY');
-                var daysdiff = moment().diff(mFDt, 'days');
 
-                minBound = new Date(pregDate);
-                maxBound = new Date();
-                mindefaultVal = new Date(moment($('#txtStartDate').datepicker('getDate')).format('MM/DD/YYYY'));
-                maxdefaultVal = new Date(moment($('#txtEndDate').datepicker('getDate')).format('MM/DD/YYYY'));
-                minrange = 0;
-                maxrange = daysdiff;
-                $("#dateSlider").dateRangeSlider({
-                    bounds: {
-                        min: minBound,
-                        max: maxBound
-                    },
-                    defaultValues: {
-                        min: mindefaultVal,
-                        max: maxdefaultVal
-                    },
-                    range: {                       
-                        min: { days: maxrange },
-                          max: { days: maxrange }
-                    }, formatter: function (val) {
-                        return moment(val).format('MM/DD/YYYY');
-                    },
-                    arrows: false,
-                    valueLabels: "change"
-                });
+            loadData(true, sDate, eDate);
+        }
+
+        function enableDisableBackForward() {
+            var showPrev = false;
+            var showNext = false;
+            switch (viewType) {
+                case 1:
+                    if (moment(currentStartDate).subtract(7, 'days') > moment(pregDate)) {
+                        showPrev = true;
+                    }
+                    if (moment(currentStartDate).add(7, 'days') < moment()) {
+                        showNext = true;
+                    }
+                    break;
+                case 2:
+                    if (moment(currentStartDate).subtract(4, 'weeks') > moment(pregDate)) {
+                        showPrev = true;
+                    }
+                    if (moment(currentStartDate).add(4, 'weeks') < moment()) {
+                        showNext = true;
+                    }
+                    break;
+                case 3:
+                    if (moment(currentStartDate).subtract(6, 'months') > moment(pregDate)) {
+                        showPrev = true;
+                    }
+                    if (moment(currentStartDate).add(6, 'months') < moment()) {
+                        showNext = true;
+                    }
+                    break;
+            }
+
+            if (showPrev) {
+                $('.timelineFooter a:nth-child(1)').show();
+            }
+            else {
+                $('.timelineFooter a:nth-child(1)').hide();
+            }
+
+            if (showNext) {
+                $('.timelineFooter a:nth-child(2)').show();
+            }
+            else {
+                $('.timelineFooter a:nth-child(2)').hide();
             }
         }
+
+        function refreshTimeline() {
+            var selectedDates = getMinMaxDates();
+            var sDate = moment(selectedDates.min).format('MM/DD/YYYY');
+            var eDate = moment(selectedDates.max).format('MM/DD/YYYY');
+
+            if (!isChanged) {
+                loadData(true, sDate, eDate);
+                isChanged = true;
+            } else {
+                isChanged = false;
+            }
+        }
+
+
+        function openWeek(sDate) {
+            viewType = 1;
+
+            $("#dayMenu").addClass("active");
+            $("#weekMenu").removeClass("active");
+            $("#monthMenu").removeClass("active");
+
+            $('.weekly').hide();
+            $('.monthly').hide();
+            $('.daily').show();
+
+            eDate = moment(sDate).add(6, 'days').format('MM/DD/YYYY');
+
+            loadData(true, sDate, eDate);
+            isChanged = true;
+        }
+
+        function openMonth(sDate) {
+            viewType = 2;
+
+            $("#weekMenu").addClass("active");
+            $("#dayMenu").removeClass("active");
+            $("#monthMenu").removeClass("active");
+
+            $('.daily').hide();
+            $('.monthly').hide();
+            $('.weekly').show();
+
+            //eDate = moment(sDate).add(4, 'weeks').format('MM/DD/YYYY');
+            eDate = moment(sDate).endOf('month').format('MM/DD/YYYY');
+
+            loadData(true, sDate, eDate);
+            isChanged = true;
+        }
+
         function openForm(recordId, entityName) {
             var entityFormOptions = {};
             entityFormOptions["entityName"] = entityName;
             entityFormOptions["entityId"] = recordId;
             entityFormOptions["openInNewWindow"] = true;
-            
+
             parent.Xrm.Navigation.openForm(entityFormOptions).then(
                 function (success) {
                 },
@@ -1119,101 +1515,15 @@
                     console.log(error);
                 });
         }
-        $("#txtStartDate").change(function () {
-            isChanged = false;
-            var Date = '', currDate = '';
 
-            if (moment($(this).datepicker('getDate')).diff(pregDate) < 0)
-                currDate = pregDate;
-            else if (moment().diff($(this).datepicker('getDate')) < 0)
-                currDate = moment().format('MM/DD/YYYY');
-            else
-                currDate = moment($(this).datepicker('getDate')).format('MM/DD/YYYY');
-            $(this).datepicker('setDate', currDate);
-
-            if (viewType == 1) {
-                var daysdiff = moment().diff(currDate, 'days');
-
-                if (currDate == $('#txtEndDate').val())
-                    Date = currDate;
-                else if (daysdiff < 6)
-                    Date = moment().format('MM/DD/YYYY');
-                else
-                    Date = moment(currDate).add(6, 'd').format('MM/DD/YYYY');
-            }
-            else if (viewType == 2) {
-                var weeksdiff = moment().diff(currDate, 'weeks');
-                if (currDate == $('#txtEndDate').val())
-                    Date = currDate;
-                else if (weeksdiff < 3)
-                    Date = moment().format('MM/DD/YYYY');
-                else
-                    Date = moment(currDate).add(3, 'weeks').format('MM/DD/YYYY');
-            }
-            else if (viewType == 3) {
-                var monthsdiff = moment().diff(currDate, 'months');
-                if (currDate == $('#txtEndDate').val())
-                    Date = currDate;
-                else if (monthsdiff < 5)
-                    Date = moment().format('MM/DD/YYYY');
-                else
-                    Date = moment(currDate).add(5, 'months').format('MM/DD/YYYY');
-            }
-            $('#txtEndDate').val(Date);
-            loadSlider();
-            $('#dateSlider').trigger("userValuesChanged");
-        });
-        $("#txtEndDate").change(function () {
-            isChanged = false;
-            var Date = '', currDate = '';           
-
-            if (moment($(this).datepicker('getDate')).diff(pregDate) < 0)
-                currDate = pregDate;
-            else if (moment().diff($(this).datepicker('getDate')) < 0)
-                currDate = moment().format('MM/DD/YYYY');
-            else
-                currDate = moment($(this).datepicker('getDate')).format('MM/DD/YYYY');
-
-            $(this).datepicker('setDate', currDate);
-            regDate = currDate;
-
-            if (viewType == 1) {
-                var daysdiff = moment(currDate).diff(moment(pregDate).format('MM/DD/YYYY'), 'days');
-                if (currDate == $('#txtStartDate').val())
-                    Date = currDate;
-                else if (daysdiff < 6)
-                    Date = moment(pregDate).format('MM/DD/YYYY');
-                else
-                    Date = moment(currDate).subtract(6, 'd').format('MM/DD/YYYY');
-            }
-            else if (viewType == 2) {
-                var weeksdiff = moment(currDate).diff(moment(pregDate).format('MM/DD/YYYY'), 'weeks');
-                if (currDate == $('#txtStartDate').val())
-                    Date = currDate;
-                else if (weeksdiff < 3)
-                    Date = moment(pregDate).format('MM/DD/YYYY');
-                else
-                    Date = moment(currDate).subtract(3, 'weeks').format('MM/DD/YYYY');
-            }
-            else if (viewType == 3) {
-                var monthsdiff = moment(currDate).diff(moment(pregDate).format('MM/DD/YYYY'), 'months');
-                if (currDate == $('#txtStartDate').val())
-                    Date = currDate;
-                else if (monthsdiff < 5)
-                    Date = moment(pregDate).format('MM/DD/YYYY');
-                else
-                    Date = moment(currDate).subtract(5, 'months').format('MM/DD/YYYY');
-            }
-            $('#txtStartDate').val(Date);
-            loadSlider();
-            $('#dateSlider').trigger("userValuesChanged");
-        });
         var dateSort = function (m, n) {
             var s = new Date(m.dateTime), e = new Date(n.dateTime);
             if (s > e) return 1;
             if (s < e) return -1;
             return 0;
         };
+
     </script>
+
 
 </body></html>
