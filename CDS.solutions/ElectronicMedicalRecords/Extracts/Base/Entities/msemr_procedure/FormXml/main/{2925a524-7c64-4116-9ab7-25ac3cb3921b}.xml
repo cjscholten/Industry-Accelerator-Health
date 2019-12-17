@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form headerdensity="HighWithControls">
       <tabs>
         <tab verticallayout="true" id="{da4ea969-949d-4590-9c53-190c8370b324}" IsUserDefined="1" name="{da4ea969-949d-4590-9c53-190c8370b324}" locklevel="0" expanded="true" showlabel="true">
           <labels>
@@ -44,19 +44,19 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{437b12b7-52b1-4577-97a3-8b7dfdb30410}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Code" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_codenew" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_codenew" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{47e404b7-5aa1-0eed-26e2-2ceb9e1a98a1}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Category" languagecode="1033" />
                         </labels>
                         <control id="msemr_category" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_category" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{4985d3c9-2217-1b0e-d038-43576cd14db5}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Code" languagecode="1033" />
-                        </labels>
-                        <control id="msemr_code" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_code" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -174,7 +174,7 @@
         </tab>
       </tabs>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar />
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
@@ -203,6 +203,49 @@
           </NavBarArea>
         </NavBarAreas>
       </Navigation>
+      <header id="{a601b2ee-c801-4369-b3da-9bb17990949a}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{1cec6033-fceb-4f87-a4e7-99eaf4dcb95b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{428e7a38-6a31-46b0-b919-84f9008542fe}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{76226c18-ecfb-432c-86d7-187779d5e622}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{babf2113-b863-4b58-8c93-fa5e59c1b2ab}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{0e2d5090-3805-4263-8f0f-b456da8b3218}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{faeb22cb-364a-4481-8e9f-131688b168af}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{50b8bb7a-3830-4930-899a-990d6e7f6250}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true" />
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

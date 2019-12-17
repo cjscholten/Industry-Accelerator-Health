@@ -37,6 +37,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -70,6 +74,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>1</IsFilterable>
+          <IsRetrievable>1</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>datetime</Format>
           <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -104,6 +112,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -138,6 +150,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format></Format>
           <MinValue>-2147483648</MinValue>
           <MaxValue>2147483647</MaxValue>
@@ -172,6 +188,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -205,6 +225,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>1</IsFilterable>
+          <IsRetrievable>1</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>datetime</Format>
           <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -239,6 +263,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -274,6 +302,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>datetime</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -310,6 +342,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -345,6 +381,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <optionset Name="msemr_medicationrequest_msemr_contexttype">
             <OptionSetType>picklist</OptionSetType>
@@ -402,6 +442,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -437,6 +481,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -472,6 +520,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format></Format>
           <MinValue>1</MinValue>
           <MaxValue>2147483647</MaxValue>
@@ -508,6 +560,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -543,6 +599,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format></Format>
           <MinValue>-2147483648</MinValue>
           <MaxValue>2147483647</MaxValue>
@@ -579,6 +639,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>datetime</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -615,6 +679,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>datetime</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -651,6 +719,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <MinValue>-100000000000</MinValue>
           <MaxValue>100000000000</MaxValue>
           <Accuracy>2</Accuracy>
@@ -687,6 +759,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>text</Format>
           <MaxLength>100</MaxLength>
           <Length>200</Length>
@@ -723,6 +799,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>text</Format>
           <MaxLength>100</MaxLength>
           <Length>200</Length>
@@ -759,6 +839,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>msemr_medicationrequestintent</OptionSetName>
           <displaynames>
@@ -766,6 +850,44 @@
           </displaynames>
           <Descriptions>
             <Description description="Whether the request is a proposal, plan, or an original order." languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="msemr_MedicationReferenceNew">
+          <Type>lookup</Type>
+          <Name>msemr_medicationreferencenew</Name>
+          <LogicalName>msemr_medicationreferencenew</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>3.0.3.1</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Medication Reference" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="msemr_medicationrequestId">
@@ -793,6 +915,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>1</IsFilterable>
+          <IsRetrievable>1</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <displaynames>
             <displayname description="Medication Request" languagecode="1033" />
           </displaynames>
@@ -826,6 +952,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>msemr_medicationtype</OptionSetName>
           <displaynames>
@@ -861,45 +991,14 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
             <displayname description="Medication Code" languagecode="1033" />
-          </displaynames>
-          <Descriptions>
-            <Description description="Identifies the medication being requested." languagecode="1033" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="msemr_medicationtypereference">
-          <Type>lookup</Type>
-          <Name>msemr_medicationtypereference</Name>
-          <LogicalName>msemr_medicationtypereference</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.4</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <LookupStyle>single</LookupStyle>
-          <LookupTypes />
-          <displaynames>
-            <displayname description="Medication Reference" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="Identifies the medication being requested." languagecode="1033" />
@@ -931,6 +1030,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>1</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>1</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>text</Format>
           <MaxLength>100</MaxLength>
           <Length>200</Length>
@@ -967,6 +1070,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>msemr_priority</OptionSetName>
           <displaynames>
@@ -1002,6 +1109,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1037,6 +1148,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1072,6 +1187,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>msemr_requesteragenttype</OptionSetName>
           <displaynames>
@@ -1107,6 +1226,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1142,6 +1265,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1177,6 +1304,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1212,6 +1343,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1247,6 +1382,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1282,6 +1421,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1317,6 +1460,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>msemr_medicationrequeststatus</OptionSetName>
           <displaynames>
@@ -1352,6 +1499,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>msemr_subjecttype</OptionSetName>
           <displaynames>
@@ -1387,6 +1538,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1422,6 +1577,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1457,6 +1616,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>0</AppDefaultValue>
           <optionset Name="msemr_medicationrequest_msemr_substitutionallowed">
             <OptionSetType>bit</OptionSetType>
@@ -1514,6 +1677,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1548,6 +1715,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -1584,6 +1755,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>1</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes>
             <LookupType id="00000000-0000-0000-0000-000000000000">8</LookupType>
@@ -1619,6 +1794,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>1</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1652,6 +1831,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1685,6 +1868,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -1719,6 +1906,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>1</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <optionset Name="msemr_medicationrequest_statecode">
             <OptionSetType>state</OptionSetType>
             <IntroducedVersion>1.0</IntroducedVersion>
@@ -1775,6 +1966,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <optionset Name="msemr_medicationrequest_statuscode">
             <OptionSetType>status</OptionSetType>
             <IntroducedVersion>1.0</IntroducedVersion>
@@ -1830,6 +2025,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format></Format>
           <MinValue>-1</MinValue>
           <MaxValue>2147483647</MaxValue>
@@ -1865,6 +2064,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format></Format>
           <MinValue>-1</MinValue>
           <MaxValue>2147483647</MaxValue>
@@ -1932,7 +2135,7 @@
       <CanEnableSyncToExternalSearchIndex>1</CanEnableSyncToExternalSearchIndex>
       <IconMediumName>msemr_medicationadmin32</IconMediumName>
       <IconSmallName>msemr_medicationadmin16</IconSmallName>
-      <IconVectorName>msemr_medicationrequestapp</IconVectorName>
+      <IconVectorName>msemr_medicationrequestSVG</IconVectorName>
       <EnforceStateTransitions>0</EnforceStateTransitions>
       <CanChangeHierarchicalRelationship>1</CanChangeHierarchicalRelationship>
       <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
@@ -1940,6 +2143,7 @@
       <ChangeTrackingEnabled>0</ChangeTrackingEnabled>
       <CanChangeTrackingBeEnabled>1</CanChangeTrackingBeEnabled>
       <IsEnabledForExternalChannels>0</IsEnabledForExternalChannels>
+      <IsSolutionAware>0</IsSolutionAware>
       <HasRelatedNotes>True</HasRelatedNotes>
     </entity>
   </EntityInfo>

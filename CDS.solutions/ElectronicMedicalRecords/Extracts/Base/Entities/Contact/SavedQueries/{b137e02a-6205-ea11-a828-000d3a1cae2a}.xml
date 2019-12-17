@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{b137e02a-6205-ea11-a828-000d3a1cae2a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="fullname" select="1" preview="1" icon="1">
+        <row id="contactid" name="result">
+          <cell name="fullname" width="150" />
+          <cell name="department" width="100" />
+          <cell name="description" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="contact">
+          <attribute name="fullname" />
+          <order attribute="fullname" descending="false" />
+          <filter type="and">
+            <condition value="935000000" attribute="msemr_contacttype" operator="eq" />
+          </filter>
+          <attribute name="contactid" />
+          <attribute name="description" />
+          <attribute name="department" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.8.3.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Patients By Priority" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

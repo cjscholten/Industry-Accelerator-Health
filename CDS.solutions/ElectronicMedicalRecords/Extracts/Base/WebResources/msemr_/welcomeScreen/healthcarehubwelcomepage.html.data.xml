@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{9b5b25dd-9c1a-ea11-a811-000d3a8aaa0f}</WebResourceId>
+  <Name>msemr_/welcomeScreen/healthcarehubwelcomepage.html</Name>
+  <DisplayName>healthcarehubwelcomepage.html</DisplayName>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>3.0.3.2</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/msemr_welcomeScreenhealthcarehubwelcomepagehtml9B5B25DD-9C1A-EA11-A811-000D3A8AAA0F</FileName>
+</WebResource>

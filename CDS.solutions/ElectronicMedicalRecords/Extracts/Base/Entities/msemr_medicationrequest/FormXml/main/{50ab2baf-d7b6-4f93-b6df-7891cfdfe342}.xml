@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form headerdensity="HighWithControls">
       <tabs>
         <tab verticallayout="true" id="{4ceae96d-33fa-40fd-ba82-d1ae8a25d59f}" IsUserDefined="1">
           <labels>
@@ -36,11 +36,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{2cae1bd9-ec5c-107a-c86d-eba01938b5b5}" showlabel="true" locklevel="0">
+                      <cell id="{c22aa02d-8993-43ea-a3ef-614a644b09df}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Medication Reference" languagecode="1033" />
                         </labels>
-                        <control id="msemr_medicationtypereference" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_medicationtypereference" disabled="false" />
+                        <control id="msemr_medicationreferencenew" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_medicationreferencenew" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -83,7 +83,7 @@
         </tab>
       </tabs>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar />
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
@@ -113,6 +113,49 @@
         </NavBarAreas>
       </Navigation>
       <controlDescriptions />
+      <header id="{46b6846e-c758-45ad-a43f-2217fe204290}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{b77892bb-afd9-4095-82e8-b8b08be259b1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e006bf01-38c8-483d-9c96-d89dfe244e3a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{77cee942-3283-4b8b-acbf-5be93fef4cc6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{f2e67950-5b44-4878-8b86-69fcf561498d}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{f5b02846-8148-4517-8938-0136a4affb55}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e06727da-02be-4847-b235-0e040c4fdbb7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d94eedf2-a676-4ecb-bf79-265e3d09d874}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true" />
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

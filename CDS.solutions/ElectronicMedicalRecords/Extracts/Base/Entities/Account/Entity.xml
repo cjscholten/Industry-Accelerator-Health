@@ -39,6 +39,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <optionset Name="msemr_account_msemr_accounttype">
             <OptionSetType>picklist</OptionSetType>
@@ -96,6 +100,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -132,6 +140,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -168,6 +180,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -204,6 +220,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -240,6 +260,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>text</Format>
           <MaxLength>100</MaxLength>
           <Length>200</Length>
@@ -276,6 +300,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -311,6 +339,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -346,6 +378,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <LookupStyle>single</LookupStyle>
           <LookupTypes />
           <displaynames>
@@ -381,6 +417,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -417,6 +457,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format></Format>
           <MinValue>-2147483648</MinValue>
           <MaxValue>2147483647</MaxValue>
@@ -453,6 +497,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -489,6 +537,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>msemr_telecomsystem</OptionSetName>
           <displaynames>
@@ -524,6 +576,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>msemr_telecomuse</OptionSetName>
           <displaynames>
@@ -559,6 +615,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -595,6 +655,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format></Format>
           <MinValue>-2147483648</MinValue>
           <MaxValue>2147483647</MaxValue>
@@ -631,6 +695,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -667,6 +735,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>msemr_telecomsystem</OptionSetName>
           <displaynames>
@@ -702,6 +774,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>msemr_telecomuse</OptionSetName>
           <displaynames>
@@ -737,6 +813,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>text</Format>
           <MaxLength>100</MaxLength>
           <Length>200</Length>
@@ -773,6 +853,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format></Format>
           <MinValue>1</MinValue>
           <MaxValue>2147483647</MaxValue>
@@ -809,6 +893,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
@@ -845,6 +933,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>msemr_telecomsystem</OptionSetName>
           <displaynames>
@@ -880,6 +972,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>msemr_telecomuse</OptionSetName>
           <displaynames>
@@ -931,9 +1027,11 @@
       <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
       <ChangeTrackingEnabled>1</ChangeTrackingEnabled>
       <IsEnabledForExternalChannels>1</IsEnabledForExternalChannels>
+      <IsSolutionAware>0</IsSolutionAware>
       <HasRelatedNotes>True</HasRelatedNotes>
       <HasRelatedActivities>True</HasRelatedActivities>
     </entity>
   </EntityInfo>
+  <FormXml />
   <RibbonDiffXml />
 </Entity>

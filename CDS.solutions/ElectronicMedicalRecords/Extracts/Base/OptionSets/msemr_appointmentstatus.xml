@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="msemr_appointmentstatus" localizedName="Appointment Status" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.8.3.2</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Appointment Status" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="935000000">
+      <labels>
+        <label description="Proposed" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="935000001">
+      <labels>
+        <label description="Pending" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="935000002">
+      <labels>
+        <label description="Booked" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="935000003">
+      <labels>
+        <label description="Arrived" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="935000004">
+      <labels>
+        <label description="Fulfilled" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="935000005">
+      <labels>
+        <label description="Cancelled" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="935000006">
+      <labels>
+        <label description="No Show" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="935000007">
+      <labels>
+        <label description="Entered In Error" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="935000008">
+      <labels>
+        <label description="Checked-In" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="935000009">
+      <labels>
+        <label description="Waitlist" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

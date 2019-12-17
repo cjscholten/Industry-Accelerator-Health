@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.6827" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.10537" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>Dynamics365ElectronicMedicalRecords</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Dynamics 365 Electronic Medical Records" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.8.2.0</Version>
+    <Version>2.1.3.0</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>microsoftdynamics365electronicmedicalrecords</UniqueName>
@@ -244,6 +244,7 @@
       <RootComponent type="1" schemaName="msemr_locationendpoint" behavior="0" />
       <RootComponent type="1" schemaName="msemr_locationtelecom" behavior="0" />
       <RootComponent type="1" schemaName="msemr_medicalidentifier" behavior="0" />
+      <RootComponent type="1" schemaName="msemr_medication" behavior="0" />
       <RootComponent type="1" schemaName="msemr_medicationadministration" behavior="0" />
       <RootComponent type="1" schemaName="msemr_medicationadministrationdefinition" behavior="0" />
       <RootComponent type="1" schemaName="msemr_medicationadministrationdevice" behavior="0" />
@@ -413,7 +414,6 @@
       <RootComponent type="1" schemaName="msemr_visionprescription" behavior="0" />
       <RootComponent type="1" schemaName="msemr_visionprescriptiondispens" behavior="0" />
       <RootComponent type="1" schemaName="task" behavior="1" />
-      <RootComponent type="1" schemaName="uom" behavior="1" />
       <RootComponent type="9" schemaName="msemr_actioncardinalitybehavior" behavior="0" />
       <RootComponent type="9" schemaName="msemr_actionconditionkind" behavior="0" />
       <RootComponent type="9" schemaName="msemr_actiongroupingbehavior" behavior="0" />
@@ -424,6 +424,8 @@
       <RootComponent type="9" schemaName="msemr_addresstype" behavior="0" />
       <RootComponent type="9" schemaName="msemr_addressuse" behavior="0" />
       <RootComponent type="9" schemaName="msemr_agetype" behavior="0" />
+      <RootComponent type="9" schemaName="msemr_appointmentstatus" behavior="0" />
+      <RootComponent type="9" schemaName="msemr_appointmenttype" behavior="0" />
       <RootComponent type="9" schemaName="msemr_artifacttype" behavior="0" />
       <RootComponent type="9" schemaName="msemr_borntype" behavior="0" />
       <RootComponent type="9" schemaName="msemr_careplanactivitystatus" behavior="0" />
@@ -510,10 +512,14 @@
       <RootComponent type="60" id="{2397c015-738a-4294-bdfe-7f22e984d1cf}" behavior="0" />
       <RootComponent type="60" id="{2925a524-7c64-4116-9ab7-25ac3cb3921b}" behavior="0" />
       <RootComponent type="60" id="{2ed6192c-465b-46b8-a8d8-84461b598d9b}" behavior="0" />
+      <RootComponent type="60" id="{3281616c-730a-ea11-a811-000d3a8aaa0f}" behavior="0" />
       <RootComponent type="60" id="{3443ddf5-6773-4aaf-a521-c702d1db803b}" behavior="0" />
       <RootComponent type="60" id="{3b9d840e-86ad-4b1d-901e-fff0f3b1b071}" behavior="0" />
       <RootComponent type="60" id="{3f1b1011-d70e-4872-a7a9-9c8b60e095f8}" behavior="0" />
+      <RootComponent type="60" id="{467441ba-6105-ea11-a826-000d3a1ca610}" behavior="0" />
       <RootComponent type="60" id="{50ab2baf-d7b6-4f93-b6df-7891cfdfe342}" behavior="0" />
+      <RootComponent type="60" id="{521146a5-4d4c-4225-bd09-2870f2df4e60}" behavior="0" />
+      <RootComponent type="60" id="{6711be19-4899-4076-9eb6-4223d43f4e15}" behavior="0" />
       <RootComponent type="60" id="{862454b2-5eef-4650-9b28-6fc6bd9ea13e}" behavior="0" />
       <RootComponent type="60" id="{8763a01a-0955-481d-b36b-6912075140fa}" behavior="0" />
       <RootComponent type="60" id="{8d63ba29-a32d-4700-891d-2b82930ac089}" behavior="0" />
@@ -521,17 +527,24 @@
       <RootComponent type="60" id="{9156c454-45d0-40fe-9e95-03635c46fb90}" behavior="0" />
       <RootComponent type="60" id="{93a52545-0d8d-44b9-9d3b-36f66ddc1122}" behavior="0" />
       <RootComponent type="60" id="{9be11a63-8131-49d3-8e77-bcc0201e23b4}" behavior="0" />
+      <RootComponent type="60" id="{a1d1136d-22ca-462e-ba29-572edf0e4ff2}" behavior="0" />
       <RootComponent type="60" id="{a31ff07d-c418-482d-96ea-9c9c5881443a}" behavior="0" />
       <RootComponent type="60" id="{a40411d7-a8c3-4ebf-af80-ef699ea674e8}" behavior="0" />
       <RootComponent type="60" id="{c5a460ff-bdc2-4a5f-9227-a0799d63793c}" behavior="0" />
+      <RootComponent type="60" id="{c95e8df7-179b-4f05-a0f4-9967fcdda652}" behavior="0" />
       <RootComponent type="60" id="{d9e04a4e-a942-474a-b637-b2967bd165c2}" behavior="0" />
       <RootComponent type="60" id="{ddb8dc93-c7cf-4260-9394-112d93d05055}" behavior="0" />
       <RootComponent type="60" id="{df5bef3a-9237-40bd-a27c-2cd7fd434706}" behavior="0" />
+      <RootComponent type="60" id="{e9486f9f-8013-4a53-9c85-c9f59515a185}" behavior="0" />
+      <RootComponent type="60" id="{f321d86f-3b7a-468e-9423-00c4db735a94}" behavior="0" />
       <RootComponent type="60" id="{f3eced87-85b5-4862-944d-10b507f6f67b}" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_/welcomeScreen/healthcarehubwelcomepage.html" behavior="0" />
       <RootComponent type="61" schemaName="msemr_allergy32" behavior="0" />
       <RootComponent type="61" schemaName="msemr_allergyintoleranceicon" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_allergyintolerancesSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_appointment16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_appointment32" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_AppointmentsEMRSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_apptemr16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_apptemr32" behavior="0" />
       <RootComponent type="61" schemaName="msemr_border" behavior="0" />
@@ -540,21 +553,28 @@
       <RootComponent type="61" schemaName="msemr_careplan32" behavior="0" />
       <RootComponent type="61" schemaName="msemr_careplanactivity16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_careplanactivity32" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_CarePlanActivitySVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_careplanapp" behavior="0" />
       <RootComponent type="61" schemaName="msemr_careplangoal16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_careplangoal32" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_CarePlanGoalSVG" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_careplanSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_careteam16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_careteam32" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_CareTeamSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_clinicalimpression" behavior="0" />
       <RootComponent type="61" schemaName="msemr_clinicalimpression32" behavior="0" />
       <RootComponent type="61" schemaName="msemr_clinicalimpressionapp" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_ClinicalImpressionSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_contactinfoicon" behavior="0" />
       <RootComponent type="61" schemaName="msemr_Controller_js" behavior="0" />
       <RootComponent type="61" schemaName="msemr_ctc_careteam_control" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_ctc_careteam_control.js" behavior="0" />
       <RootComponent type="61" schemaName="msemr_ctc_careteam_svg" behavior="0" />
       <RootComponent type="61" schemaName="msemr_ctc_doctor_svg" behavior="0" />
       <RootComponent type="61" schemaName="msemr_ctc_nurse_svg" behavior="0" />
       <RootComponent type="61" schemaName="msemr_d365forhealthtile" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_DevciesSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_device16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_device32" behavior="0" />
       <RootComponent type="61" schemaName="msemr_deviceapp" behavior="0" />
@@ -563,13 +583,16 @@
       <RootComponent type="61" schemaName="msemr_encounter16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_encounter32" behavior="0" />
       <RootComponent type="61" schemaName="msemr_encounterapp" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_EncountersSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_episodeofcareapp" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_EpisodeofCareSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_episodesofcare16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_episodesofcare32" behavior="0" />
       <RootComponent type="61" schemaName="msemr_familymember32" behavior="0" />
       <RootComponent type="61" schemaName="msemr_familymemberhistory16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_harrymindset" behavior="0" />
       <RootComponent type="61" schemaName="msemr_hcservicesapp" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_HealthcareServicesSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_healthservices16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_hospital16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_hospital32" behavior="0" />
@@ -581,36 +604,48 @@
       <RootComponent type="61" schemaName="msemr_jquery-ui.min" behavior="0" />
       <RootComponent type="61" schemaName="msemr_jquery-ui_css" behavior="0" />
       <RootComponent type="61" schemaName="msemr_jquery214" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_JSON2_JS" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_LocationsSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_medadmin16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_medadmin32" behavior="0" />
       <RootComponent type="61" schemaName="msemr_medicationadmin16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_medicationadmin32" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_medicationadministrationSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_medicationreqapp" behavior="0" />
       <RootComponent type="61" schemaName="msemr_medicationrequestapp" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_medicationrequestSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_medications16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_medications32" behavior="0" />
       <RootComponent type="61" schemaName="msemr_moment" behavior="0" />
       <RootComponent type="61" schemaName="msemr_nutritionorder16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_nutritionorder32" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_NutritionOrdersSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_observation16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_observation32" behavior="0" />
       <RootComponent type="61" schemaName="msemr_observationapp" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_ObservationSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_OpenEntities" behavior="0" />
       <RootComponent type="61" schemaName="msemr_Patient360Script" behavior="0" />
       <RootComponent type="61" schemaName="msemr_practitionerqualification16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_practitionerqualification32" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_PractitionerQualificationSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_practitionerrole16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_practitionerrole32" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_PractitionerRoleSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_procedure16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_procedure32" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_ProceduresSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_referralrequest16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_referralrequest32" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_ReferralRequestsSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_riskassesment32" behavior="0" />
       <RootComponent type="61" schemaName="msemr_riskassesmentapp" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_RiskAssessmentSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_rsikassesment16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_specimen16" behavior="0" />
       <RootComponent type="61" schemaName="msemr_specimen32" behavior="0" />
       <RootComponent type="61" schemaName="msemr_specimenapp" behavior="0" />
+      <RootComponent type="61" schemaName="msemr_SpecimensSVG" behavior="0" />
       <RootComponent type="61" schemaName="msemr_tc_common_css" behavior="0" />
       <RootComponent type="61" schemaName="msemr_tc_icon_appointment_svg" behavior="0" />
       <RootComponent type="61" schemaName="msemr_tc_icon_device_svg" behavior="0" />
@@ -635,10 +670,9 @@
       <RootComponent type="61" schemaName="msemr_ui-icons_cc0000_256x240" behavior="0" />
       <RootComponent type="61" schemaName="msemr_ui-icons_ffffff_256x240" behavior="0" />
       <RootComponent type="61" schemaName="msemr_XrmServiceToolkit_JS" behavior="0" />
-      <RootComponent type="61" schemaName="new_PatientReadings" behavior="0" />
       <RootComponent type="62" schemaName="msemr_DynamicsHealth365" behavior="0" />
-      <RootComponent type="62" schemaName="msemr_DynamicsHealth365CDM" behavior="0" />
       <RootComponent type="62" behavior="0" />
+      <RootComponent type="80" schemaName="msemr_DynamicsHealth365" behavior="0" />
       <RootComponent type="91" id="{fee9a40f-4237-4087-9fd5-2483d0069b31}" schemaName="Microsoft.Dynamics.Health, Version=1.0.0.0, Culture=neutral, PublicKeyToken=20f0165d2cb5406f" behavior="0" />
       <RootComponent type="92" id="{022e3e6b-1881-e811-a839-000d3a33b56b}" behavior="0" />
       <RootComponent type="92" id="{0b7ef3de-1881-e811-a83c-000d3a33b3be}" behavior="0" />
@@ -659,500 +693,68 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required key="0" type="1" schemaName="uom" displayName="Unit" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="1" type="10" schemaName="msemr_uom_msemr_devicemetric_Unit" displayName="msemr_uom_msemr_devicemetric_Unit" parentSchemaName="uom" parentDisplayName="Unit" />
+        <Required key="0" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="1" type="60" displayName="Organization" parentDisplayName="Account" id="{3281616c-730a-ea11-a811-000d3a8aaa0f}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="2" type="1" schemaName="list" displayName="Marketing List" solution="msdynce_Marketing (9.0.4.37)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
+        <Required key="2" type="60" displayName="Task" parentDisplayName="Task" solution="msdynce_Activities (9.0.1.2033)" id="{16654191-19ad-48ca-9e46-c4b4fbdad76f}" />
+        <Dependent key="2" type="60" displayName="Task" parentDisplayName="Task" id="{16654191-19ad-48ca-9e46-c4b4fbdad76f}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="2" type="1" schemaName="list" displayName="Marketing List" solution="msdynce_Marketing (9.0.4.37)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
+        <Required key="3" type="60" displayName="Account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+        <Dependent key="4" type="80" schemaName="msemr_DynamicsHealth365" displayName="Dynamics Health 365" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="2" type="1" schemaName="list" displayName="Marketing List" solution="msdynce_Marketing (9.0.4.37)" />
-        <Dependent key="5" type="62" />
+        <Required key="5" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.1910.4029)" />
+        <Dependent key="6" type="60" displayName="Physician 360" parentDisplayName="Contact" id="{c95e8df7-179b-4f05-a0f4-9967fcdda652}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="6" type="1" schemaName="msdyn_upgraderun" displayName="Upgrade Run" solution="SolutionUpgradeInfrastructure (2.6.0.0)" />
-        <Dependent key="5" type="62" />
+        <Required key="5" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.1910.4029)" />
+        <Dependent key="7" type="60" displayName="Patient 360" parentDisplayName="Contact" id="{521146a5-4d4c-4225-bd09-2870f2df4e60}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="7" type="1" schemaName="salesliterature" displayName="Sales Literature" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
+        <Required key="8" type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="BaseCustomControlsCore (9.0.1910.4029)" />
+        <Dependent key="7" type="60" displayName="Patient 360" parentDisplayName="Contact" id="{521146a5-4d4c-4225-bd09-2870f2df4e60}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="7" type="1" schemaName="salesliterature" displayName="Sales Literature" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
+        <Required key="8" type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="BaseCustomControlsCore (9.0.1910.4029)" />
+        <Dependent key="6" type="60" displayName="Physician 360" parentDisplayName="Contact" id="{c95e8df7-179b-4f05-a0f4-9967fcdda652}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="7" type="1" schemaName="salesliterature" displayName="Sales Literature" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="5" type="62" />
+        <Required key="8" type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="BaseCustomControlsCore (9.0.1910.4029)" />
+        <Dependent key="1" type="60" displayName="Organization" parentDisplayName="Account" id="{3281616c-730a-ea11-a811-000d3a8aaa0f}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="8" type="1" schemaName="bulkoperation" displayName="Quick Campaign" solution="msdynce_Marketing (9.0.4.37)" />
-        <Dependent key="5" type="62" />
+        <Required key="5" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.1910.4029)" />
+        <Dependent key="9" type="60" displayName="PHYSICIAN 360" parentDisplayName="Contact" id="{e9486f9f-8013-4a53-9c85-c9f59515a185}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="8" type="1" schemaName="bulkoperation" displayName="Quick Campaign" solution="msdynce_Marketing (9.0.4.37)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
+        <Required key="8" type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="BaseCustomControlsCore (9.0.1910.4029)" />
+        <Dependent key="9" type="60" displayName="PHYSICIAN 360" parentDisplayName="Contact" id="{e9486f9f-8013-4a53-9c85-c9f59515a185}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="8" type="1" schemaName="bulkoperation" displayName="Quick Campaign" solution="msdynce_Marketing (9.0.4.37)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
+        <Required key="10" type="61" schemaName="msdyn_appmanagementcontrol" displayName="msdyn_appmanagementcontrol" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="11" type="62" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="9" type="1" schemaName="msdyn_postruleconfig" displayName="Post Rule Configuration" solution="ActivityFeedsCore (9.0.0.0)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
+        <Required key="12" type="61" schemaName="msdyncrm_/libs/knowledgearticlerouting/knowledgearticleroutingtounifiedmoca.html" displayName="msdyncrm_/libs/knowledgearticlerouting/knowledgearticleroutingtounifiedmoca.html" solution="msdynce_KnowledgeManagement (9.0.1.33)" />
+        <Dependent key="11" type="62" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="9" type="1" schemaName="msdyn_postruleconfig" displayName="Post Rule Configuration" solution="ActivityFeedsCore (9.0.0.0)" />
-        <Dependent key="5" type="62" />
+        <Required key="10" type="61" schemaName="msdyn_appmanagementcontrol" displayName="msdyn_appmanagementcontrol" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="13" type="62" schemaName="msemr_DynamicsHealth365" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="9" type="1" schemaName="msdyn_postruleconfig" displayName="Post Rule Configuration" solution="ActivityFeedsCore (9.0.0.0)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
+        <Required key="12" type="61" schemaName="msdyncrm_/libs/knowledgearticlerouting/knowledgearticleroutingtounifiedmoca.html" displayName="msdyncrm_/libs/knowledgearticlerouting/knowledgearticleroutingtounifiedmoca.html" solution="msdynce_KnowledgeManagement (9.0.1.33)" />
+        <Dependent key="13" type="62" schemaName="msemr_DynamicsHealth365" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="10" type="1" schemaName="msdyn_solutionhistory" displayName="Solution History" solution="SolutionHistoryAPIs (9.1.0.8)" />
-        <Dependent key="5" type="62" />
+        <Required key="14" type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="7" type="60" displayName="Patient 360" parentDisplayName="Contact" id="{521146a5-4d4c-4225-bd09-2870f2df4e60}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="11" type="1" schemaName="leadtoopportunitysalesprocess" displayName="Lead To Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="11" type="1" schemaName="leadtoopportunitysalesprocess" displayName="Lead To Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="11" type="1" schemaName="leadtoopportunitysalesprocess" displayName="Lead To Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="12" type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="12" type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="12" type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="13" type="1" schemaName="competitor" displayName="Competitor" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="13" type="1" schemaName="competitor" displayName="Competitor" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="13" type="1" schemaName="competitor" displayName="Competitor" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="14" type="1" schemaName="msdyn_postconfig" displayName="Post Configuration" solution="ActivityFeedsCore (9.0.0.0)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="14" type="1" schemaName="msdyn_postconfig" displayName="Post Configuration" solution="ActivityFeedsCore (9.0.0.0)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="14" type="1" schemaName="msdyn_postconfig" displayName="Post Configuration" solution="ActivityFeedsCore (9.0.0.0)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="15" type="1" schemaName="contract" displayName="Contract" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="15" type="1" schemaName="contract" displayName="Contract" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="15" type="1" schemaName="contract" displayName="Contract" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="16" type="1" schemaName="campaign" displayName="Campaign" solution="msdynce_Marketing (9.0.4.37)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="16" type="1" schemaName="campaign" displayName="Campaign" solution="msdynce_Marketing (9.0.4.37)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="16" type="1" schemaName="campaign" displayName="Campaign" solution="msdynce_Marketing (9.0.4.37)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="17" type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="17" type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="17" type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="18" type="1" schemaName="service" displayName="Service" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="18" type="1" schemaName="service" displayName="Service" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="18" type="1" schemaName="service" displayName="Service" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="19" type="1" schemaName="opportunitysalesprocess" displayName="Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="19" type="1" schemaName="opportunitysalesprocess" displayName="Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="19" type="1" schemaName="opportunitysalesprocess" displayName="Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="20" type="1" schemaName="invoice" displayName="Invoice" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="20" type="1" schemaName="invoice" displayName="Invoice" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="20" type="1" schemaName="invoice" displayName="Invoice" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="21" type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="21" type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="21" type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="22" type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="22" type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="22" type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="24" type="10" schemaName="msemr_product_msemr_medicationimage_MedicationID" displayName="msemr_product_msemr_medicationimage_MedicationID" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="25" type="10" schemaName="msemr_product_msemr_medicationingredient_IngredientItemmedication" displayName="msemr_product_msemr_medicationingredient_IngredientItemmedication" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="26" type="10" schemaName="msemr_product_msemr_identifiesspecifictimeswhentheeventoccu_Medication" displayName="msemr_product_msemr_identifiesspecifictimeswhentheeventoccu_Medication" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="27" type="10" schemaName="msemr_product_msemr_procedure_Code" displayName="msemr_product_msemr_procedure_Code" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="28" type="10" schemaName="msemr_product_msemr_procedureusedreference_RefMedication" displayName="msemr_product_msemr_procedureusedreference_RefMedication" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="29" type="10" schemaName="msemr_product_msemr_medicationpackagebatch_MedicationID" displayName="msemr_product_msemr_medicationpackagebatch_MedicationID" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="30" type="10" schemaName="msemr_product_msemr_slot_ServiceType" displayName="msemr_product_msemr_slot_ServiceType" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="31" type="10" schemaName="msemr_product_msemr_procedurerequest_msemr_ProcedureCode" displayName="msemr_product_msemr_procedurerequest_msemr_ProcedureCode" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="32" type="10" schemaName="msemr_product_msemr_scheduleservicetype_ServiceType" displayName="msemr_product_msemr_scheduleservicetype_ServiceType" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="33" type="10" schemaName="msemr_product_msemr_medicationadministration_MedicationReference" displayName="msemr_product_msemr_medicationadministration_MedicationReference" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="34" type="10" schemaName="msemr_product_msemr_careplanactivity_ActivityProductReferenceTypeMedication" displayName="msemr_product_msemr_careplanactivity_ActivityProductReferenceTypeMedication" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="35" type="10" schemaName="msemr_product_msemr_medicationrequest_medicationtypereference" displayName="msemr_product_msemr_medicationrequest_medicationtypereference" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="36" type="10" schemaName="msemr_product_msemr_appointmentemrservicetype_ServiceTypeCode" displayName="msemr_product_msemr_appointmentemrservicetype_ServiceTypeCode" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="23" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="37" type="10" schemaName="msemr_product_msemr_medicationpackagecontent_MedicationIdentifier" displayName="msemr_product_msemr_medicationpackagecontent_MedicationIdentifier" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="38" type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="38" type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="38" type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="39" type="1" schemaName="phonetocaseprocess" displayName="Phone To Case Process" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="39" type="1" schemaName="phonetocaseprocess" displayName="Phone To Case Process" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="39" type="1" schemaName="phonetocaseprocess" displayName="Phone To Case Process" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="0" type="1" schemaName="uom" displayName="Unit" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="0" type="1" schemaName="uom" displayName="Unit" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="36" type="10" schemaName="msemr_product_msemr_appointmentemrservicetype_ServiceTypeCode" displayName="msemr_product_msemr_appointmentemrservicetype_ServiceTypeCode" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="26" type="10" schemaName="msemr_product_msemr_identifiesspecifictimeswhentheeventoccu_Medication" displayName="msemr_product_msemr_identifiesspecifictimeswhentheeventoccu_Medication" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="33" type="10" schemaName="msemr_product_msemr_medicationadministration_MedicationReference" displayName="msemr_product_msemr_medicationadministration_MedicationReference" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="25" type="10" schemaName="msemr_product_msemr_medicationingredient_IngredientItemmedication" displayName="msemr_product_msemr_medicationingredient_IngredientItemmedication" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="35" type="10" schemaName="msemr_product_msemr_medicationrequest_medicationtypereference" displayName="msemr_product_msemr_medicationrequest_medicationtypereference" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="37" type="10" schemaName="msemr_product_msemr_medicationpackagecontent_MedicationIdentifier" displayName="msemr_product_msemr_medicationpackagecontent_MedicationIdentifier" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="29" type="10" schemaName="msemr_product_msemr_medicationpackagebatch_MedicationID" displayName="msemr_product_msemr_medicationpackagebatch_MedicationID" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="32" type="10" schemaName="msemr_product_msemr_scheduleservicetype_ServiceType" displayName="msemr_product_msemr_scheduleservicetype_ServiceType" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="30" type="10" schemaName="msemr_product_msemr_slot_ServiceType" displayName="msemr_product_msemr_slot_ServiceType" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="28" type="10" schemaName="msemr_product_msemr_procedureusedreference_RefMedication" displayName="msemr_product_msemr_procedureusedreference_RefMedication" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="27" type="10" schemaName="msemr_product_msemr_procedure_Code" displayName="msemr_product_msemr_procedure_Code" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="41" type="10" schemaName="msemr_product_msemr_medicationpackagecontent_PackageItemmedication" displayName="msemr_product_msemr_medicationpackagecontent_PackageItemmedication" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="24" type="10" schemaName="msemr_product_msemr_medicationimage_MedicationID" displayName="msemr_product_msemr_medicationimage_MedicationID" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="34" type="10" schemaName="msemr_product_msemr_careplanactivity_ActivityProductReferenceTypeMedication" displayName="msemr_product_msemr_careplanactivity_ActivityProductReferenceTypeMedication" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="31" type="10" schemaName="msemr_product_msemr_procedurerequest_msemr_ProcedureCode" displayName="msemr_product_msemr_procedurerequest_msemr_ProcedureCode" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="42" type="10" schemaName="msemr_product_msemr_medicationingredient_MedicationIdentifier" displayName="msemr_product_msemr_medicationingredient_MedicationIdentifier" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="40" type="2" schemaName="name" displayName="Name" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="43" type="10" schemaName="msemr_product_msemr_identifiesspecifictimeswhentheeventoccu_ProcedureCode" displayName="msemr_product_msemr_identifiesspecifictimeswhentheeventoccu_ProcedureCode" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="44" type="2" schemaName="uomid" displayName="Unit" parentSchemaName="uom" parentDisplayName="Unit" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="1" type="10" schemaName="msemr_uom_msemr_devicemetric_Unit" displayName="msemr_uom_msemr_devicemetric_Unit" parentSchemaName="uom" parentDisplayName="Unit" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="45" type="2" schemaName="name" displayName="Name" parentSchemaName="uom" parentDisplayName="Unit" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="1" type="10" schemaName="msemr_uom_msemr_devicemetric_Unit" displayName="msemr_uom_msemr_devicemetric_Unit" parentSchemaName="uom" parentDisplayName="Unit" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="35" type="10" schemaName="msemr_product_msemr_medicationrequest_medicationtypereference" displayName="msemr_product_msemr_medicationrequest_medicationtypereference" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="26" type="10" schemaName="msemr_product_msemr_identifiesspecifictimeswhentheeventoccu_Medication" displayName="msemr_product_msemr_identifiesspecifictimeswhentheeventoccu_Medication" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="37" type="10" schemaName="msemr_product_msemr_medicationpackagecontent_MedicationIdentifier" displayName="msemr_product_msemr_medicationpackagecontent_MedicationIdentifier" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="24" type="10" schemaName="msemr_product_msemr_medicationimage_MedicationID" displayName="msemr_product_msemr_medicationimage_MedicationID" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="25" type="10" schemaName="msemr_product_msemr_medicationingredient_IngredientItemmedication" displayName="msemr_product_msemr_medicationingredient_IngredientItemmedication" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="30" type="10" schemaName="msemr_product_msemr_slot_ServiceType" displayName="msemr_product_msemr_slot_ServiceType" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="32" type="10" schemaName="msemr_product_msemr_scheduleservicetype_ServiceType" displayName="msemr_product_msemr_scheduleservicetype_ServiceType" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="29" type="10" schemaName="msemr_product_msemr_medicationpackagebatch_MedicationID" displayName="msemr_product_msemr_medicationpackagebatch_MedicationID" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="33" type="10" schemaName="msemr_product_msemr_medicationadministration_MedicationReference" displayName="msemr_product_msemr_medicationadministration_MedicationReference" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="34" type="10" schemaName="msemr_product_msemr_careplanactivity_ActivityProductReferenceTypeMedication" displayName="msemr_product_msemr_careplanactivity_ActivityProductReferenceTypeMedication" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="36" type="10" schemaName="msemr_product_msemr_appointmentemrservicetype_ServiceTypeCode" displayName="msemr_product_msemr_appointmentemrservicetype_ServiceTypeCode" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="28" type="10" schemaName="msemr_product_msemr_procedureusedreference_RefMedication" displayName="msemr_product_msemr_procedureusedreference_RefMedication" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="31" type="10" schemaName="msemr_product_msemr_procedurerequest_msemr_ProcedureCode" displayName="msemr_product_msemr_procedurerequest_msemr_ProcedureCode" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="46" type="2" schemaName="productid" displayName="Product" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
-        <Dependent key="27" type="10" schemaName="msemr_product_msemr_procedure_Code" displayName="msemr_product_msemr_procedure_Code" parentSchemaName="product" parentDisplayName="Product" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="47" type="60" displayName="Task" parentDisplayName="Task" solution="msdynce_Activities (9.0.1.2033)" id="{16654191-19ad-48ca-9e46-c4b4fbdad76f}" />
-        <Dependent key="47" type="60" displayName="Task" parentDisplayName="Task" id="{16654191-19ad-48ca-9e46-c4b4fbdad76f}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="48" type="61" schemaName="msdyn_launchDesigner.html" displayName="msdyn_launchDesigner.html" solution="GuidedHelp (1.2.0.2)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="48" type="61" schemaName="msdyn_launchDesigner.html" displayName="msdyn_launchDesigner.html" solution="GuidedHelp (1.2.0.2)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="49" type="61" schemaName="msdyn_/PersonalWall.htm" displayName="msdyn_/PersonalWall.htm" solution="ActivityFeedsCore (9.0.0.0)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="49" type="61" schemaName="msdyn_/PersonalWall.htm" displayName="msdyn_/PersonalWall.htm" solution="ActivityFeedsCore (9.0.0.0)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="49" type="61" schemaName="msdyn_/PersonalWall.htm" displayName="msdyn_/PersonalWall.htm" solution="ActivityFeedsCore (9.0.0.0)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="50" type="61" schemaName="msdyn_LearningPath.png" displayName="msdyn_LearningPath.png" solution="GuidedHelp (1.2.0.2)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="50" type="61" schemaName="msdyn_LearningPath.png" displayName="msdyn_LearningPath.png" solution="GuidedHelp (1.2.0.2)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="51" type="61" schemaName="msdyn_/Images/Wall_16.png" displayName="msdyn_/Images/Wall_16.png" solution="ActivityFeedsCore (9.0.0.0)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="51" type="61" schemaName="msdyn_/Images/Wall_16.png" displayName="msdyn_/Images/Wall_16.png" solution="ActivityFeedsCore (9.0.0.0)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="51" type="61" schemaName="msdyn_/Images/Wall_16.png" displayName="msdyn_/Images/Wall_16.png" solution="ActivityFeedsCore (9.0.0.0)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="52" type="61" schemaName="msdyn_appmanagementcontrol" displayName="msdyn_appmanagementcontrol" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="52" type="61" schemaName="msdyn_appmanagementcontrol" displayName="msdyn_appmanagementcontrol" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="52" type="61" schemaName="msdyn_appmanagementcontrol" displayName="msdyn_appmanagementcontrol" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="5" type="62" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="53" type="61" schemaName="msdyncrm_/libs/knowledgearticlerouting/knowledgearticleroutingtounifiedmoca.html" displayName="msdyncrm_/libs/knowledgearticlerouting/knowledgearticleroutingtounifiedmoca.html" solution="msdynce_KnowledgeManagement (9.0.1.33)" />
-        <Dependent key="3" type="62" schemaName="msemr_DynamicsHealth365CDM" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="53" type="61" schemaName="msdyncrm_/libs/knowledgearticlerouting/knowledgearticleroutingtounifiedmoca.html" displayName="msdyncrm_/libs/knowledgearticlerouting/knowledgearticleroutingtounifiedmoca.html" solution="msdynce_KnowledgeManagement (9.0.1.33)" />
-        <Dependent key="4" type="62" schemaName="msemr_DynamicsHealth365" />
+        <Required key="14" type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="6" type="60" displayName="Physician 360" parentDisplayName="Contact" id="{c95e8df7-179b-4f05-a0f4-9967fcdda652}" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>

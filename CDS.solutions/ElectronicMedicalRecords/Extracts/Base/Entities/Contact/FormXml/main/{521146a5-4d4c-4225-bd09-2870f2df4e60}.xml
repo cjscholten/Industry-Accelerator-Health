@@ -1,0 +1,1839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{521146a5-4d4c-4225-bd09-2870f2df4e60}</formid>
+    <IntroducedVersion>1.6</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{13c118dd-d4ad-48ee-8087-d35f5b5f2490}" name="SUMMARY_TAB" labelid="{d30a68e3-88d8-4ae5-893e-f6c7a3aa580b}" expanded="true" showlabel="false" IsUserDefined="0">
+          <labels>
+            <label description="Summary" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="24%">
+              <sections>
+                <section id="{101071f5-50e1-4c8b-9a07-ba8e22941e7f}" name="PATIENT_INFORMATION" labelid="{bf4fff8a-1de5-44e5-a637-ebb22503612c}" showlabel="true" IsUserDefined="0" celllabelalignment="Left" locklevel="0" celllabelposition="Left" labelwidth="115" columns="1" layout="varwidth" showbar="true">
+                  <labels>
+                    <label description="PATIENT INFORMATION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4a9b4a18-3875-b09d-77e5-e5ad7d75c1e3}" labelid="{5a40a95c-7f89-43d8-84c9-aaa2626bd0d5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Contact Type" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_contacttype" datafieldname="msemr_contacttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{513cdd75-ded3-4ec3-898c-11bf547bcd7c}" labelid="{451b62cd-b7b7-4907-a406-4af211926969}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="First Name" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="firstname" datafieldname="firstname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" uniqueid="{13683bca-2d04-3d8e-314b-2596de885350}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{67339c7e-8111-4056-b58c-639a6c4d84f4}" labelid="{d1775748-7ba1-4b56-becb-4ad707732796}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Last Name" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="lastname" datafieldname="lastname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e06ad2db-b2ab-a9ce-8b3c-d3217d2e5ac0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Practitioner" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_generalpractioner" datafieldname="msemr_generalpractioner" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{05851e87-ea94-85a6-35c8-c9305a735b15}" labelid="{4423154f-1235-4deb-b488-4536a787bb59}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Medical Record Number" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="msemr_medicalrecordnumber" datafieldname="msemr_medicalrecordnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c7ba9c34-7597-26ed-1082-c4015c5b6b39}" labelid="{0274b322-46a6-4efd-a250-fd9fb4f0e2be}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="emailaddress1" datafieldname="emailaddress1" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1a45dedd-1444-a6dc-3010-59a59001222e}" labelid="{5f39b6db-c972-49df-9999-c5ac340cf3b0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Home Phone" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="telephone2" datafieldname="telephone2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0fd67383-480d-4cd4-a4a5-1cbaf263ae85}" labelid="{bf15927a-e72d-465f-aa2a-aa842ed51b29}" showlabel="true">
+                        <labels>
+                          <label description="Mobile Phone" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="mobilephone" datafieldname="mobilephone" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2db414cc-d5b1-7797-7266-d300b3b25653}" labelid="{e4cd58be-147a-4bfa-b273-0b0e588dd814}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Business Phone" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="telephone1" datafieldname="telephone1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{546e368a-0ffc-4c1d-bff1-3b44703fc5be}" labelid="{ee3cf0a4-fcf0-41cc-9230-0bf43bd6bd86}" showlabel="true">
+                        <labels>
+                          <label description="Contact Method" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="preferredcontactmethodcode" datafieldname="preferredcontactmethodcode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9324a785-3eca-dc1d-d189-691bd6eb6bbd}" labelid="{253e6bfe-902e-480d-87a3-2414d05dbae3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Gender" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="gendercode" datafieldname="gendercode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{89a2b101-c237-5b76-cb37-0884e48eb508}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="createdon" datafieldname="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" uniqueid="{4ba29a23-13dc-8e32-30a6-055c422c4a33}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section id="{d8bb8b4b-0db0-191c-8b02-b94c01da2b74}" name="ADDRESS_INFO" labelid="{389a28b4-d4d6-4918-9ee8-26cecdffd021}" showlabel="true" IsUserDefined="0" celllabelalignment="Left" locklevel="0" celllabelposition="Left" labelwidth="115" columns="1" layout="varwidth" showbar="true">
+                  <labels>
+                    <label description="ADDRESS INFORMATION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7a7f9e6a-c480-4951-bc2a-237e081b4a5f}" labelid="{a2d939f3-bc07-45c1-ab07-b9aadf468d57}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="address1_composite" datafieldname="address1_composite" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9194e6d9-289a-0867-e7d5-4b08ee14ec5c}" labelid="{0aa1d2ea-d227-4bf2-8b42-fba903de9179}" showlabel="false" rowspan="8" auto="false" colspan="1">
+                        <labels>
+                          <label description="Address" languagecode="1033" />
+                        </labels>
+                        <control id="mapcontrol" classid="{62B0DF79-0464-470F-8AF7-4483CFEA0C7D}">
+                          <parameters>
+                            <AddressField>address1_composite</AddressField>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section id="{53218136-174a-59e1-0dc2-becaa0ae4969}" name="Patient_RelHealth" labelid="{1cf735c1-a158-456b-9411-46b8038207be}" showlabel="true" IsUserDefined="0" celllabelalignment="Left" locklevel="0" celllabelposition="Left" labelwidth="115" columns="1" layout="varwidth" showbar="true">
+                  <labels>
+                    <label description="RELATIONSHIP HEALTH" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a223a15d-170b-96b9-bbe5-0e9ba0cc28cb}" labelid="{6325888e-8494-4db5-b149-0319ea2ff8fe}" showlabel="false" rowspan="6" auto="false" colspan="1">
+                        <labels>
+                          <label description="Relationship Assistant" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="ActionCards" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{3ff9a528-dd50-4aca-8f10-2e5ed73513ad}">
+                          <parameters>
+                            <ViewId>{92AFD454-0F2E-4397-A1C8-05E37C6AD699}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName />
+                            <TargetEntityType>actioncard</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="38%">
+              <sections>
+                <section id="{ca5abdb9-88a2-b1eb-aead-10c4b6d061b8}" name="Patient_relationships" labelid="{1841268b-2db4-4cbf-8c26-350e707ca9e2}" showlabel="true" IsUserDefined="0" celllabelalignment="Left" locklevel="0" celllabelposition="Left" labelwidth="115" columns="1" layout="varwidth" showbar="true">
+                  <labels>
+                    <label description="PATIENT RELATIONSHIPS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{dccd7e93-adc7-0610-3b2c-ba6cc629a47c}" labelid="{04fa784b-4108-431e-9315-ec3e6ed0a050}" showlabel="false" rowspan="6" auto="false" colspan="1">
+                        <labels>
+                          <label description="PATIENT RELATIONSHIPS" languagecode="1033" />
+                        </labels>
+                        <control id="Patient_Relationships" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{3BAC0053-80D8-41E6-9BCB-020AC5A471BA}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msemr_contact_msemr_relatedperson_Patient</RelationshipName>
+                            <TargetEntityType>msemr_relatedperson</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{3BAC0053-80D8-41E6-9BCB-020AC5A471BA}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#D6EAFA</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section id="{50082ca6-ba88-4fd6-9692-916c7bd9eed0}" name="Timeline" labelid="{8f407623-74d1-4e3d-9aaf-77b37abc2cf3}" showlabel="true" IsUserDefined="0" celllabelalignment="Left" locklevel="0" celllabelposition="Left" labelwidth="115" columns="1" layout="varwidth" showbar="true">
+                  <labels>
+                    <label description="PATIENT INTERACTIONS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{754eb055-3142-4ca6-b929-aa672dcd0a75}" labelid="{8d3fa690-0b39-4efd-a6b7-e099aa440f78}" showlabel="false" locklevel="0" rowspan="20" colspan="1">
+                        <labels>
+                          <label description="Conversation Tabs" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{20237b39-9158-2dbc-933c-62cb9e2a116a}">
+                          <parameters>
+                            <UClientUniqueName>Timeline</UClientUniqueName>
+                            <UClientModules>Activities,Notes,Posts</UClientModules>
+                            <UClientDefaultModuleForCreateExperience>Notes</UClientDefaultModuleForCreateExperience>
+                            <UClientShowFilterPane>true</UClientShowFilterPane>
+                            <UClientExpandFilterPane>false</UClientExpandFilterPane>
+                            <UClientOrderBy>descending</UClientOrderBy>
+                            <UClientRecordPerPage>10</UClientRecordPerPage>
+                            <UClientSortActivitiesByValue>modifiedon</UClientSortActivitiesByValue>
+                            <UClientDisplayActivityHeaderUsing>defaultformat</UClientDisplayActivityHeaderUsing>
+                            <UClientCreateActivityUsing>quickcreateform</UClientCreateActivityUsing>
+                            <UClientDisplayActivityUsing>defaultfields</UClientDisplayActivityUsing>
+                            <DefaultTabId>ActivitiesTab</DefaultTabId>
+                            <OrderByActivityWall>descending</OrderByActivityWall>
+                            <SortActivityWall>modifiedon</SortActivityWall>
+                            <EmailConversationView>true</EmailConversationView>
+                            <ShowArticleTab>false</ShowArticleTab>
+                            <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="38%">
+              <sections>
+                <section id="{62a14c24-6d88-42a6-be2b-5b8d59c29b6d}" name="ref_pan_CUSTOMER_DETAILS_TAB" labelid="{bc1d1b1b-8d19-4ac8-9e80-fee4fe473fb2}" showlabel="true" IsUserDefined="0" celllabelalignment="Left" locklevel="0" celllabelposition="Top" labelwidth="115" columns="1" layout="varwidth" showbar="false" autoexpand="false" rowheight="13">
+                  <labels>
+                    <label description="PATIENT DETAILS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{029d6e4d-c996-0e54-25c3-7ed9c865255a}" labelid="{18071f40-ce2a-4421-9f6f-b3fe04efe4a8}" showlabel="true" rowspan="7" auto="false" colspan="1">
+                        <labels>
+                          <label description="Patient Conditions" languagecode="1033" />
+                        </labels>
+                        <control id="patientconditions" classid="{02D4264B-47E2-4B4C-AA95-F439F3F4D458}" uniqueid="{0d4e6de7-6c7b-b96d-09d8-53bc46c3474c}">
+                          <parameters>
+                            <ViewId>{F2C9921C-7D5B-4FE3-90E3-FFBE7E2274EC}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msemr_contact_msemr_condition_SubjectTypePatient</RelationshipName>
+                            <TargetEntityType>msemr_condition</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{F2C9921C-7D5B-4FE3-90E3-FFBE7E2274EC}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#D6EAFA</HeaderColorCode>
+                            <ReferencePanelSubgridIconUrl>msemr_tc_icon_visionPrescription_svg</ReferencePanelSubgridIconUrl>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{13e8bc1a-3a65-4786-b844-d495e1b506b3}" labelid="{f2edd626-a2d0-4954-b7ba-4a14aa39f2c7}" showlabel="true" rowspan="8" auto="false" colspan="1">
+                        <labels>
+                          <label description="Patient Medications" languagecode="1033" />
+                        </labels>
+                        <control id="patientmedications" classid="{02D4264B-47E2-4B4C-AA95-F439F3F4D458}" uniqueid="{b5148c43-cb84-9e5c-473a-2b337ab5929e}">
+                          <parameters>
+                            <ViewId>{9F76E648-1E9D-4E09-B212-B7650B58546A}</ViewId>
+                            <RelationshipName>msemr_contact_msemr_medicationrequest_SubjectTypePatient</RelationshipName>
+                            <TargetEntityType>msemr_medicationrequest</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <IsUserView>false</IsUserView>
+                            <ViewIds>{9F76E648-1E9D-4E09-B212-B7650B58546A}</ViewIds>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <ReferencePanelSubgridIconUrl>msemr_tc_icon_medication_svg</ReferencePanelSubgridIconUrl>
+                            <HeaderColorCode>#D6EAFA</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{2e615cba-5311-4288-989e-0bfde553b7ac}" labelid="{00c60489-a502-4761-b667-5b0a483cb660}" showlabel="true" rowspan="8" auto="false" colspan="1">
+                        <labels>
+                          <label description="Recent Appointments" languagecode="1033" />
+                        </labels>
+                        <control id="patientappointments" classid="{02D4264B-47E2-4B4C-AA95-F439F3F4D458}" uniqueid="{c0725abc-600c-22ea-9e5b-ce16be8846e0}">
+                          <parameters>
+                            <TargetEntityType>msemr_appointmentemr</TargetEntityType>
+                            <ViewId>{F16DC992-4C5A-4DBB-8DF8-DA87E26554FB}</ViewId>
+                            <RelationshipName>msemr_contact_msemr_appointmentemr_ActorPatient</RelationshipName>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <EnableContextualActions>true</EnableContextualActions>
+                            <IsUserView>false</IsUserView>
+                            <ViewIds>{F16DC992-4C5A-4DBB-8DF8-DA87E26554FB},{0A290C64-3849-49D0-805C-471438E29DF2}</ViewIds>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <ReferencePanelSubgridIconUrl>msemr_tc_icon_referral_svg</ReferencePanelSubgridIconUrl>
+                            <HeaderColorCode>#D6EAFA</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{b551f6f7-7c3d-42bc-9b7f-a08e87f92334}" labelid="{45c54196-b606-4565-b8bd-aac8dfa1127d}" showlabel="true" rowspan="9" auto="false" colspan="1">
+                        <labels>
+                          <label description="Recent Procedures" languagecode="1033" />
+                        </labels>
+                        <control id="recentpatientprocedures" classid="{02D4264B-47E2-4B4C-AA95-F439F3F4D458}" uniqueid="{3e05610c-7eab-3b9e-089a-16863a23a9e4}">
+                          <parameters>
+                            <ViewId>{37F42566-B883-41A7-931A-E157E86E063D}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msemr_contact_msemr_procedure_Patient</RelationshipName>
+                            <TargetEntityType>msemr_procedure</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>6</RecordsPerPage>
+                            <ReferencePanelSubgridIconUrl>msemr_tc_icon_task_svg</ReferencePanelSubgridIconUrl>
+                            <ViewIds>{37F42566-B883-41A7-931A-E157E86E063D}</ViewIds>
+                            <HeaderColorCode>#D6EAFA</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{97b5a39b-5328-8ca5-490d-458cdb732e7d}" showlabel="true" rowspan="7" auto="false" colspan="1">
+                        <labels>
+                          <label description="Allergies" languagecode="1033" />
+                        </labels>
+                        <control id="Allergies" classid="{02D4264B-47E2-4B4C-AA95-F439F3F4D458}" uniqueid="{6041747c-6db7-056d-2448-4e909d874b10}">
+                          <parameters>
+                            <ViewId>{E7C42310-05F6-4774-90B1-2E6F25AAA606}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msemr_contact_msemr_allergyintolerance_Patient</RelationshipName>
+                            <TargetEntityType>msemr_allergyintolerance</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{E7C42310-05F6-4774-90B1-2E6F25AAA606}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#D6EAFA</HeaderColorCode>
+                            <ReferencePanelSubgridIconUrl>msemr_allergyintoleranceicon</ReferencePanelSubgridIconUrl>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section id="{4b4c80c4-91c2-8631-3690-3e3665ee2e6d}" name="SUMMARY_TAB_section_7" showlabel="true" IsUserDefined="0" celllabelalignment="Left" locklevel="0" celllabelposition="Left" labelwidth="115" columns="1" layout="varwidth" showbar="true" visible="false">
+                  <labels>
+                    <label description="PHYSICIAN RECOMMENDATION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d4ce600c-e7cb-3c47-5445-7bcc6be5c846}" showlabel="false" rowspan="15" auto="false" colspan="1">
+                        <labels>
+                          <label description="testtetes" languagecode="1033" />
+                        </labels>
+                        <control id="IFRAME_testte" classid="{FD2A7985-3187-444e-908D-6624B21F69C0}">
+                          <parameters>
+                            <Url>https://www.healthgrades.com/find-a-doctor/new</Url>
+                            <PassParameters>false</PassParameters>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>false</Border>
+                            <ShowOnMobileClient>false</ShowOnMobileClient>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false">
+                            <dependencies />
+                          </event>
+                        </events>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{a2e3c458-72cb-9549-340b-bb5c2e6c7ab9}" name="tab_5" expanded="true" showlabel="true" IsUserDefined="0" locklevel="0">
+          <labels>
+            <label description="Education" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{e5a467b0-c165-4d08-5a56-ea26e3218b99}" name="tab_5_section_1" showlabel="false" IsUserDefined="0" locklevel="0" labelwidth="115" columns="1" layout="varwidth" showbar="false">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3808b664-787b-4245-7222-9492920a48ad}" showlabel="false" rowspan="20" auto="false" colspan="1">
+                        <labels>
+                          <label description="Education Search" languagecode="1033" />
+                        </labels>
+                        <control id="Education" classid="{E616A57F-20E0-4534-8662-A101B5DDF4E0}">
+                          <parameters>
+                            <FilterResults>3</FilterResults>
+                            <AllowChangingFiltersOnUI>true</AllowChangingFiltersOnUI>
+                            <ShowLanguageFilter>true</ShowLanguageFilter>
+                            <ShowDepartmentFilter>false</ShowDepartmentFilter>
+                            <EnableAutoSuggestions>true</EnableAutoSuggestions>
+                            <SearchForAutoSuggestionsUsing>description</SearchForAutoSuggestionsUsing>
+                            <EnableRating>true</EnableRating>
+                            <ShowRatingUsing>exchangerate</ShowRatingUsing>
+                            <AutoSuggestionSource>0</AutoSuggestionSource>
+                            <NumberOfResults>10</NumberOfResults>
+                            <ShowContextualActions>ShowAll</ShowContextualActions>
+                            <ActionList />
+                            <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{9410d285-719a-38a7-bce2-9774b16b3ea3}" name="timeline_careplans" labelid="{81b18bd0-ab03-410d-a3fc-187f9f18d35d}" expanded="true" showlabel="true" IsUserDefined="0" locklevel="0">
+          <labels>
+            <label description="Timeline" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{6d730125-a05a-260c-5872-7ab94960872b}" name="tab_3_section_1" labelid="{773e4d06-d413-4839-942e-491db01c0ec3}" showlabel="false" IsUserDefined="0" locklevel="0" labelwidth="115" columns="1" layout="varwidth" showbar="false">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d0092482-a021-419b-776c-a6c0745d2bb9}" labelid="{35c71724-9b0f-4dce-a3c3-d9b58f45a582}" showlabel="false" rowspan="26" auto="false" colspan="1">
+                        <labels>
+                          <label description="Patient Timeline" languagecode="1033" />
+                        </labels>
+                        <control id="WebResource_patienttimeline" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
+                          <parameters>
+                            <Url>msemr_tc_timeline_control_html</Url>
+                            <PassParameters>true</PassParameters>
+                            <ShowOnMobileClient>false</ShowOnMobileClient>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>false</Border>
+                            <WebResourceId>{D3F928AB-8274-E811-A83A-000D3A33BDBD}</WebResourceId>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false">
+                            <dependencies />
+                          </event>
+                        </events>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{0d88b4c4-e7e9-7947-a6e1-caa4655d0c7c}" name="careteam_careplans" labelid="{ca1cc80c-d2fe-4d0c-9fd7-2b05f647a88e}" expanded="true" showlabel="true" IsUserDefined="0" locklevel="0">
+          <labels>
+            <label description="Care Team &amp; Care Plans" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{9144b693-30ae-d513-4c4d-43620203a1e6}" name="CARE_Team" labelid="{b2ce9584-883d-4b25-a958-f500e15860b5}" showlabel="true" IsUserDefined="0" celllabelalignment="Left" locklevel="0" celllabelposition="Left" labelwidth="115" columns="1" layout="varwidth" showbar="true">
+                  <labels>
+                    <label description="CARE TEAM" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1bd41d1b-5939-5cc0-d9d6-25ec2237170b}" labelid="{2dabbbaf-982a-459a-8d9e-e684f2a117a1}" showlabel="false" rowspan="20" auto="false" colspan="1">
+                        <labels>
+                          <label description="Care Team" languagecode="1033" />
+                        </labels>
+                        <control id="WebResource_careteam" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
+                          <parameters>
+                            <Url>msemr_ctc_careteam_control</Url>
+                            <PassParameters>true</PassParameters>
+                            <ShowOnMobileClient>false</ShowOnMobileClient>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>false</Border>
+                            <WebResourceId>{1B2EADB6-1879-E811-A83B-000D3A33B5CC}</WebResourceId>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false">
+                            <dependencies />
+                          </event>
+                        </events>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section id="{652a9a47-4ed9-bedc-8926-6c6c14a453a6}" name="care_plan" labelid="{f6c8fa6a-6b9e-47d3-a416-98ee9d25f633}" showlabel="true" IsUserDefined="0" celllabelalignment="Left" locklevel="0" celllabelposition="Left" labelwidth="115" columns="1" layout="varwidth" showbar="true">
+                  <labels>
+                    <label description="CARE PLANS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{67c3c99e-5c8d-c903-0451-abc8797bd7ee}" labelid="{fdb49c08-adcf-4a4a-80a7-227651f9aa26}" showlabel="false" rowspan="12" auto="false" colspan="1">
+                        <labels>
+                          <label description="Care Plans (Patient)" languagecode="1033" />
+                        </labels>
+                        <control id="Care_Plans" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{1cc3b2e1-07e6-6bd8-a570-d7228edd021e}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{AC2F655B-09CB-4C6E-BF1A-6156B5AC0E29}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msemr_contact_msemr_careplan_PatientIdentifier</RelationshipName>
+                            <TargetEntityType>msemr_careplan</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{AC2F655B-09CB-4C6E-BF1A-6156B5AC0E29}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <HeaderColorCode>#D6EAFA</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{2617b740-a221-4510-b5f9-92d8bee371fa}" celllabelposition="Top" labelwidth="115" columns="1111">
+        <rows>
+          <row>
+            <cell id="{ee702bd1-2903-2884-75ec-790852517a08}" labelid="{84cf5806-fa55-4259-83ca-fde63d27c2dc}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Medical Record Number" languagecode="1033" />
+              </labels>
+              <control disabled="false" id="header_msemr_medicalrecordnumber" datafieldname="msemr_medicalrecordnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+            </cell>
+            <cell id="{3e3f3558-1d2a-40cf-9e66-744f93a851cd}" labelid="{add9a2a1-da10-41fa-9357-a4f3dd9b9680}" showlabel="true">
+              <labels>
+                <label description="Business Phone" languagecode="1033" />
+              </labels>
+              <control disabled="false" id="header_telephone1" datafieldname="telephone1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+            </cell>
+            <cell id="{cf440f34-7bd1-4937-b50a-4657cfdf1141}" labelid="{6e169221-e0b0-465d-8263-3c9d2e78ef0f}" showlabel="true">
+              <labels>
+                <label description="Email" languagecode="1033" />
+              </labels>
+              <control disabled="false" id="header_emailaddress1" datafieldname="emailaddress1" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" />
+            </cell>
+            <cell id="{feb62a46-38f3-41d0-b39c-28a7f4bd90c3}" labelid="{0584651f-2ff6-4786-92bd-da20007af8af}" showlabel="true" locklevel="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" datafieldname="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:AppCommon/Contact/Contact_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem Id="navAddresses" Area="Info" Sequence="10" RelationshipName="Contact_CustomerAddress" Show="false">
+            <Privileges>
+              <Privilege Privilege="ReadActivity" Entity="" />
+            </Privileges>
+            <Titles>
+              <Title Text="Addresses" LCID="1033" />
+              <Title Text="العناوين" LCID="1025" />
+              <Title Text="Адреси" LCID="1026" />
+              <Title Text="Adreces" LCID="1027" />
+              <Title Text="Adresy" LCID="1029" />
+              <Title Text="Adresser" LCID="1030" />
+              <Title Text="Adressen" LCID="1031" />
+              <Title Text="Διευθύνσεις" LCID="1032" />
+              <Title Text="Direcciones" LCID="3082" />
+              <Title Text="Aadressid" LCID="1061" />
+              <Title Text="Helbideak" LCID="1069" />
+              <Title Text="Osoitteet" LCID="1035" />
+              <Title Text="Adresses" LCID="1036" />
+              <Title Text="Enderezos" LCID="1110" />
+              <Title Text="כתובות" LCID="1037" />
+              <Title Text="पते" LCID="1081" />
+              <Title Text="Adrese" LCID="1050" />
+              <Title Text="Címek" LCID="1038" />
+              <Title Text="Alamat" LCID="1057" />
+              <Title Text="Indirizzi" LCID="1040" />
+              <Title Text="住所" LCID="1041" />
+              <Title Text="Мекенжайлар" LCID="1087" />
+              <Title Text="주소" LCID="1042" />
+              <Title Text="Adresai" LCID="1063" />
+              <Title Text="Adreses" LCID="1062" />
+              <Title Text="Alamat" LCID="1086" />
+              <Title Text="Adresser" LCID="1044" />
+              <Title Text="Adressen" LCID="1043" />
+              <Title Text="Adresy" LCID="1045" />
+              <Title Text="Endereços" LCID="1046" />
+              <Title Text="Endereços" LCID="2070" />
+              <Title Text="Adrese" LCID="1048" />
+              <Title Text="Адреса" LCID="1049" />
+              <Title Text="Adresy" LCID="1051" />
+              <Title Text="Naslovi" LCID="1060" />
+              <Title Text="Адресе" LCID="10266" />
+              <Title Text="Adrese" LCID="9242" />
+              <Title Text="Adresser" LCID="1053" />
+              <Title Text="ที่อยู่" LCID="1054" />
+              <Title Text="Adresler" LCID="1055" />
+              <Title Text="Адреси" LCID="1058" />
+              <Title Text="Địa chỉ" LCID="1066" />
+              <Title Text="地址" LCID="2052" />
+              <Title Text="地址" LCID="3076" />
+              <Title Text="地址" LCID="1028" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="navSubConts" Area="Info" Sequence="11" RelationshipName="contact_customer_contacts" Show="false">
+            <Privileges>
+              <Privilege Privilege="ReadActivity" Entity="" />
+            </Privileges>
+            <Titles>
+              <Title Text="Contacts" LCID="1033" />
+              <Title Text="جهات الاتصال" LCID="1025" />
+              <Title Text="Контакти" LCID="1026" />
+              <Title Text="Contactes" LCID="1027" />
+              <Title Text="Kontakty" LCID="1029" />
+              <Title Text="Kontakter" LCID="1030" />
+              <Title Text="Kontakte" LCID="1031" />
+              <Title Text="Επαφές" LCID="1032" />
+              <Title Text="Contactos" LCID="3082" />
+              <Title Text="Kontaktid" LCID="1061" />
+              <Title Text="Kontaktuak" LCID="1069" />
+              <Title Text="Yhteyshenkilöt" LCID="1035" />
+              <Title Text="Contacts" LCID="1036" />
+              <Title Text="Contactos" LCID="1110" />
+              <Title Text="אנשי קשר" LCID="1037" />
+              <Title Text="संपर्क" LCID="1081" />
+              <Title Text="Kontakti" LCID="1050" />
+              <Title Text="Kapcsolattartók" LCID="1038" />
+              <Title Text="Kontak" LCID="1057" />
+              <Title Text="Contatti" LCID="1040" />
+              <Title Text="取引先担当者" LCID="1041" />
+              <Title Text="Істес кісілер" LCID="1087" />
+              <Title Text="연락처" LCID="1042" />
+              <Title Text="Kontaktai" LCID="1063" />
+              <Title Text="Kontaktpersonas" LCID="1062" />
+              <Title Text="Kenalan" LCID="1086" />
+              <Title Text="Kontakter" LCID="1044" />
+              <Title Text="Contactpersonen" LCID="1043" />
+              <Title Text="Kontakty" LCID="1045" />
+              <Title Text="Contatos" LCID="1046" />
+              <Title Text="Contactos" LCID="2070" />
+              <Title Text="Persoane de contact" LCID="1048" />
+              <Title Text="Контакты" LCID="1049" />
+              <Title Text="Kontakty" LCID="1051" />
+              <Title Text="Stiki" LCID="1060" />
+              <Title Text="Контакти" LCID="10266" />
+              <Title Text="Kontakti" LCID="9242" />
+              <Title Text="Kontakter" LCID="1053" />
+              <Title Text="ผู้ติดต่อ" LCID="1054" />
+              <Title Text="İlgili Kişiler" LCID="1055" />
+              <Title Text="Контактні особи" LCID="1058" />
+              <Title Text="Người liên hệ" LCID="1066" />
+              <Title Text="联系人" LCID="2052" />
+              <Title Text="連絡人" LCID="3076" />
+              <Title Text="連絡人" LCID="1028" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="navRelationships" Area="Info" Sequence="12" RelationshipName="contact_customer_relationship_customer" Show="false">
+            <Privileges>
+              <Privilege Privilege="ReadActivity" Entity="" />
+            </Privileges>
+            <Titles>
+              <Title Text="CustomerRelationship" LCID="1033" />
+              <Title Text="العلاقة بالعميل" LCID="1025" />
+              <Title Text="Взаимоотношения с клиент" LCID="1026" />
+              <Title Text="Relació amb el client" LCID="1027" />
+              <Title Text="Vztah se zákazníkem" LCID="1029" />
+              <Title Text="CustomerRelationship" LCID="1030" />
+              <Title Text="Kundenbeziehung" LCID="1031" />
+              <Title Text="CustomerRelationship" LCID="1032" />
+              <Title Text="Relación con el cliente" LCID="3082" />
+              <Title Text="CustomerRelationship" LCID="1061" />
+              <Title Text="CustomerRelationship" LCID="1069" />
+              <Title Text="CustomerRelationship" LCID="1035" />
+              <Title Text="Relation client" LCID="1036" />
+              <Title Text="CustomerRelationship" LCID="1110" />
+              <Title Text="CustomerRelationship" LCID="1037" />
+              <Title Text="CustomerRelationship" LCID="1081" />
+              <Title Text="CustomerRelationship" LCID="1050" />
+              <Title Text="CustomerRelationship" LCID="1038" />
+              <Title Text="CustomerRelationship" LCID="1057" />
+              <Title Text="Relazione con il cliente" LCID="1040" />
+              <Title Text="CustomerRelationship" LCID="1041" />
+              <Title Text="Тұтынушы қатынасы" LCID="1087" />
+              <Title Text="고객 관계" LCID="1042" />
+              <Title Text="CustomerRelationship" LCID="1063" />
+              <Title Text="Klientu attiecības" LCID="1062" />
+              <Title Text="CustomerRelationship" LCID="1086" />
+              <Title Text="Kunderelasjon" LCID="1044" />
+              <Title Text="Klantrelatie" LCID="1043" />
+              <Title Text="Relacja z klientem" LCID="1045" />
+              <Title Text="CustomerRelationship" LCID="1046" />
+              <Title Text="CustomerRelationship" LCID="2070" />
+              <Title Text="CustomerRelationship" LCID="1048" />
+              <Title Text="CustomerRelationship" LCID="1049" />
+              <Title Text="CustomerRelationship" LCID="1051" />
+              <Title Text="CustomerRelationship" LCID="1060" />
+              <Title Text="Однос са клијентима" LCID="10266" />
+              <Title Text="Odnos sa klijentima" LCID="9242" />
+              <Title Text="Kundrelation" LCID="1053" />
+              <Title Text="ลูกค้าสัมพันธ์" LCID="1054" />
+              <Title Text="CustomerRelationship" LCID="1055" />
+              <Title Text="Зв’язок із клієнтом" LCID="1058" />
+              <Title Text="CustomerRelationship" LCID="1066" />
+              <Title Text="CustomerRelationship" LCID="2052" />
+              <Title Text="CustomerRelationship" LCID="3076" />
+              <Title Text="CustomerRelationship" LCID="1028" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navCampaignsInSFA" Sequence="21" Area="Marketing" Id="navCampaignsInSFA" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Campaigns" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="navAsyncOperations" Area="ProcessCenter" Sequence="9500" RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAsyncOperations" Show="false">
+            <Titles>
+              <Title Text="Workflows" LCID="1033" />
+              <Title Text="عمليات سير العمل" LCID="1025" />
+              <Title Text="Работни потоци" LCID="1026" />
+              <Title Text="Fluxos de treball" LCID="1027" />
+              <Title Text="Pracovní postupy" LCID="1029" />
+              <Title Text="Arbejdsprocesser" LCID="1030" />
+              <Title Text="Workflows" LCID="1031" />
+              <Title Text="Ροές εργασιών" LCID="1032" />
+              <Title Text="Flujos de trabajo" LCID="3082" />
+              <Title Text="Töövood" LCID="1061" />
+              <Title Text="Lan-fluxuak" LCID="1069" />
+              <Title Text="Työnkulut" LCID="1035" />
+              <Title Text="Workflows" LCID="1036" />
+              <Title Text="Fluxos de traballo" LCID="1110" />
+              <Title Text="זרימות עבודה" LCID="1037" />
+              <Title Text="कार्यप्रवाह" LCID="1081" />
+              <Title Text="Tjekovi rada" LCID="1050" />
+              <Title Text="Munkafolyamatok" LCID="1038" />
+              <Title Text="Alur Kerja" LCID="1057" />
+              <Title Text="Flussi di lavoro" LCID="1040" />
+              <Title Text="ワークフロー" LCID="1041" />
+              <Title Text="Жұмыс ағындары" LCID="1087" />
+              <Title Text="워크플로" LCID="1042" />
+              <Title Text="Darbo eigos" LCID="1063" />
+              <Title Text="Darbplūsmas" LCID="1062" />
+              <Title Text="Aliran Kerja" LCID="1086" />
+              <Title Text="Arbeidsflyter" LCID="1044" />
+              <Title Text="Werkstromen" LCID="1043" />
+              <Title Text="Przepływy pracy" LCID="1045" />
+              <Title Text="Fluxos de Trabalho" LCID="1046" />
+              <Title Text="Fluxos de Trabalho" LCID="2070" />
+              <Title Text="Fluxuri de lucru" LCID="1048" />
+              <Title Text="Бизнес-процессы" LCID="1049" />
+              <Title Text="Pracovné postupy" LCID="1051" />
+              <Title Text="Poteki dela" LCID="1060" />
+              <Title Text="Токови посла" LCID="10266" />
+              <Title Text="Tokovi posla" LCID="9242" />
+              <Title Text="Arbetsflöden" LCID="1053" />
+              <Title Text="เวิร์กโฟลว์" LCID="1054" />
+              <Title Text="İş Akışları" LCID="1055" />
+              <Title Text="Робочі цикли" LCID="1058" />
+              <Title Text="Quy trình làm việc" LCID="1066" />
+              <Title Text="工作流" LCID="2052" />
+              <Title Text="工作流程" LCID="3076" />
+              <Title Text="工作流程" LCID="1028" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="navProcessSessions" Area="ProcessCenter" Sequence="9700" RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navProcessSessions" Show="false">
+            <Titles>
+              <Title Text="Dialog Sessions" LCID="1033" />
+              <Title Text="جلسات عمل الحوار" LCID="1025" />
+              <Title Text="Диалогови сесии" LCID="1026" />
+              <Title Text="Sessions de diàleg" LCID="1027" />
+              <Title Text="Relace dialogů" LCID="1029" />
+              <Title Text="Dialogsessioner" LCID="1030" />
+              <Title Text="Dialogsitzungen" LCID="1031" />
+              <Title Text="Περίοδοι λειτουργίας παραθύρου διαλόγου" LCID="1032" />
+              <Title Text="Sesiones de diálogo" LCID="3082" />
+              <Title Text="Dialoogiseansid" LCID="1061" />
+              <Title Text="Elkarrizketa-saioak" LCID="1069" />
+              <Title Text="Dialogi-istunnot" LCID="1035" />
+              <Title Text="Sessions de dialogues" LCID="1036" />
+              <Title Text="Sesións de diálogo" LCID="1110" />
+              <Title Text="הפעלות דו-שיח" LCID="1037" />
+              <Title Text="संवाद सत्र" LCID="1081" />
+              <Title Text="Sesije dijaloga" LCID="1050" />
+              <Title Text="Párbeszéd-munkamenetek" LCID="1038" />
+              <Title Text="Sesi Dialog" LCID="1057" />
+              <Title Text="Sessioni di interazione" LCID="1040" />
+              <Title Text="ダイアログ セッション" LCID="1041" />
+              <Title Text="Диалогтық сеанстар" LCID="1087" />
+              <Title Text="대화 세션" LCID="1042" />
+              <Title Text="Dialogo seansai" LCID="1063" />
+              <Title Text="Dialogu sesijas" LCID="1062" />
+              <Title Text="Sesi Dialog" LCID="1086" />
+              <Title Text="Dialogøkter" LCID="1044" />
+              <Title Text="Dialoogvenstersessies" LCID="1043" />
+              <Title Text="Sesje dialogowe" LCID="1045" />
+              <Title Text="Sessões de Diálogo" LCID="1046" />
+              <Title Text="Sessões de Diálogo" LCID="2070" />
+              <Title Text="Sesiuni de dialog" LCID="1048" />
+              <Title Text="Сеансы диалогового окна" LCID="1049" />
+              <Title Text="Relácie dialógového okna" LCID="1051" />
+              <Title Text="Seje dialoga" LCID="1060" />
+              <Title Text="Сесије дијалога" LCID="10266" />
+              <Title Text="Sesije dijaloga" LCID="9242" />
+              <Title Text="Dialogsessioner" LCID="1053" />
+              <Title Text="เซสชันของกล่องโต้ตอบ" LCID="1054" />
+              <Title Text="Diyalog Oturumları" LCID="1055" />
+              <Title Text="Сеанси діалогу" LCID="1058" />
+              <Title Text="Phiên hộp thoại" LCID="1066" />
+              <Title Text="对话会话" LCID="2052" />
+              <Title Text="對話方塊工作階段" LCID="3076" />
+              <Title Text="對話方塊工作階段" LCID="1028" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_activitydefinitioncontributorcontact_Contact" Sequence="10001" Area="Info" Id="nav_msemr_contact_msemr_activitydefinitioncontributorcontact_Contact">
+            <Titles>
+              <Title LCID="1033" Text="Activity Definition Contributor Contacts" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_additionalname_Patient" Sequence="10002" Area="Info" Id="nav_msemr_contact_msemr_additionalname_Patient">
+            <Titles>
+              <Title LCID="1033" Text="Additional Names" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_allergyintolerance_Patient" Sequence="10003" Area="Info" Id="nav_msemr_contact_msemr_allergyintolerance_Patient">
+            <Titles>
+              <Title LCID="1033" Text="Allergy Intolerances" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_appointmentemr_ActorPatient" Sequence="10004" Area="Info" Id="nav_msemr_contact_msemr_appointmentemr_ActorPatient">
+            <Titles>
+              <Title LCID="1033" Text="Appointments (EMR)" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_careplan_PatientIdentifier" Sequence="10005" Area="Info" Id="nav_msemr_contact_msemr_careplan_PatientIdentifier">
+            <Titles>
+              <Title LCID="1033" Text="Care Plans" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_careteam_SubjectPatient" Sequence="10006" Area="Info" Id="nav_msemr_contact_msemr_careteam_SubjectPatient">
+            <Titles>
+              <Title LCID="1033" Text="Care Teams" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_clinicalimpression_Assessor" Sequence="10007" Area="Info" Id="nav_msemr_contact_msemr_clinicalimpression_Assessor">
+            <Titles>
+              <Title LCID="1033" Text="Clinical Impressions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_device_Patient" Sequence="10008" Area="Info" Id="nav_msemr_contact_msemr_device_Patient">
+            <Titles>
+              <Title LCID="1033" Text="Devices" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_devicerequest_PerformerTypePatient" Id="nav_msemr_contact_msemr_devicerequest_PerformerTypePatient" Show="true" Sequence="10009" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Device Requests" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_encounter_SubjectPatient" Sequence="10010" Area="Info" Id="nav_msemr_contact_msemr_encounter_SubjectPatient">
+            <Titles>
+              <Title LCID="1033" Text="Encounters" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_episodeofcare_Patient" Sequence="10011" Area="Info" Id="nav_msemr_contact_msemr_episodeofcare_Patient">
+            <Titles>
+              <Title LCID="1033" Text="Episodes of Care" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_familymemberhistory_Patient" Sequence="10012" Area="Info" Id="nav_msemr_contact_msemr_familymemberhistory_Patient">
+            <Titles>
+              <Title LCID="1033" Text="Family Member Histories" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_medicationadministration_SubjectTypePatient" Sequence="10013" Area="Info" Id="nav_msemr_contact_msemr_medicationadministration_SubjectTypePatient">
+            <Titles>
+              <Title LCID="1033" Text="Medication Administration" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_medicationrequest_Recorder" Sequence="10014" Area="Info" Id="nav_msemr_contact_msemr_medicationrequest_Recorder">
+            <Titles>
+              <Title LCID="1033" Text="Medication Requests" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_nutritionorder_Patient" Sequence="10015" Area="Info" Id="nav_msemr_contact_msemr_nutritionorder_Patient">
+            <Titles>
+              <Title LCID="1033" Text="Nutrition Orders" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_observation_SubjectTypePatient" Sequence="10016" Area="Info" Id="nav_msemr_contact_msemr_observation_SubjectTypePatient">
+            <Titles>
+              <Title LCID="1033" Text="Observations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_procedure_Patient" Sequence="10017" Area="Info" Id="nav_msemr_contact_msemr_procedure_Patient">
+            <Titles>
+              <Title LCID="1033" Text="Procedures" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_procedurerequest_PerformerAgentPatient" Id="nav_msemr_contact_msemr_procedurerequest_PerformerAgentPatient" Show="true" Sequence="10018" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Procedure Requests" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_referralrequest_RequesterAgentPatient" Id="nav_msemr_contact_msemr_referralrequest_RequesterAgentPatient" Show="true" Sequence="10019" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Referral Requests" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_riskassessment_performerPractitioner" Sequence="10020" Area="Info" Id="nav_msemr_contact_msemr_riskassessment_performerPractitioner">
+            <Titles>
+              <Title LCID="1033" Text="Risk Assessments" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_specimen_SubjectTypePatient" Sequence="10021" Area="Info" Id="nav_msemr_contact_msemr_specimen_SubjectTypePatient">
+            <Titles>
+              <Title LCID="1033" Text="Specimens" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_task_RequesterAgentPatient" Sequence="10022" Area="Info" Id="nav_msemr_contact_task_RequesterAgentPatient">
+            <Titles>
+              <Title LCID="1033" Text="Tasks" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_contact_Contact1" Area="Info" Sequence="10023" RelationshipName="msemr_contact_contact_Contact1" Show="false">
+            <Titles>
+              <Title Text="Contacts" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_contact_Contact2" Area="Info" Sequence="10024" RelationshipName="msemr_contact_contact_Contact2" Show="false">
+            <Titles>
+              <Title Text="Contacts" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_contact_GeneralPractioner" Area="Info" Sequence="10025" RelationshipName="msemr_contact_contact_GeneralPractioner" Show="false">
+            <Titles>
+              <Title Text="Contacts" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_contact_Link1" Area="Info" Sequence="10026" RelationshipName="msemr_contact_contact_Link1" Show="false">
+            <Titles>
+              <Title Text="Contacts" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_contact_Link2" Area="Info" Sequence="10027" RelationshipName="msemr_contact_contact_Link2" Show="false">
+            <Titles>
+              <Title Text="Contacts" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_activitydefinitioncontact_Contact" Area="Info" Sequence="10028" RelationshipName="msemr_contact_msemr_activitydefinitioncontact_Contact" Show="false">
+            <Titles>
+              <Title Text="Activity Definition Contacts" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_appointmentemr_ActorPractitioner" Area="Info" Sequence="10029" RelationshipName="msemr_contact_msemr_appointmentemr_ActorPractitioner" Show="false">
+            <Titles>
+              <Title Text="Appointments (EMR)" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_appointmentemr_ActorRelatedPerson" Area="Info" Sequence="10030" RelationshipName="msemr_contact_msemr_appointmentemr_ActorRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Appointments (EMR)" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_appointmentemrparticipant_ActorPatient" Sequence="10031" Area="Info" Id="nav_msemr_contact_msemr_appointmentemrparticipant_ActorPatient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Appointment (EMR) Participants" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_appointmentemrparticipant_ActorPhysician" Sequence="10032" Area="Info" Id="nav_msemr_contact_msemr_appointmentemrparticipant_ActorPhysician" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Appointment (EMR) Participants" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_appointmentemrparticipant_ActorRelatedPerson" Sequence="10033" Area="Info" Id="nav_msemr_contact_msemr_appointmentemrparticipant_ActorRelatedPerson" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Appointment (EMR) Participants" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_careplanactivityperformer_PerformerTypePatient" Area="Info" Sequence="10034" RelationshipName="msemr_contact_msemr_careplanactivityperformer_PerformerTypePatient" Show="false">
+            <Titles>
+              <Title Text="Care Plan Activity Performers" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_careplanactivityperformer_PerformerTypePractitioner" Sequence="10035" Area="Info" Id="nav_msemr_contact_msemr_careplanactivityperformer_PerformerTypePractitioner" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Care Plan Activity Performers" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_careplanactivityperformer_PerformerTypeRelatedPerson" Area="Info" Sequence="10036" RelationshipName="msemr_contact_msemr_careplanactivityperformer_PerformerTypeRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Care Plan Activity Performers" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_careplanauthor_PlanAuthorPatientIdentifier" Area="Info" Sequence="10037" RelationshipName="msemr_contact_msemr_careplanauthor_PlanAuthorPatientIdentifier" Show="false">
+            <Titles>
+              <Title Text="Care Plan Authors" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_careplanauthor_PlanAuthorPractitionerIdentifier" Area="Info" Sequence="10038" RelationshipName="msemr_contact_msemr_careplanauthor_PlanAuthorPractitionerIdentifier" Show="false">
+            <Titles>
+              <Title Text="Care Plan Authors" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_careplanauthor_PlanAuthorRelatedPersonIdentifier" Area="Info" Sequence="10039" RelationshipName="msemr_contact_msemr_careplanauthor_PlanAuthorRelatedPersonIdentifier" Show="false">
+            <Titles>
+              <Title Text="Care Plan Authors" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_careteamparticipant_MemberPatient" Area="Info" Sequence="10040" RelationshipName="msemr_contact_msemr_careteamparticipant_MemberPatient" Show="false">
+            <Titles>
+              <Title Text="Care Team Participants" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_careteamparticipant_MemberPractioner" Sequence="10041" Area="Info" Id="nav_msemr_contact_msemr_careteamparticipant_MemberPractioner" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Care Team Participants" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_careteamparticipant_MemberRelatedPerson" Area="Info" Sequence="10042" RelationshipName="msemr_contact_msemr_careteamparticipant_MemberRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Care Team Participants" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_clinicalimpression_SubjectPatient" Area="Info" Sequence="10043" RelationshipName="msemr_contact_msemr_clinicalimpression_SubjectPatient" Show="false">
+            <Titles>
+              <Title Text="Clinical Impressions" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_communication_Contact" Sequence="10044" Area="Info" Id="nav_msemr_contact_msemr_communication_Contact" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Communications" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_communicationrequest_Lookup" Area="Info" Sequence="10045" RelationshipName="msemr_contact_msemr_communicationrequest_Lookup" Show="false">
+            <Titles>
+              <Title Text="Communication Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_communicationrequest_RequesterAgentPatient" Area="Info" Sequence="10046" RelationshipName="msemr_contact_msemr_communicationrequest_RequesterAgentPatient" Show="false">
+            <Titles>
+              <Title Text="Communication Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_communicationrequest_RequesterAgentRelatedPerson" Area="Info" Sequence="10047" RelationshipName="msemr_contact_msemr_communicationrequest_RequesterAgentRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Communication Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_communicationrequest_SenderPatient" Area="Info" Sequence="10048" RelationshipName="msemr_contact_msemr_communicationrequest_SenderPatient" Show="false">
+            <Titles>
+              <Title Text="Communication Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_communicationrequest_SenderPractitioner" Area="Info" Sequence="10049" RelationshipName="msemr_contact_msemr_communicationrequest_SenderPractitioner" Show="false">
+            <Titles>
+              <Title Text="Communication Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_communicationrequest_SenderRelatedPerson" Area="Info" Sequence="10050" RelationshipName="msemr_contact_msemr_communicationrequest_SenderRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Communication Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_communicationrequest_SubjectPatient" Sequence="10051" Area="Info" Id="nav_msemr_contact_msemr_communicationrequest_SubjectPatient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Communication Requests" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_communicationrequestrecipient_RecipientPatient" Sequence="10052" Area="Info" Id="nav_msemr_contact_msemr_communicationrequestrecipient_RecipientPatient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Communication Request Recipients" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_communicationrequestrecipient_RecipientPractitioner" Area="Info" Sequence="10053" RelationshipName="msemr_contact_msemr_communicationrequestrecipient_RecipientPractitioner" Show="false">
+            <Titles>
+              <Title Text="Communication Request Recipients" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_communicationrequestrecipient_RecipientRelatedPerson" Area="Info" Sequence="10054" RelationshipName="msemr_contact_msemr_communicationrequestrecipient_RecipientRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Communication Request Recipients" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_condition_Asserter" Sequence="10055" Area="Info" Id="nav_msemr_contact_msemr_condition_Asserter" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Conditions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_condition_Practitioner" Sequence="10056" Area="Info" Id="nav_msemr_contact_msemr_condition_Practitioner" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Conditions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_condition_SubjectTypePatient" Sequence="10057" Area="Info" Id="nav_msemr_contact_msemr_condition_SubjectTypePatient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Conditions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_contactlink_Link" Area="Info" Sequence="10058" RelationshipName="msemr_contact_msemr_contactlink_Link" Show="false">
+            <Titles>
+              <Title Text="Contact Links" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_contactlink_Patient" Sequence="10059" Area="Info" Id="nav_msemr_contact_msemr_contactlink_Patient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Contact Links" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_devicerequest_PerformerTypeRelatedPerson" Area="Info" Sequence="10061" RelationshipName="msemr_contact_msemr_devicerequest_PerformerTypeRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Device Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_devicerequest_Practitioner" Area="Info" Sequence="10062" RelationshipName="msemr_contact_msemr_devicerequest_Practitioner" Show="false">
+            <Titles>
+              <Title Text="Device Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_devicerequest_RequesterAgentTypePractitoner" Sequence="10063" Area="Info" Id="nav_msemr_contact_msemr_devicerequest_RequesterAgentTypePractitoner" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Device Requests" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_devicerequest_SubjectTypePatient" Area="Info" Sequence="10064" RelationshipName="msemr_contact_msemr_devicerequest_SubjectTypePatient" Show="false">
+            <Titles>
+              <Title Text="Device Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_encounter_EncounterPatientIdentifier" Sequence="10065" Area="Info" Id="nav_msemr_contact_msemr_encounter_EncounterPatientIdentifier" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Encounters" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_encounterparticipant" Sequence="10066" Area="Info" Id="nav_msemr_contact_msemr_encounterparticipant" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Encounter Participants" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_encounterparticipant_IndividualType" Sequence="10067" Area="Info" Id="nav_msemr_contact_msemr_encounterparticipant_IndividualType" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Encounter Participants" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_encounterparticipant_IndividualTypeRelatedPerson" Area="Info" Sequence="10068" RelationshipName="msemr_contact_msemr_encounterparticipant_IndividualTypeRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Encounter Participants" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_episodeofcare_CareManager" Sequence="10069" Area="Info" Id="nav_msemr_contact_msemr_episodeofcare_CareManager" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Episodes of Care" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_goal_GoalExpressedByPatient" Sequence="10070" Area="Info" Id="nav_msemr_contact_msemr_goal_GoalExpressedByPatient">
+            <Titles>
+              <Title LCID="1033" Text="Goals (Expressed by Patient)" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_goal_GoalExpressedByPractitioner" Area="Info" Sequence="10071" RelationshipName="msemr_contact_msemr_goal_GoalExpressedByPractitioner" Show="false">
+            <Titles>
+              <Title Text="Goals" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_goal_GoalExpressedByRelatedPerson" Area="Info" Sequence="10072" RelationshipName="msemr_contact_msemr_goal_GoalExpressedByRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Goals" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_goal_GoalSubjectPatient" Sequence="10073" Area="Info" Id="nav_msemr_contact_msemr_goal_GoalSubjectPatient">
+            <Titles>
+              <Title LCID="1033" Text="Goals (Subject Patient)" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_medicalidentifier_Assignee" Sequence="10074" Area="Info" Id="nav_msemr_contact_msemr_medicalidentifier_Assignee" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Medical Identifiers" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_medicationadministrationperformer_PerformerActorTypePatient" Area="Info" Sequence="10075" RelationshipName="msemr_contact_msemr_medicationadministrationperformer_PerformerActorTypePatient" Show="false">
+            <Titles>
+              <Title Text="Medication Administration Performers" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_medicationadministrationperformer_PerformerActorTypePractitioner" Sequence="10076" Area="Info" Id="nav_msemr_contact_msemr_medicationadministrationperformer_PerformerActorTypePractitioner" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Medication Administration Performers" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_medicationadministrationperformer_PerformerActorTypeRelatedPerson" Area="Info" Sequence="10077" RelationshipName="msemr_contact_msemr_medicationadministrationperformer_PerformerActorTypeRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Medication Administration Performers" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_medicationrequest_RequesterAgentTypePatient" Area="Info" Sequence="10078" RelationshipName="msemr_contact_msemr_medicationrequest_RequesterAgentTypePatient" Show="false">
+            <Titles>
+              <Title Text="Medication Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_medicationrequest_RequesterAgentTypePractitioner" Area="Info" Sequence="10079" RelationshipName="msemr_contact_msemr_medicationrequest_RequesterAgentTypePractitioner" Show="false">
+            <Titles>
+              <Title Text="Medication Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_medicationrequest_RequesterAgentTypeRelatedPerson" Area="Info" Sequence="10080" RelationshipName="msemr_contact_msemr_medicationrequest_RequesterAgentTypeRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Medication Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_medicationrequest_SubjectTypePatient" Area="Info" Sequence="10081" RelationshipName="msemr_contact_msemr_medicationrequest_SubjectTypePatient" Show="false">
+            <Titles>
+              <Title Text="Medication Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_nutritionorder_Orderer" Area="Info" Sequence="10082" RelationshipName="msemr_contact_msemr_nutritionorder_Orderer" Show="false">
+            <Titles>
+              <Title Text="Nutrition Orders" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_observationperformer_ObsPerformerPatient" Area="Info" Sequence="10083" RelationshipName="msemr_contact_msemr_observationperformer_ObsPerformerPatient" Show="false">
+            <Titles>
+              <Title Text="Observation Performers" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_observationperformer_ObsPerformerPractitioner" Sequence="10084" Area="Info" Id="nav_msemr_contact_msemr_observationperformer_ObsPerformerPractitioner" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Observation Performers" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_observationperformer_ObsPerformerRelatedPerson" Area="Info" Sequence="10085" RelationshipName="msemr_contact_msemr_observationperformer_ObsPerformerRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Observation Performers" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_plandefinitioncontributorcontact_contact" Sequence="10086" Area="Info" Id="nav_msemr_contact_msemr_plandefinitioncontributorcontact_contact" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Plan Definition Contributor Contacts" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_practitionerqualification_Practitioner" Area="Info" Sequence="10087" RelationshipName="msemr_contact_msemr_practitionerqualification_Practitioner" Show="false">
+            <Titles>
+              <Title Text="Practitioner Qualifications" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_practitionerrole_Practitioner" Area="Info" Sequence="10088" RelationshipName="msemr_contact_msemr_practitionerrole_Practitioner" Show="false">
+            <Titles>
+              <Title Text="Practitioner Roles" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_procedureperformer_PerformerActorPatient" Area="Info" Sequence="10089" RelationshipName="msemr_contact_msemr_procedureperformer_PerformerActorPatient" Show="false">
+            <Titles>
+              <Title Text="Procedure Performers" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_procedureperformer_PerformerActorPractitioner" Sequence="10090" Area="Info" Id="nav_msemr_contact_msemr_procedureperformer_PerformerActorPractitioner" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Procedure Performers" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_procedureperformer_PerformerActorRelatedPerson" Area="Info" Sequence="10091" RelationshipName="msemr_contact_msemr_procedureperformer_PerformerActorRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Procedure Performers" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_procedurerequest_PerformerPractitioner" Area="Info" Sequence="10093" RelationshipName="msemr_contact_msemr_procedurerequest_PerformerPractitioner" Show="false">
+            <Titles>
+              <Title Text="Procedure Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_procedurerequest_PerformertRelatedPerson" Area="Info" Sequence="10094" RelationshipName="msemr_contact_msemr_procedurerequest_PerformertRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Procedure Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_procedurerequest_RequesterAgentPractitioner" Sequence="10095" Area="Info" Id="nav_msemr_contact_msemr_procedurerequest_RequesterAgentPractitioner" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Procedure Requests" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_procedurerequest_SubjectPatient" Sequence="10096" Area="Info" Id="nav_msemr_contact_msemr_procedurerequest_SubjectPatient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Procedure Requests" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_referralrequest_RequesterAgentPractitioner" Area="Info" Sequence="10098" RelationshipName="msemr_contact_msemr_referralrequest_RequesterAgentPractitioner" Show="false">
+            <Titles>
+              <Title Text="Referral Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_referralrequest_RequesterAgentRelatedPerson" Area="Info" Sequence="10099" RelationshipName="msemr_contact_msemr_referralrequest_RequesterAgentRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Referral Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_referralrequest_Requestor" Area="Info" Sequence="10100" RelationshipName="msemr_contact_msemr_referralrequest_Requestor" Show="false">
+            <Titles>
+              <Title Text="Referral Requests" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_referralrequest_SubjectPatient" Sequence="10101" Area="Info" Id="nav_msemr_contact_msemr_referralrequest_SubjectPatient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Referral Requests" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_referralrequestrecipient_RecipientPractitioner" Sequence="10102" Area="Info" Id="nav_msemr_contact_msemr_referralrequestrecipient_RecipientPractitioner" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Referral Request Recipients" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_relatedperson_Patient" Sequence="10103" Area="Info" Id="nav_msemr_contact_msemr_relatedperson_Patient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Related Persons" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_relatedperson_RelatedPerson" Sequence="10104" Area="Info" Id="nav_msemr_contact_msemr_relatedperson_RelatedPerson" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Related Persons" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_requestgroup_AuthorTypePractitioner" Area="Info" Sequence="10105" RelationshipName="msemr_contact_msemr_requestgroup_AuthorTypePractitioner" Show="false">
+            <Titles>
+              <Title Text="Request Groups" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_requestgroup_SubjectTypePatient" Sequence="10106" Area="Info" Id="nav_msemr_contact_msemr_requestgroup_SubjectTypePatient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Request Groups" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_requestgroupactionparticipant_ActionParticipantTypePatient" Sequence="10107" Area="Info" Id="nav_msemr_contact_msemr_requestgroupactionparticipant_ActionParticipantTypePatient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Request Group Action Participants" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_requestgroupactionparticipant_ActionParticipantTypePerson" Area="Info" Sequence="10108" RelationshipName="msemr_contact_msemr_requestgroupactionparticipant_ActionParticipantTypePerson" Show="false">
+            <Titles>
+              <Title Text="Request Group Action Participants" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_requestgroupactionparticipant_ActionParticipantTypePractitioner" Area="Info" Sequence="10109" RelationshipName="msemr_contact_msemr_requestgroupactionparticipant_ActionParticipantTypePractitioner" Show="false">
+            <Titles>
+              <Title Text="Request Group Action Participants" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_requestgroupactionparticipant_ActionParticipantTypeRelatedPerson" Area="Info" Sequence="10110" RelationshipName="msemr_contact_msemr_requestgroupactionparticipant_ActionParticipantTypeRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Request Group Action Participants" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_riskassessment_subjectpatient" Area="Info" Sequence="10111" RelationshipName="msemr_contact_msemr_riskassessment_subjectpatient" Show="false">
+            <Titles>
+              <Title Text="Risk Assessments" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_schedule_ActorPatient" Sequence="10112" Area="Info" Id="nav_msemr_contact_msemr_schedule_ActorPatient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Schedules" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_schedule_ActorPractitioner" Area="Info" Sequence="10113" RelationshipName="msemr_contact_msemr_schedule_ActorPractitioner" Show="false">
+            <Titles>
+              <Title Text="Schedules" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_scheduleactor_ActorPatient" Sequence="10114" Area="Info" Id="nav_msemr_contact_msemr_scheduleactor_ActorPatient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Schedule Actors" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_scheduleactor_ActorPractitioner" Area="Info" Sequence="10115" RelationshipName="msemr_contact_msemr_scheduleactor_ActorPractitioner" Show="false">
+            <Titles>
+              <Title Text="Schedule Actors" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_specimen_CollectionCollector" Area="Info" Sequence="10116" RelationshipName="msemr_contact_msemr_specimen_CollectionCollector" Show="false">
+            <Titles>
+              <Title Text="Specimens" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_taskrestrictionrecipient_RestrictionRecipientPatient" Sequence="10117" Area="Info" Id="nav_msemr_contact_msemr_taskrestrictionrecipient_RestrictionRecipientPatient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Task Restriction Recipients" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_taskrestrictionrecipient_RestrictionRecipientPractitioner" Area="Info" Sequence="10118" RelationshipName="msemr_contact_msemr_taskrestrictionrecipient_RestrictionRecipientPractitioner" Show="false">
+            <Titles>
+              <Title Text="Task Restriction Recipients" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_taskrestrictionrecipient_RestrictionRecipientRelatedPerson" Area="Info" Sequence="10119" RelationshipName="msemr_contact_msemr_taskrestrictionrecipient_RestrictionRecipientRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Task Restriction Recipients" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msemr_contact_msemr_visionprescription_Patient" Sequence="10120" Area="Info" Id="nav_msemr_contact_msemr_visionprescription_Patient" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Vision Prescriptions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_msemr_visionprescription_Prescriber" Area="Info" Sequence="10121" RelationshipName="msemr_contact_msemr_visionprescription_Prescriber" Show="false">
+            <Titles>
+              <Title Text="Vision Prescriptions" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_task_PerformerOwnerPatient" Area="Info" Sequence="10122" RelationshipName="msemr_contact_task_PerformerOwnerPatient" Show="false">
+            <Titles>
+              <Title Text="Tasks" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_task_PerformerOwnerPractitioner" Area="Info" Sequence="10123" RelationshipName="msemr_contact_task_PerformerOwnerPractitioner" Show="false">
+            <Titles>
+              <Title Text="Tasks" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_task_PerformerOwnerRelatedPerson" Area="Info" Sequence="10124" RelationshipName="msemr_contact_task_PerformerOwnerRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Tasks" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_task_RequesterAgentPractitioner" Area="Info" Sequence="10125" RelationshipName="msemr_contact_task_RequesterAgentPractitioner" Show="false">
+            <Titles>
+              <Title Text="Tasks" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem Id="nav_msemr_contact_task_RequesterAgentRelatedPerson" Area="Info" Sequence="10126" RelationshipName="msemr_contact_task_RequesterAgentRelatedPerson" Show="false">
+            <Titles>
+              <Title Text="Tasks" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{3ff9a528-dd50-4aca-8f10-2e5ed73513ad}">
+          <customControl formFactor="2" name="MscrmControls.CardFeedContainer.CardFeedContainer">
+            <parameters>
+              <data-set name="SubGrid">
+                <ViewId>{92AFD454-0F2E-4397-A1C8-05E37C6AD699}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>actioncard</TargetEntityType>
+                <FilteredViewIds>{92AFD454-0F2E-4397-A1C8-05E37C6AD699}</FilteredViewIds>
+                <EnableViewPicker>false</EnableViewPicker>
+              </data-set>
+              <EntityTypeCode type="Decimal" static="true">2</EntityTypeCode>
+              <Location type="Decimal" static="true">1</Location>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.CardFeedContainer.CardFeedContainer">
+            <parameters>
+              <data-set name="SubGrid">
+                <ViewId>{92AFD454-0F2E-4397-A1C8-05E37C6AD699}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>actioncard</TargetEntityType>
+                <FilteredViewIds>{92AFD454-0F2E-4397-A1C8-05E37C6AD699}</FilteredViewIds>
+                <EnableViewPicker>false</EnableViewPicker>
+              </data-set>
+              <EntityTypeCode type="Decimal" static="true">2</EntityTypeCode>
+              <Location type="Decimal" static="true">1</Location>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.CardFeedContainer.CardFeedContainer">
+            <parameters>
+              <data-set name="SubGrid">
+                <ViewId>{92AFD454-0F2E-4397-A1C8-05E37C6AD699}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>actioncard</TargetEntityType>
+                <FilteredViewIds>{92AFD454-0F2E-4397-A1C8-05E37C6AD699}</FilteredViewIds>
+                <EnableViewPicker>false</EnableViewPicker>
+              </data-set>
+              <EntityTypeCode type="Decimal" static="true">2</EntityTypeCode>
+              <Location type="Decimal" static="true">1</Location>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{1cc3b2e1-07e6-6bd8-a570-d7228edd021e}">
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="0">
+            <parameters>
+              <ViewId>{AC2F655B-09CB-4C6E-BF1A-6156B5AC0E29}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>msemr_contact_msemr_careplan_PatientIdentifier</RelationshipName>
+              <TargetEntityType>msemr_careplan</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <ViewIds>{AC2F655B-09CB-4C6E-BF1A-6156B5AC0E29}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+              <RecordsPerPage>10</RecordsPerPage>
+              <HeaderColorCode>#D6EAFA</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="1">
+            <parameters>
+              <ViewId>{AC2F655B-09CB-4C6E-BF1A-6156B5AC0E29}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>msemr_contact_msemr_careplan_PatientIdentifier</RelationshipName>
+              <TargetEntityType>msemr_careplan</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <ViewIds>{AC2F655B-09CB-4C6E-BF1A-6156B5AC0E29}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+              <RecordsPerPage>10</RecordsPerPage>
+              <HeaderColorCode>#D6EAFA</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="2">
+            <parameters>
+              <ViewId>{AC2F655B-09CB-4C6E-BF1A-6156B5AC0E29}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>msemr_contact_msemr_careplan_PatientIdentifier</RelationshipName>
+              <TargetEntityType>msemr_careplan</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <ViewIds>{AC2F655B-09CB-4C6E-BF1A-6156B5AC0E29}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+              <RecordsPerPage>10</RecordsPerPage>
+              <HeaderColorCode>#D6EAFA</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl name="MscrmControls.Grid.GridControl" formFactor="-1">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{AC2F655B-09CB-4C6E-BF1A-6156B5AC0E29}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>msemr_contact_msemr_careplan_PatientIdentifier</RelationshipName>
+                <TargetEntityType>msemr_careplan</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{AC2F655B-09CB-4C6E-BF1A-6156B5AC0E29}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy type="Enum" static="true">yes</EnableGroupBy>
+              <EnableEditing type="Enum" static="true">yes</EnableEditing>
+              <ReflowBehavior type="Enum" static="true">GridOnly</ReflowBehavior>
+              <EnableFiltering type="Enum" static="true">yes</EnableFiltering>
+              <HideNestedGridColumnHeader type="Enum" static="true">no</HideNestedGridColumnHeader>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler enabled="true" handlerUniqueId="4ea24ebd-795d-434e-af94-6812c3867b54" libraryName="AppCommon/Contact/Contact_main_system_library.js" functionName="AppCommon.Contact.Instance.form_onload" />
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="createdon">
+          <Handlers>
+            <Handler enabled="true" handlerUniqueId="{9dc5c15e-e5b9-2470-7657-77dd5aa2b209}" libraryName="msemr_Patient360Script" functionName="onSave" passExecutionContext="true" parameters="" />
+          </Handlers>
+        </event>
+      </events>
+      <formLibraries>
+        <Library name="msemr_Patient360Script" libraryUniqueId="{ae58b21b-2022-7a18-4516-14c7721b1480}" />
+      </formLibraries>
+      <DisplayConditions FallbackForm="true" Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Patient 360" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Form specific to Patient Contact" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

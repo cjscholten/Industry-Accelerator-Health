@@ -32,6 +32,10 @@
           <IsSortableEnabled>0</IsSortableEnabled>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>-1</AppDefaultValue>
           <optionset Name="customeraddress_addresstypecode">
             <OptionSetType>picklist</OptionSetType>
@@ -123,6 +127,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>2</Behavior>
@@ -159,6 +167,10 @@
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
           <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
           <Format>date</Format>
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>2</Behavior>
@@ -208,6 +220,7 @@
       <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
       <ChangeTrackingEnabled>0</ChangeTrackingEnabled>
       <IsEnabledForExternalChannels>0</IsEnabledForExternalChannels>
+      <IsSolutionAware>0</IsSolutionAware>
     </entity>
   </EntityInfo>
   <FormXml />
