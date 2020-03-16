@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
       <tabs>
         <tab verticallayout="true" id="{7fb41aaf-760d-4a93-aac0-e9326d224e06}" IsUserDefined="1" name="{7fb41aaf-760d-4a93-aac0-e9326d224e06}" locklevel="0" expanded="true" showlabel="true">
           <labels>
@@ -48,7 +48,7 @@
                         <labels>
                           <label description="Patient" languagecode="1033" />
                         </labels>
-                        <control id="msemr_subjecttypepatient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_subjecttypepatient" disabled="false" />
+                        <control id="msemr_subjecttypepatient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_subjecttypepatient" disabled="false" uniqueid="{8b74613e-dcd4-642b-2c1d-db9eab644aaa}" />
                       </cell>
                     </row>
                     <row>
@@ -411,6 +411,17 @@
           </NavBarArea>
         </NavBarAreas>
       </Navigation>
+      <formLibraries>
+        <Library name="msemr_/Scripts/Utilities/clearFieldsFromContactType.js" libraryUniqueId="{b53dd9c5-948a-2359-7c27-6208881837c0}" />
+        <Library name="msemr_/Scripts/Entities/msemr_condition.js" libraryUniqueId="{5ab232dc-b023-d00e-3313-d95e8a460182}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="HealthcareAccelerator.Entities.msemr_condition.form.executeOnLoad" libraryName="msemr_/Scripts/Entities/msemr_condition.js" handlerUniqueId="{c7dd2ed3-9a03-58ac-bb77-e457d8ab4b58}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

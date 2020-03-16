@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form headerdensity="HighWithControls">
+    <form headerdensity="HighWithControls" shownavigationbar="true" showImage="false" maxWidth="1920">
       <tabs>
         <tab verticallayout="true" id="{4ceae96d-33fa-40fd-ba82-d1ae8a25d59f}" IsUserDefined="1">
           <labels>
@@ -75,6 +75,23 @@
                         <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                       </cell>
                     </row>
+                    <row>
+                      <cell id="{b1e49167-1118-168a-b02b-5d15ada30d45}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Practitoner" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_requesteragenttypepractitioner" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_requesteragenttypepractitioner" disabled="true" uniqueid="{ca97ab42-0a1b-2c24-d42e-02d9c2048ccc}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A2D479C5-53E3-4C69-ADDD-802327E67A0D}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
                   </rows>
                 </section>
               </sections>
@@ -83,7 +100,7 @@
         </tab>
       </tabs>
       <Navigation>
-        <NavBar />
+        <NavBar></NavBar>
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
@@ -155,6 +172,17 @@
           </row>
         </rows>
       </footer>
+      <formLibraries>
+        <Library name="msemr_/Scripts/Utilities/clearFieldsFromContactType.js" libraryUniqueId="{b2593259-556b-7600-63ab-97bb62b10d59}" />
+        <Library name="msemr_/Scripts/Entities/msemr_medicationrequest.js" libraryUniqueId="{08c7a434-3b3e-85d6-2742-653e9207d8b2}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="HealthcareAccelerator.Entities.msemr_medicationrequest.form.executeOnLoad" libraryName="msemr_/Scripts/Entities/msemr_medicationrequest.js" handlerUniqueId="{d28d09de-5aa9-2206-e5ce-c85d1da29cdd}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
       <DisplayConditions Order="0" FallbackForm="true" />
     </form>
     <IsCustomizable>1</IsCustomizable>

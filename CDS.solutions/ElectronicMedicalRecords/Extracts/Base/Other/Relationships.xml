@@ -961,6 +961,7 @@
   <EntityRelationship Name="msemr_account_task_Requesteronbehalfof" />
   <EntityRelationship Name="msemr_account_task_RequesterOrganization" />
   <EntityRelationship Name="msemr_activitydefinitionjurisdiction_ActivityDefinition" />
+  <EntityRelationship Name="msemr_appointmentemr_AppointmentType_msem" />
   <EntityRelationship Name="msemr_appointmentemr_businessunit_owningbusinessunit" />
   <EntityRelationship Name="msemr_appointmentemr_mailbox_sendermailboxid" />
   <EntityRelationship Name="msemr_appointmentemr_owner_ownerid" />
@@ -1918,6 +1919,7 @@
   <EntityRelationship Name="msemr_msemr_visionprescription_msemr_visionprescriptiondispens_VisionPrescription" />
   <EntityRelationship Name="msemr_observation_msemr_goaloutcomereference_OutcomeReference" />
   <EntityRelationship Name="msemr_plandefinition_msemr_medicationrequestdefinition_MedicationRequestDefinitionPlanDefinition" />
+  <EntityRelationship Name="msemr_procedure_codeableconcept_msemr_cod" />
   <EntityRelationship Name="msemr_procedure_CodeNew_msemr_medication" />
   <EntityRelationship Name="msemr_procedurerequest_ProcedureCodeNew_m" />
   <EntityRelationship Name="msemr_procedureusedreference_MedicationNe" />

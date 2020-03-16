@@ -5,7 +5,7 @@
     <IntroducedVersion>1.4</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
       <tabs>
         <tab verticallayout="true" id="{9dbfdc62-7f39-4e0c-87a7-8db8cf05bfd7}" IsUserDefined="1">
           <labels>
@@ -40,7 +40,7 @@
                         <labels>
                           <label description="Subject (Patient)" languagecode="1033" />
                         </labels>
-                        <control id="msemr_subjectpatient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_subjectpatient" disabled="false" />
+                        <control id="msemr_subjectpatient" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_subjectpatient" disabled="false" uniqueid="{500e3039-5c8c-342b-9b94-ad413c52d826}" />
                       </cell>
                     </row>
                     <row>
@@ -57,6 +57,23 @@
                           <label description="Owner" languagecode="1033" />
                         </labels>
                         <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{223eee41-39c9-46d7-bb1a-a2148b2e6b21}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Practitioner" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_performerpractitioner" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_performerpractitioner" disabled="true" uniqueid="{694dcdd2-091e-3c6d-bb8c-62c1ec66211d}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A2D479C5-53E3-4C69-ADDD-802327E67A0D}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
                       </cell>
                     </row>
                   </rows>
@@ -96,6 +113,18 @@
           </NavBarArea>
         </NavBarAreas>
       </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="msemr_/Scripts/Utilities/clearFieldsFromContactType.js" libraryUniqueId="{15a2a611-b302-7c07-3140-778959b8d045}" />
+        <Library name="msemr_/Scripts/Entities/msemr_procedurerequest.js" libraryUniqueId="{07cdd4d5-427c-490d-0c83-7ed3a11493ba}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="HealthcareAccelerator.Entities.msemr_procedurerequest.form.executeOnLoad" libraryName="msemr_/Scripts/Entities/msemr_procedurerequest.js" handlerUniqueId="{6050ee9a-dd6b-b270-9138-9db4018cdc53}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>
