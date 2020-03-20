@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{c8e2a816-cb58-ea11-a811-000d3a8bd97d}</WebResourceId>
+  <Name>msemr_/Scripts/Utilities/clearFieldsFromContactType.js</Name>
+  <DisplayName>clearFieldsFromContactType.js</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>2.2.0.2</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/msemr_ScriptsUtilitiesclearFieldsFromContactTypejsC8E2A816-CB58-EA11-A811-000D3A8BD97D</FileName>
+</WebResource>

@@ -3,6 +3,7 @@
   <UniqueName>msemr_DynamicsHealth365</UniqueName>
   <IntroducedVersion>1.7</IntroducedVersion>
   <WebResourceId>1ed57b56-af79-e811-a838-000d3a33b56b</WebResourceId>
+  <OptimizedFor></OptimizedFor>
   <WelcomePageId>9b5b25dd-9c1a-ea11-a811-000d3a8aaa0f</WelcomePageId>
   <FormFactor>1</FormFactor>
   <ClientType>4</ClientType>

@@ -44,11 +44,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{437b12b7-52b1-4577-97a3-8b7dfdb30410}" showlabel="true" locklevel="0">
+                      <cell id="{1d25875d-23e0-4a95-aead-100ae6c00ab6}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Code" languagecode="1033" />
                         </labels>
-                        <control id="msemr_codenew" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_codenew" disabled="false" />
+                        <control id="msemr_codeableconcept" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_codeableconcept" disabled="false" />
                       </cell>
                     </row>
                     <row>

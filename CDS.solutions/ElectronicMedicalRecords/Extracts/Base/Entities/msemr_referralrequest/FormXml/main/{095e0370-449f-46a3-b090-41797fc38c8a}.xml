@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
       <tabs>
         <tab verticallayout="true" id="{f7c87b60-5a1e-4c77-a27e-ecfcb30a9d37}" IsUserDefined="1" name="{f7c87b60-5a1e-4c77-a27e-ecfcb30a9d37}" locklevel="0" expanded="true" showlabel="true">
           <labels>
@@ -308,6 +308,17 @@
         </NavBarAreas>
       </Navigation>
       <controlDescriptions />
+      <formLibraries>
+        <Library name="msemr_/Scripts/Utilities/clearFieldsFromContactType.js" libraryUniqueId="{7b155913-593d-6868-b7c1-b417a9d47078}" />
+        <Library name="msemr_/Scripts/Entities/msemr_referralrequest.js" libraryUniqueId="{36ed8256-b621-87ac-5c88-6aea46204520}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="HealthcareAccelerator.Entities.msemr_referralrequest.form.executeOnLoad" libraryName="msemr_/Scripts/Entities/msemr_referralrequest.js" handlerUniqueId="{93528898-5eba-259e-5ed5-711ec97b654e}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

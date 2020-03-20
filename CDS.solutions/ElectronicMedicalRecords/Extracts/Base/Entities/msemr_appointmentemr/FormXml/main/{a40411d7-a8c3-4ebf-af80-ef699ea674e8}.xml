@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form headerdensity="HighWithControls">
+    <form headerdensity="HighWithControls" shownavigationbar="true" showImage="false" maxWidth="1920">
       <tabs>
         <tab id="{438b9f88-3906-4e2c-85bb-b0922fe0c451}" name="{438b9f88-3906-4e2c-85bb-b0922fe0c451}" IsUserDefined="1" showlabel="true" expanded="true" locklevel="0" verticallayout="true">
           <labels>
@@ -25,6 +25,14 @@
                           <label description="Subject" languagecode="1033" />
                         </labels>
                         <control id="subject" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c3e081a6-147f-47da-b209-3d330bc8819e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Appointment Type" languagecode="1033" />
+                        </labels>
+                        <control id="msemr_appointmenttype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msemr_appointmenttype" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -339,6 +347,16 @@
           </row>
         </rows>
       </footer>
+      <formLibraries>
+        <Library name="msemr_/Scripts/Entities/msemr_appointmentemr.js" libraryUniqueId="{5d18e150-b7e8-e290-6aac-362c9be56b94}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="HealthcareAccelerator.Entities.msemr_appointmentemr.form.executeOnLoad" libraryName="msemr_/Scripts/Entities/msemr_appointmentemr.js" handlerUniqueId="{3e9ae313-6863-c2ce-5e37-c471dc2276bb}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
       <DisplayConditions Order="0" FallbackForm="true" />
     </form>
     <IsCustomizable>1</IsCustomizable>

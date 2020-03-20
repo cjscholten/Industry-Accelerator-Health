@@ -28,10 +28,10 @@
           <attribute name="birthdate" />
           <attribute name="address1_composite" />
           <order descending="false" attribute="fullname" />
-          <filter type="and">
-            <condition value="935000000" attribute="msemr_contacttype" operator="eq" />
-          </filter>
           <attribute name="contactid" />
+          <filter type="and">
+            <condition attribute="msemr_contacttype" operator="eq" value="935000001" />
+          </filter>
         </entity>
       </fetch>
     </fetchxml>
