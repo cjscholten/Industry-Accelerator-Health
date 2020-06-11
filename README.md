@@ -20,6 +20,7 @@ Dynamics 365 announced the Microsoft Power Platform, a connected app platform th
 With the Power Platform providing a unified approach to building data driven solutions, the team is taking it one step further by introducing Industry Solution Accelerators. Accelerators are industry focused foundational components that enable ISVs and other solution providers, a way to build solutions that are based on industry standards supported and driven by Microsoft. Along with our Health Accelerator that was released during Inspire 2018, which you can read about here, we are focused on delivering accelerators for other industries for which you can find more detail in the links below.
 
 Engage with experts and peers, read blog articles, and find local events within the Industry Accelerator Community. 
+
 Join the [conversation](https://community.dynamics.com/365/industry-accelerators/).
 
 ## Overview of the Industry Health Accelerator
@@ -29,6 +30,7 @@ The Dynamics 365 has prioritize going beyond extendible applications and horizon
 The Dynamics 365 Health Accelerator is the first of such accelerators and is based on the FHIR HL7 3.0 specification. The Health Accelerator is a collaborative effort including but not limited to, the Dynamics 365 CDS, ISV Success, CDM, Connector and Analytic teams, the Microsoft Health Vertical, Marketing, OCP and industry ISVs, SIs and Partners. [Learn more](https://community.dynamics.com/365/b/healthaccelerator)
 
 Engage with experts and peers, read blog articles, and find local events within the Health Accelerator Community. 
+
 Join the [Health conversation](https://community.dynamics.com/365/industry-accelerators/f/health-accelerator-forum).
 
 ## Releases
