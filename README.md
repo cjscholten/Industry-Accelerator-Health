@@ -27,7 +27,6 @@ The Dynamics 365 Health Accelerator is the first of such accelerators and is bas
 
 ## Releases
 
-<b>[Latest Release](https://github.com/microsoft/Industry-Accelerator-Health/releases/tag/v2.2.3.2)</b>
 
 Click "release" tab on the top or click this [link](https://github.com/microsoft/Industry-Accelerator-Health/releases) to navigate to latest release details and download the latest release assets.
 
