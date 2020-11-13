@@ -1,3 +1,5 @@
+> The Dynamics 365 Healthcare Accelerator is deprecated effective November 13th, 2020 and will no longer be available for download after December 30th, 2020. More information can be found here: [Deprecation of Dynamics 365 healthcare accelerator](https://docs.microsoft.com/en-us/dynamics365/industry/healthcare/accelerator-deprecation} 
+
 # Health Accelerator
 Hello ISVs, SIs, Partners and Customers - Your success is our goal.
 This Repository helps you to Connect, Extend, Build and Contribute to Microsoft Health Industry Accelerator.
